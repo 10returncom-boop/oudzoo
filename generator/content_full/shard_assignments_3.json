@@ -1,0 +1,368 @@
+{
+ "shard": 3,
+ "total": 27,
+ "note": "此為派工清單，僅供本片負責的 slug 使用；不得撰寫清單以外的 slug。",
+ "articles": [
+  {
+   "slug": "look-grain",
+   "t": "看紋理辨識",
+   "c": "appraisal",
+   "catName": "鑑賞辨偽",
+   "g": "identify",
+   "grpName": "鑑定方法",
+   "tags": [
+    "紋理",
+    "鑑定"
+   ],
+   "s": "觀察沉香表面的油線、色澤與質地，是辨別真偽與油脂含量的第一步。"
+  },
+  {
+   "slug": "pressed-oil",
+   "t": "壓油香",
+   "c": "appraisal",
+   "catName": "鑑賞辨偽",
+   "g": "fake",
+   "grpName": "辨偽識別",
+   "tags": [
+    "壓油",
+    "仿品"
+   ],
+   "s": "壓油香是以機械將油脂壓入木質以增重與增香的仿品，外觀易騙人。"
+  },
+  {
+   "slug": "aquilaria-crassna",
+   "t": "A. crassna 越南沉香樹",
+   "c": "botany",
+   "catName": "植物與樹種",
+   "g": "species",
+   "grpName": "主要樹種",
+   "tags": [
+    "Aquilaria",
+    "樹種",
+    "越南"
+   ],
+   "s": "A. crassna 主要分布於越南與中南半島，是惠安系沉香的重要樹種。"
+  },
+  {
+   "slug": "aquilaria-malaccensis",
+   "t": "A. malaccensis 馬來沉香樹",
+   "c": "botany",
+   "catName": "植物與樹種",
+   "g": "species",
+   "grpName": "主要樹種",
+   "tags": [
+    "Aquilaria",
+    "樹種",
+    "馬來"
+   ],
+   "s": "A. malaccensis 是分布最廣、貿易量最大的沉香樹種，東南亞多國皆有其蹤跡。"
+  },
+  {
+   "slug": "thymelaeaceae",
+   "t": "瑞香科概述",
+   "c": "botany",
+   "catName": "植物與樹種",
+   "g": "thymel",
+   "grpName": "瑞香科與屬",
+   "tags": [
+    "瑞香科",
+    "植物"
+   ],
+   "s": "瑞香科（Thymelaeaceae）包含沉香屬在內的多個產香科屬，是沉香來源的主要植物家族。"
+  },
+  {
+   "slug": "incense-civilization",
+   "t": "香文化與文明",
+   "c": "culture",
+   "catName": "歷史與文化",
+   "g": "culture2",
+   "grpName": "文化內涵",
+   "tags": [
+    "香文化",
+    "文明"
+   ],
+   "s": "沉香串連東西方香文化，是人類文明中連結感官、信仰與生活美學的重要媒介。"
+  },
+  {
+   "slug": "agarwood-paste",
+   "t": "沉香油膏",
+   "c": "form",
+   "catName": "香品形式",
+   "g": "craft",
+   "grpName": "工藝與萃取",
+   "tags": [
+    "油膏",
+    "萃取"
+   ],
+   "s": "沉香油膏以沉香萃取物調製，質地濃稠、香氣馥郁，適於塗抹使用。"
+  },
+  {
+   "slug": "buddha-beads",
+   "t": "佛珠與念珠",
+   "c": "form",
+   "catName": "香品形式",
+   "g": "beads",
+   "grpName": "珠串",
+   "tags": [
+    "佛珠",
+    "念珠"
+   ],
+   "s": "沉香佛珠與念珠結合宗教持誦與品香，香氣能助靜心專注。"
+  },
+  {
+   "slug": "incense-brand",
+   "t": "香牌",
+   "c": "form",
+   "catName": "香品形式",
+   "g": "incense",
+   "grpName": "香品",
+   "tags": [
+    "香牌",
+    "香品"
+   ],
+   "s": "香牌是以香粉壓製成形的佩件，可佩戴或懸掛，香氣細緻。"
+  },
+  {
+   "slug": "raw-wood",
+   "t": "沉香原木",
+   "c": "form",
+   "catName": "香品形式",
+   "g": "raw",
+   "grpName": "原材",
+   "tags": [
+    "原木",
+    "車珠料"
+   ],
+   "s": "沉香原木是最完整的沉香形式，保留原始結香樣貌，適合收藏、切片或車珠。"
+  },
+  {
+   "slug": "live-resin",
+   "t": "生結沉香",
+   "c": "formation",
+   "catName": "結香與形成",
+   "g": "state",
+   "grpName": "結香狀態",
+   "tags": [
+    "生結",
+    "結香類型"
+   ],
+   "s": "生結指樹木尚存活時取出的沉香，香氣較清新、樹脂仍在生成中。"
+  },
+  {
+   "slug": "water-sink",
+   "t": "水沉沉香",
+   "c": "formation",
+   "catName": "結香與形成",
+   "g": "bury",
+   "grpName": "埋藏環境",
+   "tags": [
+    "水沉",
+    "埋藏環境"
+   ],
+   "s": "水沉指落入水中長期浸泡結香的沉香，質地緊密、香氣內斂。"
+  },
+  {
+   "slug": "beginner-guide",
+   "t": "新手入門指南",
+   "c": "industry",
+   "catName": "產業與市場",
+   "g": "buy",
+   "grpName": "選購指南",
+   "tags": [
+    "新手",
+    "入門"
+   ],
+   "s": "新手宜從聞香經驗與平價產區開始，逐步建立對沉香香氣與品級的鑑賞能力。"
+  },
+  {
+   "slug": "endangered",
+   "t": "瀕危現況",
+   "c": "law",
+   "catName": "法規與保育",
+   "g": "conserve",
+   "grpName": "保育永續",
+   "tags": [
+    "瀕危",
+    "保育"
+   ],
+   "s": "野生沉香樹因過度採伐瀕危，各產區已加強人工栽培與保育。"
+  },
+  {
+   "slug": "aceh",
+   "t": "亞齊沉香",
+   "c": "origin",
+   "catName": "產區品系",
+   "g": "indonesia",
+   "grpName": "印尼",
+   "tags": [
+    "亞齊",
+    "印尼",
+    "產區"
+   ],
+   "s": "亞齊位於蘇門答臘北部，沉香香氣甘甜醇厚，具地域特色。"
+  },
+  {
+   "slug": "daraq-agarwood",
+   "t": "達拉干沉香",
+   "c": "origin",
+   "catName": "產區品系",
+   "g": "indonesia",
+   "grpName": "印尼",
+   "tags": [
+    "達拉干",
+    "印尼",
+    "產區"
+   ],
+   "s": "達拉干沉香以油脂豐富、涼甜與奶香交織著稱，是星洲系中的高品質產區。"
+  },
+  {
+   "slug": "hui-an-system",
+   "t": "惠安系沉香",
+   "c": "origin",
+   "catName": "產區品系",
+   "g": "system",
+   "grpName": "品系系統",
+   "tags": [
+    "惠安系",
+    "品系"
+   ],
+   "s": "惠安系指越南、中國、中南半島等地的沉香，香氣清涼甘甜、花香明顯。"
+  },
+  {
+   "slug": "khang-hoa",
+   "t": "慶和沉香",
+   "c": "origin",
+   "catName": "產區品系",
+   "g": "vietnam",
+   "grpName": "越南",
+   "tags": [
+    "慶和",
+    "越南",
+    "產區"
+   ],
+   "s": "慶和省位於越南中南部，出產的沉香香韻清甜，是越南重要產區之一。"
+  },
+  {
+   "slug": "manilau",
+   "t": "馬尼撈沉香",
+   "c": "origin",
+   "catName": "產區品系",
+   "g": "indonesia",
+   "grpName": "印尼",
+   "tags": [
+    "馬尼撈",
+    "印尼",
+    "產區"
+   ],
+   "s": "馬尼撈沉香油脂高、香氣涼甜醇厚，被視為星洲系名香之一。"
+  },
+  {
+   "slug": "star-island-system",
+   "t": "星洲系沉香",
+   "c": "origin",
+   "catName": "產區品系",
+   "g": "system",
+   "grpName": "品系系統",
+   "tags": [
+    "星洲系",
+    "品系"
+   ],
+   "s": "星洲系指印尼、馬來西亞、汶萊等島嶼產區的沉香，香氣醇厚奶香、較濃烈。"
+  },
+  {
+   "slug": "agarwood-name",
+   "t": "沉香之名與意象",
+   "c": "overview",
+   "catName": "沉香基礎",
+   "g": "base",
+   "grpName": "認識沉香",
+   "tags": [
+    "沉香",
+    "文化",
+    "命名"
+   ],
+   "s": "「沉香」之名源於其沉水而香、香氣沉穩內斂，歷代文人賦予其高潔、隱逸與典藏意象。"
+  },
+  {
+   "slug": "fungus-resin",
+   "t": "真菌與結香",
+   "c": "overview",
+   "catName": "沉香基礎",
+   "g": "resin",
+   "grpName": "結香原理",
+   "tags": [
+    "結香",
+    "真菌",
+    "微生物"
+   ],
+   "s": "特定真菌感染會加速並加劇樹脂沉積，真菌種類亦影響沉香的色澤與香氣。"
+  },
+  {
+   "slug": "floating-grade",
+   "t": "浮水與半沉",
+   "c": "quality",
+   "catName": "品級與品質",
+   "g": "sinking",
+   "grpName": "沉水等級",
+   "tags": [
+    "浮水",
+    "半沉",
+    "等級"
+   ],
+   "s": "浮水與半沉沉香油脂較少、密度較低，價格較親民，適合入門與日常用香。"
+  },
+  {
+   "slug": "oil-line",
+   "t": "油線紋理",
+   "c": "quality",
+   "catName": "品級與品質",
+   "g": "oil",
+   "grpName": "油脂與紋理",
+   "tags": [
+    "油線",
+    "紋理"
+   ],
+   "s": "沉香表面的油線紋理反映油脂分布，細密油線通常代表油脂豐富、品質較佳。"
+  },
+  {
+   "slug": "direct-burn",
+   "t": "明火焚香",
+   "c": "way",
+   "catName": "品香與香道",
+   "g": "method",
+   "grpName": "品香方法",
+   "tags": [
+    "明火",
+    "焚香"
+   ],
+   "s": "明火直接焚燒香材香氣濃烈直接，適合一般香材，但會損失部分細膩層次。"
+  },
+  {
+   "slug": "incense-seat",
+   "t": "香席",
+   "c": "way",
+   "catName": "品香與香道",
+   "g": "kodo",
+   "grpName": "香道文化",
+   "tags": [
+    "香席",
+    "香道"
+   ],
+   "s": "香席是品香聚會的形式，透過儀軌、器具與品聞引導，營造靜心交流的氛圍。"
+  },
+  {
+   "slug": "religious-incense",
+   "t": "佛教與道教用香",
+   "c": "way",
+   "catName": "品香與香道",
+   "g": "apply",
+   "grpName": "香道應用",
+   "tags": [
+    "佛教",
+    "道教",
+    "宗教"
+   ],
+   "s": "沉香在佛教與道教中皆為重要供香，象徵清淨、供養與修行助緣。"
+  }
+ ]
+}

@@ -1,0 +1,380 @@
+{
+ "shard": 2,
+ "total": 28,
+ "note": "此為派工清單，僅供本片負責的 slug 使用；不得撰寫清單以外的 slug。",
+ "articles": [
+  {
+   "slug": "grade-identify",
+   "t": "等級辨識",
+   "c": "appraisal",
+   "catName": "鑑賞辨偽",
+   "g": "judge",
+   "grpName": "品質判斷",
+   "tags": [
+    "等級",
+    "辨識"
+   ],
+   "s": "綜合密度、油脂、香氣與產地特徵，將沉香區分為不同品級。"
+  },
+  {
+   "slug": "origin-fake",
+   "t": "產地造假",
+   "c": "appraisal",
+   "catName": "鑑賞辨偽",
+   "g": "fake",
+   "grpName": "辨偽識別",
+   "tags": [
+    "產地",
+    "造假"
+   ],
+   "s": "以低價產區冒充名產區是常見手法，需以香氣與紋理特徵綜合判斷。"
+  },
+  {
+   "slug": "aquilaria-beccariana",
+   "t": "A. beccariana 產香樹種",
+   "c": "botany",
+   "catName": "植物與樹種",
+   "g": "species",
+   "grpName": "主要樹種",
+   "tags": [
+    "Aquilaria",
+    "樹種"
+   ],
+   "s": "A. beccariana 分布於印尼與馬來半島，亦為可結香的重要樹種。"
+  },
+  {
+   "slug": "aquilaria-hirta",
+   "t": "A. hirta 印尼沉香樹",
+   "c": "botany",
+   "catName": "植物與樹種",
+   "g": "species",
+   "grpName": "主要樹種",
+   "tags": [
+    "Aquilaria",
+    "樹種",
+    "印尼"
+   ],
+   "s": "A. hirta 分布於印尼與馬來，是加里曼丹等星洲系產區的常見樹種。"
+  },
+  {
+   "slug": "gyrinops-genus",
+   "t": "Gyrinops 屬",
+   "c": "botany",
+   "catName": "植物與樹種",
+   "g": "thymel",
+   "grpName": "瑞香科與屬",
+   "tags": [
+    "Gyrinops",
+    "樹種",
+    "屬"
+   ],
+   "s": "Gyrinops 屬與 Aquilaria 相近，也是能結香的瑞香科樹種，主要分布於南亞與東南亞。"
+  },
+  {
+   "slug": "agarwood-zen",
+   "t": "沉香與禪修",
+   "c": "culture",
+   "catName": "歷史與文化",
+   "g": "culture2",
+   "grpName": "文化內涵",
+   "tags": [
+    "禪修",
+    "香"
+   ],
+   "s": "沉香香氣沉穩有助靜心，是禪修與靜坐常用的助緣香。"
+  },
+  {
+   "slug": "silk-road",
+   "t": "沉香與香料貿易",
+   "c": "culture",
+   "catName": "歷史與文化",
+   "g": "history",
+   "grpName": "歷史源流",
+   "tags": [
+    "香料",
+    "貿易",
+    "絲路"
+   ],
+   "s": "沉香是古代香料貿易的重要商品，經海陸絲路流通於東西方之間。"
+  },
+  {
+   "slug": "bead-material",
+   "t": "車珠料",
+   "c": "form",
+   "catName": "香品形式",
+   "g": "raw",
+   "grpName": "原材",
+   "tags": [
+    "車珠料",
+    "原材"
+   ],
+   "s": "車珠料是適合加工成珠串的沉香原材，需評估油脂分布與料形利用率。"
+  },
+  {
+   "slug": "fragments",
+   "t": "沉香碎料",
+   "c": "form",
+   "catName": "香品形式",
+   "g": "raw",
+   "grpName": "原材",
+   "tags": [
+    "碎料",
+    "原材"
+   ],
+   "s": "碎料是加工後的邊角沉香，價格親民，適合磨粉或日常熏香。"
+  },
+  {
+   "slug": "incense-stick",
+   "t": "線香",
+   "c": "form",
+   "catName": "香品形式",
+   "g": "incense",
+   "grpName": "香品",
+   "tags": [
+    "線香",
+    "香品"
+   ],
+   "s": "沉香線香以沉香粉與黏合料製成，點燃即散香，是最普遍的日常用香形式。"
+  },
+  {
+   "slug": "insect-hole",
+   "t": "蟲漏沉香",
+   "c": "formation",
+   "catName": "結香與形成",
+   "g": "special",
+   "grpName": "特殊結香",
+   "tags": [
+    "蟲漏",
+    "結香",
+    "蟲蛀"
+   ],
+   "s": "蟲漏是昆蟲蛀咬造成創傷後結成的沉香，蟲道與樹脂交織，常呈蜂窩狀，香氣清雅帶特殊韻味。"
+  },
+  {
+   "slug": "soil-sink",
+   "t": "土沉沉香",
+   "c": "formation",
+   "catName": "結香與形成",
+   "g": "bury",
+   "grpName": "埋藏環境",
+   "tags": [
+    "土沉",
+    "埋藏環境"
+   ],
+   "s": "土沉指埋於土壤中結香的沉香，因土壤風土不同而有獨特醇香。"
+  },
+  {
+   "slug": "auction-market",
+   "t": "沉香拍賣市場",
+   "c": "industry",
+   "catName": "產業與市場",
+   "g": "market",
+   "grpName": "行情市場",
+   "tags": [
+    "拍賣",
+    "市場"
+   ],
+   "s": "沉香是藝術品拍賣中的特色品項，頂級奇楠與雕件屢創高價，反映其收藏地位。"
+  },
+  {
+   "slug": "curing",
+   "t": "沉香養護",
+   "c": "industry",
+   "catName": "產業與市場",
+   "g": "keep",
+   "grpName": "保存收藏",
+   "tags": [
+    "養護",
+    "保存"
+   ],
+   "s": "沉香的養護包括適度盤玩、避免暴曬與乾燥存放，維持油脂與香氣。"
+  },
+  {
+   "slug": "trade-regulation",
+   "t": "沉香貿易法規",
+   "c": "law",
+   "catName": "法規與保育",
+   "g": "regulation",
+   "grpName": "法規規範",
+   "tags": [
+    "貿易",
+    "法規"
+   ],
+   "s": "沉香國際貿易受 CITES 與各國海關法規管制，須依規定申報來源與證件。"
+  },
+  {
+   "slug": "cambodia-agarwood",
+   "t": "柬埔寨沉香",
+   "c": "origin",
+   "catName": "產區品系",
+   "g": "indochina",
+   "grpName": "中南半島",
+   "tags": [
+    "柬埔寨",
+    "產區"
+   ],
+   "s": "柬埔寨沉香香氣甘甜帶花蜜韻，屬惠安系，是中南半島重要產區。"
+  },
+  {
+   "slug": "hue-agarwood",
+   "t": "順化沉香",
+   "c": "origin",
+   "catName": "產區品系",
+   "g": "vietnam",
+   "grpName": "越南",
+   "tags": [
+    "順化",
+    "越南",
+    "產區"
+   ],
+   "s": "順化位於越南中部，出產的沉香香氣清雅帶甜，是惠安系中的上品之一。"
+  },
+  {
+   "slug": "kalimantan",
+   "t": "加里曼丹沉香",
+   "c": "origin",
+   "catName": "產區品系",
+   "g": "indonesia",
+   "grpName": "印尼",
+   "tags": [
+    "加里曼丹",
+    "印尼",
+    "產區"
+   ],
+   "s": "加里曼丹位於婆羅洲，是印尼最大的沉香產區，香氣濃烈醇厚、奶香明顯，帶甜涼。"
+  },
+  {
+   "slug": "malaysia-west",
+   "t": "西馬沉香",
+   "c": "origin",
+   "catName": "產區品系",
+   "g": "malaysia",
+   "grpName": "馬來西亞",
+   "tags": [
+    "西馬",
+    "馬來西亞"
+   ],
+   "s": "西馬沉香香氣清甜，介於惠安與星洲之間，具獨特風味。"
+  },
+  {
+   "slug": "quang-binh",
+   "t": "廣平沉香",
+   "c": "origin",
+   "catName": "產區品系",
+   "g": "vietnam",
+   "grpName": "越南",
+   "tags": [
+    "廣平",
+    "越南",
+    "產區"
+   ],
+   "s": "廣平沉香屬越南中北部產區，香氣甘甜清冽，具地域特色。"
+  },
+  {
+   "slug": "yunnan-agarwood",
+   "t": "雲南沉香",
+   "c": "origin",
+   "catName": "產區品系",
+   "g": "china",
+   "grpName": "中國",
+   "tags": [
+    "雲南",
+    "中國",
+    "產區"
+   ],
+   "s": "雲南南部產沉香，與中南半島風土相近，香氣具熱帶特色。"
+  },
+  {
+   "slug": "agarwood-vs-sandalwood",
+   "t": "沉香與檀香之別",
+   "c": "overview",
+   "catName": "沉香基礎",
+   "g": "base",
+   "grpName": "認識沉香",
+   "tags": [
+    "沉香",
+    "檀香",
+    "比較"
+   ],
+   "s": "沉香是受傷結香的樹脂香，檀香是檀香樹心材自帶的香氣；前者內斂多變、價格高，後者溫和持續、較親民。"
+  },
+  {
+   "slug": "black-qi-nan",
+   "t": "黑奇楠",
+   "c": "quality",
+   "catName": "品級與品質",
+   "g": "qinan",
+   "grpName": "奇楠分類",
+   "tags": [
+    "奇楠",
+    "黑奇楠"
+   ],
+   "s": "黑奇楠油脂色深近黑，香氣沉穩醇厚，屬成熟的奇楠類型。"
+  },
+  {
+   "slug": "oil-content",
+   "t": "油脂含量與品級",
+   "c": "quality",
+   "catName": "品級與品質",
+   "g": "oil",
+   "grpName": "油脂與紋理",
+   "tags": [
+    "油脂",
+    "品級"
+   ],
+   "s": "油脂含量決定沉香的香氣、密度與價值，是品級判定的核心依據。"
+  },
+  {
+   "slug": "yellow-qi-nan",
+   "t": "黃奇楠",
+   "c": "quality",
+   "catName": "品級與品質",
+   "g": "qinan",
+   "grpName": "奇楠分類",
+   "tags": [
+    "奇楠",
+    "黃奇楠"
+   ],
+   "s": "黃奇楠油脂呈黃褐，香氣甜醇，是奇楠品類之一。"
+  },
+  {
+   "slug": "incense-health",
+   "t": "品香養生與安神",
+   "c": "way",
+   "catName": "品香與香道",
+   "g": "apply",
+   "grpName": "香道應用",
+   "tags": [
+    "養生",
+    "安神"
+   ],
+   "s": "品聞沉香被認為有助安定情緒、改善睡眠與靜心，是身心修養的一環。"
+  },
+  {
+   "slug": "kodo-ritual",
+   "t": "香道禮儀",
+   "c": "way",
+   "catName": "品香與香道",
+   "g": "kodo",
+   "grpName": "香道文化",
+   "tags": [
+    "香道",
+    "禮儀"
+   ],
+   "s": "香道講究器具排列、點香手勢與品聞禮節，是東方生活美學的具體呈現。"
+  },
+  {
+   "slug": "tea-incense",
+   "t": "茶香與香道",
+   "c": "way",
+   "catName": "品香與香道",
+   "g": "apply",
+   "grpName": "香道應用",
+   "tags": [
+    "茶",
+    "香道"
+   ],
+   "s": "沉香與茶道相輔相成，品茶佐以淡雅沉香，能提升感官的細膩體驗。"
+  }
+ ]
+}

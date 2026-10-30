@@ -1,0 +1,972 @@
+[
+  {
+    "id": "overview",
+    "name": "沉香基礎",
+    "slug": "overview",
+    "icon": "🌱",
+    "desc": "沉香是什麼、本質、結香原理與價值地位，建立對沉香的基本認知。",
+    "groups": [
+      {
+        "id": "base",
+        "name": "認識沉香",
+        "children": [
+          {
+            "slug": "what-is-agarwood",
+            "title": "沉香是什麼？沉香的形成原理、結香種類、產地分級與真假辨別 新手入門完整解說",
+            "wip": false
+          },
+          {
+            "slug": "agarwood-not-wood",
+            "title": "沉香不是木材！沉香的本質真相、樹脂結香與沉香樹的關係一次搞懂",
+            "wip": false
+          },
+          {
+            "slug": "agarwood-vs-sandalwood",
+            "title": "沉香與檀香差在哪？香氣、來源、產地、用途與價格完整比較",
+            "wip": false
+          },
+          {
+            "slug": "agarwood-name",
+            "title": "「沉香」之名從何而來？命名由來、意象與東方香文化的角色",
+            "wip": false
+          }
+        ]
+      },
+      {
+        "id": "resin",
+        "name": "結香原理",
+        "children": [
+          {
+            "slug": "resin-formation",
+            "title": "沉香如何結香？結香機制、形成過程、所需時間與品質關鍵完整解析",
+            "wip": false
+          },
+          {
+            "slug": "injury-resin",
+            "title": "沉香樹受傷為何會結香？創傷結香的原理、過程與優質沉香條件",
+            "wip": false
+          },
+          {
+            "slug": "fungus-resin",
+            "title": "真菌是結香的關鍵？沉香結香與真菌感染的關係與科學觀點",
+            "wip": false
+          },
+          {
+            "slug": "resin-time",
+            "title": "沉香結香要多久？結香時間長短、環境與沉香品質的關係",
+            "wip": false
+          }
+        ]
+      },
+      {
+        "id": "value",
+        "name": "價值地位",
+        "children": [
+          {
+            "slug": "why-precious",
+            "title": "沉香為何如此珍貴？稀有成因、採集難度、香氣文化與價值解密",
+            "wip": false
+          },
+          {
+            "slug": "agarwood-status",
+            "title": "沉香的文化地位：從宮廷到民間的「香中之王」與東方用香傳統",
+            "wip": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "botany",
+    "name": "植物與樹種",
+    "slug": "botany",
+    "icon": "🌳",
+    "desc": "瑞香科、Aquilaria 與 Gyrinops 屬及各產香樹種，分布與瀕危保育。",
+    "groups": [
+      {
+        "id": "thymel",
+        "name": "瑞香科與屬",
+        "children": [
+          {
+            "slug": "thymelaeaceae",
+            "title": "瑞香科植物有哪些？沉香樹所屬科別、特徵與親緣樹種入門",
+            "wip": false
+          },
+          {
+            "slug": "aquilaria-genus",
+            "title": "Aquilaria 沉香屬解析：主要結香樹種、分布與產香特性總整理",
+            "wip": false
+          },
+          {
+            "slug": "gyrinops-genus",
+            "title": "Gyrinops 屬是什麼？與 Aquilaria 的區別、分布與產香特性",
+            "wip": false
+          }
+        ]
+      },
+      {
+        "id": "species",
+        "name": "主要樹種",
+        "children": [
+          {
+            "slug": "aquilaria-malaccensis",
+            "title": "A. malaccensis 馬來沉香樹：樹種特性、分布產區與結香價值",
+            "wip": false
+          },
+          {
+            "slug": "aquilaria-crassna",
+            "title": "A. crassna 越南沉香樹：品種特性、產區風土與收藏價值",
+            "wip": false
+          },
+          {
+            "slug": "aquilaria-sinensis",
+            "title": "A. sinensis 中國沉香樹：海南沉香樹種特性、分布與結香",
+            "wip": false
+          },
+          {
+            "slug": "aquilaria-filaria",
+            "title": "A. filaria 菲律賓沉香樹：樹種特性、產地分布與結香情況",
+            "wip": false
+          },
+          {
+            "slug": "aquilaria-hirta",
+            "title": "A. hirta 印尼沉香樹：品種特性、產地與產香特點",
+            "wip": false
+          },
+          {
+            "slug": "aquilaria-beccariana",
+            "title": "A. beccariana 產香樹種：特性、分布與結香品質",
+            "wip": false
+          },
+          {
+            "slug": "agarwood-species",
+            "title": "產香樹種怎麼比？沉香樹種類比較、選材重點與頂級樹種",
+            "wip": false
+          }
+        ]
+      },
+      {
+        "id": "habitat",
+        "name": "分布與保育",
+        "children": [
+          {
+            "slug": "tree-habitat",
+            "title": "沉香樹長在哪？全球分布範圍、氣候土壤與適合的生長環境",
+            "wip": false
+          },
+          {
+            "slug": "endangered-tree",
+            "title": "沉香樹為何瀕危？樹種保育、瀕危現況與永續展望",
+            "wip": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "formation",
+    "name": "結香與形成",
+    "slug": "formation",
+    "icon": "🔬",
+    "desc": "生結熟結倒架、水沉土沉、蟲漏與人工接菌等結香類型與形成機制。",
+    "groups": [
+      {
+        "id": "state",
+        "name": "結香狀態",
+        "children": [
+          {
+            "slug": "live-resin",
+            "title": "生結沉香是什麼？特性、香氣、品級與品香重點",
+            "wip": false
+          },
+          {
+            "slug": "ripe-resin",
+            "title": "熟結沉香是什麼？與生結的差異、形成與收藏價值",
+            "wip": false
+          },
+          {
+            "slug": "fallen-tree",
+            "title": "倒架沉香是什麼？倒伏結香的特色、品級與品香要點",
+            "wip": false
+          }
+        ]
+      },
+      {
+        "id": "bury",
+        "name": "埋藏環境",
+        "children": [
+          {
+            "slug": "water-sink",
+            "title": "水沉沉香：長期水浸結香的特性、香氣與收藏重點",
+            "wip": false
+          },
+          {
+            "slug": "soil-sink",
+            "title": "土沉沉香：埋土結香的特色、香氣變化與品級",
+            "wip": false
+          },
+          {
+            "slug": "sand-sink",
+            "title": "沙沉沉香：沙土環境結香的特殊風味與特性",
+            "wip": false
+          }
+        ]
+      },
+      {
+        "id": "special",
+        "name": "特殊結香",
+        "children": [
+          {
+            "slug": "resin-kinds",
+            "title": "結香類型有哪些？生結、熟結、蟲漏、水沉等沉香結香方式總整理",
+            "wip": false
+          },
+          {
+            "slug": "insect-hole",
+            "title": "蟲漏沉香是什麼？蟲蛀結香的形成、特色與稀有價值",
+            "wip": false
+          },
+          {
+            "slug": "artificial-resin",
+            "title": "人工接菌能造出好沉香？人工催香與天然沉香的差異與風險",
+            "wip": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "origin",
+    "name": "產區品系",
+    "slug": "origin",
+    "icon": "🗺️",
+    "desc": "惠安系與星洲系兩大系統，越南、中國、中南半島、印尼、馬來西亞等各大產區風土。",
+    "groups": [
+      {
+        "id": "system",
+        "name": "品系系統",
+        "children": [
+          {
+            "slug": "hui-an-system",
+            "title": "惠安系沉香有哪些？香氣特色、代表產地與選購重點",
+            "wip": false
+          },
+          {
+            "slug": "star-island-system",
+            "title": "星洲系沉香有哪些？香氣特色、代表產地與選購重點",
+            "wip": false
+          },
+          {
+            "slug": "two-systems",
+            "title": "惠安系與星洲系差在哪？兩大品系的香氣、產地與選購完整比較",
+            "wip": false
+          }
+        ]
+      },
+      {
+        "id": "vietnam",
+        "name": "越南",
+        "children": [
+          {
+            "slug": "vietnam-agarwood",
+            "title": "越南沉香聞起來如何？代表產地、香氣特色與收藏價值",
+            "wip": false
+          },
+          {
+            "slug": "nha-trang",
+            "title": "芽莊沉香：越南頂級產地的香氣、品級與收藏價值",
+            "wip": false
+          },
+          {
+            "slug": "fusen-red-soil",
+            "title": "富森紅土沉香：稀有紅土沉的特點、香氣與行情",
+            "wip": false
+          },
+          {
+            "slug": "hue-agarwood",
+            "title": "順化沉香：越南中部名香的特色、香氣與品級",
+            "wip": false
+          },
+          {
+            "slug": "quang-binh",
+            "title": "廣平沉香：越南沉香產地的風土、香氣與特色",
+            "wip": false
+          },
+          {
+            "slug": "khang-hoa",
+            "title": "慶和沉香：越南沉香產地的特色、香氣與品級",
+            "wip": false
+          }
+        ]
+      },
+      {
+        "id": "china",
+        "name": "中國",
+        "children": [
+          {
+            "slug": "hainan-agarwood",
+            "title": "海南沉香：中國頂級沉香的香氣、地位與收藏價值",
+            "wip": false
+          },
+          {
+            "slug": "guangdong-agarwood",
+            "title": "廣東莞香：中國沉香產地的特色、歷史與香氣",
+            "wip": false
+          },
+          {
+            "slug": "yunnan-agarwood",
+            "title": "雲南沉香：熱帶產區的香氣、特色與產地風土",
+            "wip": false
+          },
+          {
+            "slug": "taiwan-agarwood",
+            "title": "台灣沉香：產地分布、香氣特性與栽種現況",
+            "wip": false
+          }
+        ]
+      },
+      {
+        "id": "indochina",
+        "name": "中南半島",
+        "children": [
+          {
+            "slug": "cambodia-agarwood",
+            "title": "柬埔寨沉香：高棉沉香的香氣、特色與收藏",
+            "wip": false
+          },
+          {
+            "slug": "laos-agarwood",
+            "title": "寮國沉香：中南半島產地的風味、香氣與特色",
+            "wip": false
+          },
+          {
+            "slug": "myanmar-agarwood",
+            "title": "緬甸沉香：產地特色、香氣與品級",
+            "wip": false
+          },
+          {
+            "slug": "thailand-agarwood",
+            "title": "泰國沉香：東南亞產地的特性、香氣與選購",
+            "wip": false
+          }
+        ]
+      },
+      {
+        "id": "indonesia",
+        "name": "印尼",
+        "children": [
+          {
+            "slug": "indonesia-agarwood",
+            "title": "印尼沉香：星洲系代表產地的香氣、特色與收藏",
+            "wip": false
+          },
+          {
+            "slug": "kalimantan",
+            "title": "加里曼丹沉香：印尼產地的香氣、特色與選購重點",
+            "wip": false
+          },
+          {
+            "slug": "daraq-agarwood",
+            "title": "達拉干沉香：頂級星洲沉香的特色、香氣與價值",
+            "wip": false
+          },
+          {
+            "slug": "manilau",
+            "title": "馬尼撈沉香：特色、香氣與品級解析",
+            "wip": false
+          },
+          {
+            "slug": "aceh",
+            "title": "亞齊沉香：印尼產地的香氣、特色與行情",
+            "wip": false
+          },
+          {
+            "slug": "ilian-papua",
+            "title": "伊利安巴布亞沉香：產地分布、香氣與特性",
+            "wip": false
+          }
+        ]
+      },
+      {
+        "id": "malaysia",
+        "name": "馬來西亞",
+        "children": [
+          {
+            "slug": "malaysia-east",
+            "title": "東馬沉香（沙巴砂勞越）：香氣、特色與收藏價值",
+            "wip": false
+          },
+          {
+            "slug": "malaysia-west",
+            "title": "西馬沉香：馬來半島產地的風味、香氣與品級",
+            "wip": false
+          }
+        ]
+      },
+      {
+        "id": "others",
+        "name": "其他產區",
+        "children": [
+          {
+            "slug": "brunei",
+            "title": "汶萊沉香：稀有產地的香氣、特色與收藏價值",
+            "wip": false
+          },
+          {
+            "slug": "india-agarwood",
+            "title": "印度沉香：歷史產地的香氣、地位與收藏",
+            "wip": false
+          },
+          {
+            "slug": "bangladesh-agarwood",
+            "title": "孟加拉沉香：南亞產地的特性、香氣與產區",
+            "wip": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "quality",
+    "name": "品級與品質",
+    "slug": "quality",
+    "icon": "🏆",
+    "desc": "奇楠分類、沉水等級、油脂含量與油線紋理等品級判定。",
+    "groups": [
+      {
+        "id": "qinan",
+        "name": "奇楠分類",
+        "children": [
+          {
+            "slug": "qi-nan-overview",
+            "title": "奇楠沉香是什麼？奇楠分級、香氣、鑑別與頂級價值總覽",
+            "wip": false
+          },
+          {
+            "slug": "white-qi-nan",
+            "title": "白奇楠：最頂級奇楠的香氣、鑑別與收藏價值",
+            "wip": false
+          },
+          {
+            "slug": "green-qi-nan",
+            "title": "綠奇楠：香氣涼甜的特色、品級與鑑別",
+            "wip": false
+          },
+          {
+            "slug": "purple-qi-nan",
+            "title": "紫奇楠：稀有品種的香氣、特色與收藏價值",
+            "wip": false
+          },
+          {
+            "slug": "yellow-qi-nan",
+            "title": "黃奇楠：甜潤香氣的特色、品級與鑑別",
+            "wip": false
+          },
+          {
+            "slug": "black-qi-nan",
+            "title": "黑奇楠：深色油脂的香氣、稀有性與收藏",
+            "wip": false
+          }
+        ]
+      },
+      {
+        "id": "sinking",
+        "name": "沉水等級",
+        "children": [
+          {
+            "slug": "sinking-grade",
+            "title": "沉水香是什麼？沉水密度、油脂含量與沉香等級的關係",
+            "wip": false
+          },
+          {
+            "slug": "nine-parts-sink",
+            "title": "九分沉：接近沉水的頂級沉香等級與鑑別重點",
+            "wip": false
+          },
+          {
+            "slug": "floating-grade",
+            "title": "浮水沉香與半沉：等級差異、價格與選購",
+            "wip": false
+          }
+        ]
+      },
+      {
+        "id": "oil",
+        "name": "油脂與紋理",
+        "children": [
+          {
+            "slug": "oil-content",
+            "title": "油脂含量怎麼看？沉香品級判定的關鍵與鑑別",
+            "wip": false
+          },
+          {
+            "slug": "oil-line",
+            "title": "油線紋理代表什麼？沉香品相、油線與品級解讀",
+            "wip": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "form",
+    "name": "香品形式",
+    "slug": "form",
+    "icon": "🧴",
+    "desc": "原木、珠串、粉末、線香、雕件、精油等不同沉香製品與運用形式。",
+    "groups": [
+      {
+        "id": "raw",
+        "name": "原材",
+        "children": [
+          {
+            "slug": "raw-wood",
+            "title": "沉香原木怎麼選？原材特性、品相與用途",
+            "wip": false
+          },
+          {
+            "slug": "bead-material",
+            "title": "車珠料是什麼？沉香手串取料的重點與選材",
+            "wip": false
+          },
+          {
+            "slug": "fragments",
+            "title": "沉香碎料：小料、碎料的價值、用途與選購",
+            "wip": false
+          }
+        ]
+      },
+      {
+        "id": "beads",
+        "name": "珠串",
+        "children": [
+          {
+            "slug": "agarwood-beads",
+            "title": "沉香手串怎麼挑？鑑別、品級、保養與選購完整指南",
+            "wip": false
+          },
+          {
+            "slug": "buddha-beads",
+            "title": "沉香佛珠與念珠：持用、選購與保養重點",
+            "wip": false
+          }
+        ]
+      },
+      {
+        "id": "incense",
+        "name": "香品",
+        "children": [
+          {
+            "slug": "agarwood-powder",
+            "title": "沉香粉怎麼用？用法、品質、保存與品香",
+            "wip": false
+          },
+          {
+            "slug": "incense-stick",
+            "title": "沉香線香怎麼選？品質、香氣與點香重點",
+            "wip": false
+          },
+          {
+            "slug": "coil-cone",
+            "title": "盤香與塔香：差異、用法、選購與品香",
+            "wip": false
+          },
+          {
+            "slug": "incense-pill",
+            "title": "沉香香丸：古法合香的製作、品用與文化",
+            "wip": false
+          },
+          {
+            "slug": "incense-seal",
+            "title": "香篆與篆香：打香篆的步驟、器具與技巧",
+            "wip": false
+          },
+          {
+            "slug": "incense-brand",
+            "title": "沉香香牌：隨身配香的由來、選購與保養",
+            "wip": false
+          }
+        ]
+      },
+      {
+        "id": "craft",
+        "name": "工藝與萃取",
+        "children": [
+          {
+            "slug": "carving-agarwood",
+            "title": "沉香雕件：收藏、賞玩與鑑別的重點",
+            "wip": false
+          },
+          {
+            "slug": "agarwood-slice",
+            "title": "沉香切片：品香、入藥的用法與選購",
+            "wip": false
+          },
+          {
+            "slug": "agarwood-oil",
+            "title": "沉香精油：萃取、鑑別、使用方式與保存",
+            "wip": false
+          },
+          {
+            "slug": "agarwood-paste",
+            "title": "沉香油膏：頂級香料的質地、品用與收藏",
+            "wip": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "way",
+    "name": "品香與香道",
+    "slug": "way",
+    "icon": "🕯️",
+    "desc": "隔火熏香、電熏、香席禮儀、宋代香文化與品香養生之道。",
+    "groups": [
+      {
+        "id": "method",
+        "name": "品香方法",
+        "children": [
+          {
+            "slug": "appreciation-ways",
+            "title": "沉香怎麼品？隔火熏香、電熏、明火等品香方式總整理",
+            "wip": false
+          },
+          {
+            "slug": "indirect-heating",
+            "title": "隔火熏香：不焦不燥的頂級品香法與技巧",
+            "wip": false
+          },
+          {
+            "slug": "electric-heating",
+            "title": "電熏香：現代品香的溫度控制要點與入門",
+            "wip": false
+          },
+          {
+            "slug": "direct-burn",
+            "title": "明火焚香：直接點燃沉香的方式、注意事項與選料",
+            "wip": false
+          },
+          {
+            "slug": "smell-raw",
+            "title": "生聞與濕聞：不燃沉香如何品其香氣與方法",
+            "wip": false
+          }
+        ]
+      },
+      {
+        "id": "kodo",
+        "name": "香道文化",
+        "children": [
+          {
+            "slug": "incense-seat",
+            "title": "香席是什麼？品香雅集的禮儀、流程與器具",
+            "wip": false
+          },
+          {
+            "slug": "kodo-ritual",
+            "title": "香道禮儀：品香的規矩、精神與入門",
+            "wip": false
+          },
+          {
+            "slug": "song-incense",
+            "title": "宋代文人香文化：品香的黃金年代與歷史",
+            "wip": false
+          },
+          {
+            "slug": "japan-kodo",
+            "title": "日本香道：組香、聞香的傳統與文化",
+            "wip": false
+          }
+        ]
+      },
+      {
+        "id": "apply",
+        "name": "香道應用",
+        "children": [
+          {
+            "slug": "religious-incense",
+            "title": "佛教與道教為何用沉香？宗教用香的意義與典故",
+            "wip": false
+          },
+          {
+            "slug": "incense-health",
+            "title": "品香養生：沉香安神、身心調養的作用與注意",
+            "wip": false
+          },
+          {
+            "slug": "home-incense",
+            "title": "居家香氛：沉香在家居空間的運用與搭配",
+            "wip": false
+          },
+          {
+            "slug": "tea-incense",
+            "title": "茶香與香道：品茶配香的雅趣與搭配",
+            "wip": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "appraisal",
+    "name": "鑑賞辨偽",
+    "slug": "appraisal",
+    "icon": "🔍",
+    "desc": "看紋理、聞香、沉水測試、燒試等鑑定方法與真假沉香的辨識。",
+    "groups": [
+      {
+        "id": "identify",
+        "name": "鑑定方法",
+        "children": [
+          {
+            "slug": "how-to-identify",
+            "title": "沉香怎麼鑑定？看紋理、聞香、沉水、燒試等辨別方法總整理",
+            "wip": false
+          },
+          {
+            "slug": "look-grain",
+            "title": "看紋理辨別沉香：油線、結構與品相的觀察",
+            "wip": false
+          },
+          {
+            "slug": "smell-identify",
+            "title": "聞香辨別沉香：氣味特徵、香韻與真偽",
+            "wip": false
+          },
+          {
+            "slug": "water-test",
+            "title": "沉水測試能判斷真假？沉水測試與品級的關係",
+            "wip": false
+          },
+          {
+            "slug": "burn-test",
+            "title": "燒試法鑑別沉香：燒聞的判斷重點與注意",
+            "wip": false
+          }
+        ]
+      },
+      {
+        "id": "judge",
+        "name": "品質判斷",
+        "children": [
+          {
+            "slug": "oil-judge",
+            "title": "油脂判斷沉香品級：油線、含量與手感的觀察",
+            "wip": false
+          },
+          {
+            "slug": "grade-identify",
+            "title": "沉香等級怎麼辨識？分級標準、品相與判斷",
+            "wip": false
+          }
+        ]
+      },
+      {
+        "id": "fake",
+        "name": "辨偽識別",
+        "children": [
+          {
+            "slug": "fake-agarwood",
+            "title": "假沉香有哪些？常見仿品、造假手法與辨別方法",
+            "wip": false
+          },
+          {
+            "slug": "pressed-oil",
+            "title": "壓油香是什麼？注油仿品的識破重點與辨別",
+            "wip": false
+          },
+          {
+            "slug": "medicine-sink",
+            "title": "藥水沉是什麼？藥水處理仿品的辨別與防範",
+            "wip": false
+          },
+          {
+            "slug": "origin-fake",
+            "title": "產地造假：沉香冒充產地的陷阱、常見手法與防範",
+            "wip": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "industry",
+    "name": "產業與市場",
+    "slug": "industry",
+    "icon": "🛒",
+    "desc": "價格行情、選購指南、證書、保存收藏、拍賣市場與專業鑑定。",
+    "groups": [
+      {
+        "id": "market",
+        "name": "行情市場",
+        "children": [
+          {
+            "slug": "agarwood-price",
+            "title": "沉香價格怎麼算？行情、影響因素與合理參考",
+            "wip": false
+          },
+          {
+            "slug": "auction-market",
+            "title": "沉香拍賣市場：天價沉香的行情、走勢與觀察",
+            "wip": false
+          },
+          {
+            "slug": "collection-investment",
+            "title": "沉香收藏與投資：保值、鑑別、風險與入門",
+            "wip": false
+          }
+        ]
+      },
+      {
+        "id": "buy",
+        "name": "選購指南",
+        "children": [
+          {
+            "slug": "buy-guide",
+            "title": "沉香怎麼買？選購指南、避坑重點與注意事項",
+            "wip": false
+          },
+          {
+            "slug": "certificate",
+            "title": "沉香證書可信嗎？鑑定、信譽與判斷重點",
+            "wip": false
+          },
+          {
+            "slug": "beginner-guide",
+            "title": "沉香新手入門：第一件沉香怎麼選？入門避坑指南",
+            "wip": false
+          }
+        ]
+      },
+      {
+        "id": "keep",
+        "name": "保存收藏",
+        "children": [
+          {
+            "slug": "storage",
+            "title": "沉香怎麼保存？收藏環境、方法與注意事項",
+            "wip": false
+          },
+          {
+            "slug": "curing",
+            "title": "沉香養護：日常保養、香氣維持與收藏技巧",
+            "wip": false
+          },
+          {
+            "slug": "appraiser",
+            "title": "沉香找誰鑑定？鑑定機構、專業判斷與流程",
+            "wip": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "law",
+    "name": "法規與保育",
+    "slug": "law",
+    "icon": "⚖️",
+    "desc": "CITES 國際公約、瀕危現況、永續採香與沉香進出口法規。",
+    "groups": [
+      {
+        "id": "conserve",
+        "name": "保育永續",
+        "children": [
+          {
+            "slug": "cites-conservation",
+            "title": "CITES 與沉香保育：國際公約、採香規範與合法沉香",
+            "wip": false
+          },
+          {
+            "slug": "endangered",
+            "title": "沉香樹瀕危現況：保護現況、威脅與永續挑戰",
+            "wip": false
+          },
+          {
+            "slug": "sustainable",
+            "title": "永續採香：如何讓沉香資源不枯竭與友善採集",
+            "wip": false
+          }
+        ]
+      },
+      {
+        "id": "regulation",
+        "name": "法規規範",
+        "children": [
+          {
+            "slug": "trade-regulation",
+            "title": "沉香貿易法規：買賣、進出口與合法性的規範",
+            "wip": false
+          },
+          {
+            "slug": "export-rule",
+            "title": "沉香進出口規範：攜帶、申報重點與注意事項",
+            "wip": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "culture",
+    "name": "歷史與文化",
+    "slug": "culture",
+    "icon": "📜",
+    "desc": "沉香千年史、香料貿易、中醫藥、文學典故與東方香文化之美。",
+    "groups": [
+      {
+        "id": "history",
+        "name": "歷史源流",
+        "children": [
+          {
+            "slug": "agarwood-history",
+            "title": "沉香歷史：從古至今的千年香路與文化演變",
+            "wip": false
+          },
+          {
+            "slug": "silk-road",
+            "title": "沉香與香料貿易：絲路、海上貿易與沉香的角色",
+            "wip": false
+          },
+          {
+            "slug": "royal-agarwood",
+            "title": "皇家與沉香：宮廷用香的歷史與典故",
+            "wip": false
+          }
+        ]
+      },
+      {
+        "id": "culture2",
+        "name": "文化內涵",
+        "children": [
+          {
+            "slug": "agarwood-tcm",
+            "title": "沉香在中醫的應用：藥用價值、功效與用法",
+            "wip": false
+          },
+          {
+            "slug": "agarwood-literature",
+            "title": "沉香文學與典故：詩詞、典籍中的香文化",
+            "wip": false
+          },
+          {
+            "slug": "agarwood-zen",
+            "title": "沉香與禪修：靜心、冥想與品香的搭配",
+            "wip": false
+          },
+          {
+            "slug": "modern-use",
+            "title": "沉香的現代應用：香氛、保養、收藏與生活",
+            "wip": false
+          },
+          {
+            "slug": "incense-civilization",
+            "title": "香文化與文明：沉香在東方文化的位置與意義",
+            "wip": false
+          }
+        ]
+      }
+    ]
+  }
+]

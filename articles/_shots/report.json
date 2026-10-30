@@ -1,0 +1,308 @@
+{
+  "src": "D:\\_WWW_325_public\\oudzoo.com\\articles\\what-is-agarwood.html",
+  "url": "file:///D:/_WWW_325_public/oudzoo.com/articles/what-is-agarwood.html",
+  "outdir": "D:\\_WWW_325_public\\oudzoo.com\\articles\\_shots",
+  "include": [
+    "lint",
+    "screenshots",
+    "structure"
+  ],
+  "shots": {
+    "desktop": {
+      "revealed": 0,
+      "screenshot": "D:\\_WWW_325_public\\oudzoo.com\\articles\\_shots\\what-is-agarwood_desktop.jpg",
+      "screenshotBytes": 122056,
+      "truncated": false,
+      "structure": {
+        "title": "沉香是什麼｜世界沉香知識百科",
+        "firstH1": "沉香是什麼",
+        "viewport": {
+          "w": 1440,
+          "h": 900
+        },
+        "fullpage": {
+          "w": 1440,
+          "h": 2496
+        },
+        "counts": {
+          "section": 8,
+          "h1": 1,
+          "h2": 6,
+          "img": 22,
+          "canvas": 0,
+          "svg": 38,
+          "links": 449,
+          "buttons": 9
+        }
+      },
+      "consoleErrors": [],
+      "consoleWarnings": [],
+      "horizontalOverflow": [],
+      "resourceErrors": [],
+      "emojiUsageWarning": [
+        {
+          "tag": "a",
+          "chars": "🔤",
+          "contextText": "🔤 A–Z 索引"
+        },
+        {
+          "tag": "a",
+          "chars": "🏷",
+          "contextText": "🏷️ 標籤總覽"
+        },
+        {
+          "tag": "a",
+          "chars": "🔍",
+          "contextText": "🔍 進階搜尋"
+        },
+        {
+          "tag": "a",
+          "chars": "🗺",
+          "contextText": "🗺️ 網站地圖"
+        },
+        {
+          "tag": "button",
+          "chars": "☆",
+          "contextText": "☆ 收藏"
+        },
+        {
+          "tag": "strong",
+          "chars": "🕘",
+          "contextText": "🕘 版本紀錄"
+        },
+        {
+          "tag": "button",
+          "chars": "🖨",
+          "contextText": "🖨️ 匯出 PDF / 列印"
+        },
+        {
+          "tag": "h3",
+          "chars": "📚",
+          "contextText": "📚 相關文章"
+        },
+        {
+          "tag": "strong",
+          "chars": "💬",
+          "contextText": "💬 討論區"
+        },
+        {
+          "tag": "button",
+          "chars": "🏠",
+          "contextText": "🏠"
+        }
+      ],
+      "emojiUsageHint": "warning · 含义：页面正文里检出 emoji 字符（U+1F300–U+1FAFF 或 U+2600–U+27BF 平面）。SKILL.md 视觉设计段明确禁用 emoji——不作图标、不作装饰、不放进数据。 | 修法：换成内联 SVG 图标（<svg viewBox=\"0 0 24 24\">）建立风格连贯的图标语言。 | 豁免：(1) **用户品牌资产明确包含 emoji**（罕见，但如即时通讯、社交媒体主题的产物合理）；(2) 主题本身就是关于 emoji 的（emoji 历史 / 表情包研究 / Unicode 演进）；(3) 引用某条真实文本原文（如推文截图的文字版），emoji 是内容而非装饰——保留原文可接受，但仍应权衡；(4) 装饰性 dingbat（如 U+2713 勾选符 ✓、U+2192 箭头 →、U+2605 星 ★）落入 U+2600–U+27BF 平面被误报的，如确认是符号非 emoji 可忽略。",
+      "faviconWarning": {
+        "present": true,
+        "count": 1,
+        "externalRefs": [
+          "../assets/favicon.svg"
+        ],
+        "unencodedHash": []
+      },
+      "faviconHint": "warning · 含义：favicon 指向了外部文件（见 externalRefs），不是 data URI。 | 修法：用**内联 SVG data URI**，一行搞定、零额外文件：`<link rel=\"icon\" type=\"image/svg+xml\" href=\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230F766E'/%3E%3Ctext x='32' y='44' font-size='36' text-anchor='middle' fill='white'%3EA%3C/text%3E%3C/svg%3E\">`。图形取产物主题里的一个符号（首字母、核心图标、品牌形状），配色沿用页面主色，别用无关的通用图标。 | **三个必须注意的编码细节**：外层 href 用双引号、SVG 内部属性用单引号；`<` `>` 写成 `%3C` `%3E`；**颜色的 `#` 必须写成 `%23`**——不编码会被当成 URL fragment，图标直接不显示。想做深浅色两版就写两个 link，加 `media=\"(prefers-color-scheme: dark)\"`。 | 为什么只能用 data URI：`link href` **不在发布链路的资源收集白名单里**（那里只认 `src` 属性和 CSS `url()`），指向 `assets/` 的图标文件发布后必然 404；而且额外文件破坏单文件自包含，用户拿到一个 html 就该能用。 | 会不会被平台图标覆盖：不会。发布平台把自己的默认 favicon 注入在 `<head>` 最前面，浏览器对多个 icon link **取最后一个**，模型写在后面的那个生效。 | 豁免：(1) 产物是页面片段（没有完整 `<head>`）时不适用；(2) externalRefs 指向 CDN 域名（`lf3-static.bytednsdoc.com` 之类）时，那是**发布平台注入的**默认图标，不是你写的——迭代已发布产物时会看到，忽略即可，自己另加一个 data URI 的 link 就行（浏览器对多个 icon link 取最后一个）。"
+    }
+  },
+  "engine": "playwright",
+  "chromiumExec": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+  "elapsedSec": 4.39,
+  "schemaVersion": 2,
+  "status": "warning",
+  "engineInfo": {
+    "name": "playwright",
+    "degraded": false,
+    "degradedReasons": []
+  },
+  "input": {
+    "original": "D:\\_WWW_325_public\\oudzoo.com\\articles\\what-is-agarwood.html",
+    "resolvedPath": "D:\\_WWW_325_public\\oudzoo.com\\articles\\what-is-agarwood.html",
+    "baseUrl": "file:///D:/_WWW_325_public/oudzoo.com/articles/what-is-agarwood.html",
+    "protocol": "file",
+    "cwd": "D:\\_WWW_325_public\\oudzoo.com\\generator",
+    "mediaMode": {
+      "reducedMotion": true
+    }
+  },
+  "artifacts": {
+    "screenshots": [
+      {
+        "viewport": "desktop",
+        "path": "D:\\_WWW_325_public\\oudzoo.com\\articles\\_shots\\what-is-agarwood_desktop.jpg",
+        "size": 122056,
+        "visualCoverage": {
+          "complete": true,
+          "reason": null
+        }
+      }
+    ]
+  },
+  "summary": {
+    "blocker": 0,
+    "error": 0,
+    "warning": 11,
+    "info": 0
+  },
+  "findings": [
+    {
+      "ruleId": "emojiUsageWarning",
+      "severity": "warning",
+      "kind": "typography",
+      "viewport": "desktop",
+      "selector": "a",
+      "evidence": {
+        "tag": "a",
+        "chars": "🔤",
+        "contextText": "🔤 A–Z 索引"
+      },
+      "dedupeKey": "emojiUsageWarning|desktop|a|0"
+    },
+    {
+      "ruleId": "emojiUsageWarning",
+      "severity": "warning",
+      "kind": "typography",
+      "viewport": "desktop",
+      "selector": "a",
+      "evidence": {
+        "tag": "a",
+        "chars": "🏷",
+        "contextText": "🏷️ 標籤總覽"
+      },
+      "dedupeKey": "emojiUsageWarning|desktop|a|1"
+    },
+    {
+      "ruleId": "emojiUsageWarning",
+      "severity": "warning",
+      "kind": "typography",
+      "viewport": "desktop",
+      "selector": "a",
+      "evidence": {
+        "tag": "a",
+        "chars": "🔍",
+        "contextText": "🔍 進階搜尋"
+      },
+      "dedupeKey": "emojiUsageWarning|desktop|a|2"
+    },
+    {
+      "ruleId": "emojiUsageWarning",
+      "severity": "warning",
+      "kind": "typography",
+      "viewport": "desktop",
+      "selector": "a",
+      "evidence": {
+        "tag": "a",
+        "chars": "🗺",
+        "contextText": "🗺️ 網站地圖"
+      },
+      "dedupeKey": "emojiUsageWarning|desktop|a|3"
+    },
+    {
+      "ruleId": "emojiUsageWarning",
+      "severity": "warning",
+      "kind": "typography",
+      "viewport": "desktop",
+      "selector": "button",
+      "evidence": {
+        "tag": "button",
+        "chars": "☆",
+        "contextText": "☆ 收藏"
+      },
+      "dedupeKey": "emojiUsageWarning|desktop|button|4"
+    },
+    {
+      "ruleId": "emojiUsageWarning",
+      "severity": "warning",
+      "kind": "typography",
+      "viewport": "desktop",
+      "selector": "strong",
+      "evidence": {
+        "tag": "strong",
+        "chars": "🕘",
+        "contextText": "🕘 版本紀錄"
+      },
+      "dedupeKey": "emojiUsageWarning|desktop|strong|5"
+    },
+    {
+      "ruleId": "emojiUsageWarning",
+      "severity": "warning",
+      "kind": "typography",
+      "viewport": "desktop",
+      "selector": "button",
+      "evidence": {
+        "tag": "button",
+        "chars": "🖨",
+        "contextText": "🖨️ 匯出 PDF / 列印"
+      },
+      "dedupeKey": "emojiUsageWarning|desktop|button|6"
+    },
+    {
+      "ruleId": "emojiUsageWarning",
+      "severity": "warning",
+      "kind": "typography",
+      "viewport": "desktop",
+      "selector": "h3",
+      "evidence": {
+        "tag": "h3",
+        "chars": "📚",
+        "contextText": "📚 相關文章"
+      },
+      "dedupeKey": "emojiUsageWarning|desktop|h3|7"
+    },
+    {
+      "ruleId": "emojiUsageWarning",
+      "severity": "warning",
+      "kind": "typography",
+      "viewport": "desktop",
+      "selector": "strong",
+      "evidence": {
+        "tag": "strong",
+        "chars": "💬",
+        "contextText": "💬 討論區"
+      },
+      "dedupeKey": "emojiUsageWarning|desktop|strong|8"
+    },
+    {
+      "ruleId": "emojiUsageWarning",
+      "severity": "warning",
+      "kind": "typography",
+      "viewport": "desktop",
+      "selector": "button",
+      "evidence": {
+        "tag": "button",
+        "chars": "🏠",
+        "contextText": "🏠"
+      },
+      "dedupeKey": "emojiUsageWarning|desktop|button|9"
+    },
+    {
+      "ruleId": "faviconWarning",
+      "severity": "warning",
+      "kind": "metadata",
+      "viewport": "desktop",
+      "selector": null,
+      "evidence": {
+        "present": true,
+        "count": 1,
+        "externalRefs": [
+          "../assets/favicon.svg"
+        ],
+        "unencodedHash": []
+      },
+      "dedupeKey": "faviconWarning|desktop||0"
+    }
+  ],
+  "prioritizedActions": [
+    {
+      "ruleId": "emojiUsageWarning",
+      "severity": "warning",
+      "viewport": "desktop",
+      "selector": "a"
+    },
+    {
+      "ruleId": "faviconWarning",
+      "severity": "warning",
+      "viewport": "desktop",
+      "selector": null
+    }
+  ],
+  "reportPath": "D:\\_WWW_325_public\\oudzoo.com\\articles\\_shots\\report.json"
+}

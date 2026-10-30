@@ -1,0 +1,501 @@
+[
+  {
+    "id": "overview",
+    "name": "沉香基礎",
+    "slug": "overview",
+    "icon": "🌱",
+    "desc": "沉香是什麼、形成機制、植物品系與分類總覽，建立對沉香的基本認知。",
+    "groups": [
+      {
+        "id": "base",
+        "name": "認識沉香",
+        "children": [
+          {
+            "slug": "what-is-agarwood",
+            "title": "沉香是什麼"
+          },
+          {
+            "slug": "agarwood-vs-sandalwood",
+            "title": "沉香與檀香之別"
+          },
+          {
+            "slug": "agarwood-name",
+            "title": "沉香之名與意象"
+          },
+          {
+            "slug": "agarwood-history-overview",
+            "title": "沉香歷史與地位"
+          }
+        ]
+      },
+      {
+        "id": "plant",
+        "name": "植物與成因",
+        "children": [
+          {
+            "slug": "agarwood-tree",
+            "title": "沉香樹 Aquilaria"
+          },
+          {
+            "slug": "resin-formation",
+            "title": "結香機制與形成"
+          },
+          {
+            "slug": "agarwood-species",
+            "title": "產油樹種與品系"
+          }
+        ]
+      },
+      {
+        "id": "classify",
+        "name": "分類總覽",
+        "children": [
+          {
+            "slug": "agarwood-classification",
+            "title": "沉香分類總覽"
+          },
+          {
+            "slug": "live-dead-sinking",
+            "title": "生結熟結倒架水沉土沉"
+          },
+          {
+            "slug": "sinking-grade",
+            "title": "沉水香與密度等級"
+          },
+          {
+            "slug": "qi-nan-overview",
+            "title": "奇楠沉香總覽"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "origin",
+    "name": "產區品系",
+    "slug": "origin",
+    "icon": "🗺️",
+    "desc": "惠安系與星洲系兩大系統，越南、中國、中南半島與印尼各大產區風土。",
+    "groups": [
+      {
+        "id": "system",
+        "name": "品系系統",
+        "children": [
+          {
+            "slug": "huian-star-island",
+            "title": "惠安系與星洲系"
+          }
+        ]
+      },
+      {
+        "id": "vietnam",
+        "name": "越南",
+        "children": [
+          {
+            "slug": "vietnam-agarwood",
+            "title": "越南沉香"
+          },
+          {
+            "slug": "nha-trang",
+            "title": "芽莊沉香"
+          },
+          {
+            "slug": "fusen-red-soil",
+            "title": "富森紅土沉香"
+          },
+          {
+            "slug": "hue-agarwood",
+            "title": "順化沉香"
+          }
+        ]
+      },
+      {
+        "id": "china",
+        "name": "中國",
+        "children": [
+          {
+            "slug": "hainan-agarwood",
+            "title": "海南沉香"
+          },
+          {
+            "slug": "guangdong-agarwood",
+            "title": "廣東莞香"
+          },
+          {
+            "slug": "yunnan-agarwood",
+            "title": "雲南沉香"
+          }
+        ]
+      },
+      {
+        "id": "indochina",
+        "name": "中南半島",
+        "children": [
+          {
+            "slug": "cambodia-agarwood",
+            "title": "柬埔寨沉香"
+          },
+          {
+            "slug": "laos-agarwood",
+            "title": "寮國沉香"
+          },
+          {
+            "slug": "myanmar-agarwood",
+            "title": "緬甸沉香"
+          }
+        ]
+      },
+      {
+        "id": "star",
+        "name": "星洲系",
+        "children": [
+          {
+            "slug": "indonesia-agarwood",
+            "title": "印尼沉香"
+          },
+          {
+            "slug": "kalimantan",
+            "title": "加里曼丹沉香"
+          },
+          {
+            "slug": "daraq-agarwood",
+            "title": "達拉干沉香"
+          },
+          {
+            "slug": "malaysia-agarwood",
+            "title": "馬來沉香"
+          },
+          {
+            "slug": "papua-agarwood",
+            "title": "巴布亞沉香"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "form",
+    "name": "香品形式",
+    "slug": "form",
+    "icon": "🧴",
+    "desc": "原木、珠串、粉末、線香、雕件、精油等不同沉香製品與運用形式。",
+    "groups": [
+      {
+        "id": "raw",
+        "name": "原材珠串",
+        "children": [
+          {
+            "slug": "raw-wood",
+            "title": "沉香原木與車珠料"
+          },
+          {
+            "slug": "agarwood-beads",
+            "title": "沉香珠子與手串"
+          }
+        ]
+      },
+      {
+        "id": "powder",
+        "name": "粉末線香",
+        "children": [
+          {
+            "slug": "agarwood-powder",
+            "title": "沉香粉"
+          },
+          {
+            "slug": "incense-stick",
+            "title": "線香"
+          },
+          {
+            "slug": "coil-cone",
+            "title": "盤香與塔香"
+          },
+          {
+            "slug": "incense-pill",
+            "title": "香丸與香牌"
+          },
+          {
+            "slug": "incense-seal",
+            "title": "香篆與篆香"
+          }
+        ]
+      },
+      {
+        "id": "craft",
+        "name": "工藝萃取",
+        "children": [
+          {
+            "slug": "carving-agarwood",
+            "title": "沉香雕件"
+          },
+          {
+            "slug": "agarwood-oil",
+            "title": "沉香精油"
+          },
+          {
+            "slug": "agarwood-slice",
+            "title": "沉香切片與碎料"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "way",
+    "name": "品香香道",
+    "slug": "way",
+    "icon": "🕯️",
+    "desc": "隔火熏香、電熏、香席禮儀、宋代香文化與品香養生之道。",
+    "groups": [
+      {
+        "id": "method",
+        "name": "品香方法",
+        "children": [
+          {
+            "slug": "appreciation-ways",
+            "title": "品香方式總覽"
+          },
+          {
+            "slug": "indirect-heating",
+            "title": "隔火熏香"
+          },
+          {
+            "slug": "electric-heating",
+            "title": "電熏香"
+          }
+        ]
+      },
+      {
+        "id": "kodo",
+        "name": "香道文化",
+        "children": [
+          {
+            "slug": "kodo-scent",
+            "title": "香席與品香步驟"
+          },
+          {
+            "slug": "song-incense-culture",
+            "title": "宋代文人香文化"
+          },
+          {
+            "slug": "incense-aesthetics",
+            "title": "一爐香的美學"
+          }
+        ]
+      },
+      {
+        "id": "apply",
+        "name": "香道應用",
+        "children": [
+          {
+            "slug": "religious-incense",
+            "title": "佛教與道教用香"
+          },
+          {
+            "slug": "incense-health",
+            "title": "品香養生與安神"
+          },
+          {
+            "slug": "home-incense",
+            "title": "居家香氛運用"
+          },
+          {
+            "slug": "tea-incense",
+            "title": "茶香與香道"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "appraisal",
+    "name": "鑑賞辨偽",
+    "slug": "appraisal",
+    "icon": "🔍",
+    "desc": "油脂品級、沉水測試、產地辨識與真假沉香的鑑定方法。",
+    "groups": [
+      {
+        "id": "identify",
+        "name": "鑑定方法",
+        "children": [
+          {
+            "slug": "how-to-identify",
+            "title": "沉香鑑定入門"
+          },
+          {
+            "slug": "water-test",
+            "title": "沉水測試"
+          },
+          {
+            "slug": "oil-content",
+            "title": "油脂含量與品級"
+          },
+          {
+            "slug": "grading-system",
+            "title": "沉香品級制度"
+          }
+        ]
+      },
+      {
+        "id": "quality",
+        "name": "品質分類",
+        "children": [
+          {
+            "slug": "buried-types",
+            "title": "水沉土沉倒架之別"
+          },
+          {
+            "slug": "insect-hole",
+            "title": "蟲漏沉香"
+          },
+          {
+            "slug": "qi-nan-quality",
+            "title": "奇楠等級辨識"
+          }
+        ]
+      },
+      {
+        "id": "fake",
+        "name": "辨偽",
+        "children": [
+          {
+            "slug": "fake-agarwood",
+            "title": "假沉香與仿品識別"
+          },
+          {
+            "slug": "origin-distinguish",
+            "title": "產地特徵辨識"
+          },
+          {
+            "slug": "grain-aroma",
+            "title": "紋理與香韻判斷"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "industry",
+    "name": "產業選購",
+    "slug": "industry",
+    "icon": "🛒",
+    "desc": "價格行情、選購指南、保存收藏、拍賣市場與 CITES 保育永續。",
+    "groups": [
+      {
+        "id": "market",
+        "name": "行情市場",
+        "children": [
+          {
+            "slug": "agarwood-price",
+            "title": "沉香價格行情"
+          },
+          {
+            "slug": "collection-investment",
+            "title": "沉香收藏與投資"
+          },
+          {
+            "slug": "auction-market",
+            "title": "沉香拍賣市場"
+          }
+        ]
+      },
+      {
+        "id": "buy",
+        "name": "選購保存",
+        "children": [
+          {
+            "slug": "buy-guide",
+            "title": "沉香選購指南"
+          },
+          {
+            "slug": "storage",
+            "title": "沉香保存方法"
+          },
+          {
+            "slug": "beginner-guide",
+            "title": "新手入門指南"
+          },
+          {
+            "slug": "certification",
+            "title": "沉香證書與信譽"
+          },
+          {
+            "slug": "comparison-buy",
+            "title": "線上選購注意事項"
+          }
+        ]
+      },
+      {
+        "id": "regulate",
+        "name": "保育法規",
+        "children": [
+          {
+            "slug": "cites-conservation",
+            "title": "沉香保育與 CITES"
+          },
+          {
+            "slug": "market-ethics",
+            "title": "沉香市場與永續"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "culture",
+    "name": "歷史文化",
+    "slug": "culture",
+    "icon": "📜",
+    "desc": "沉香千年史、中醫藥用、文學典故與東方香文化之美。",
+    "groups": [
+      {
+        "id": "history",
+        "name": "歷史源流",
+        "children": [
+          {
+            "slug": "agarwood-history",
+            "title": "沉香歷史沿革"
+          },
+          {
+            "slug": "agarwood-silk-road",
+            "title": "沉香與香料貿易"
+          },
+          {
+            "slug": "agarwood-royal",
+            "title": "皇家與沉香"
+          }
+        ]
+      },
+      {
+        "id": "culture2",
+        "name": "文化內涵",
+        "children": [
+          {
+            "slug": "agarwood-tcm",
+            "title": "沉香與中醫藥"
+          },
+          {
+            "slug": "agarwood-literature",
+            "title": "沉香文學與典故"
+          },
+          {
+            "slug": "agarwood-culture",
+            "title": "沉香文化內涵"
+          },
+          {
+            "slug": "agarwood-moderate",
+            "title": "沉香的現代應用"
+          },
+          {
+            "slug": "agarwood-zen",
+            "title": "沉香與禪修"
+          },
+          {
+            "slug": "incense-civilization",
+            "title": "香文化與文明"
+          }
+        ]
+      }
+    ]
+  }
+]

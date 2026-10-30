@@ -1,0 +1,378 @@
+{
+ "shard": 1,
+ "total": 28,
+ "note": "此為派工清單，僅供本片負責的 slug 使用；不得撰寫清單以外的 slug。",
+ "articles": [
+  {
+   "slug": "burn-test",
+   "t": "燒試法",
+   "c": "appraisal",
+   "catName": "鑑賞辨偽",
+   "g": "identify",
+   "grpName": "鑑定方法",
+   "tags": [
+    "燒試",
+    "鑑定"
+   ],
+   "s": "以小量沉香燒試，真香香氣醇正，仿品常冒黑煙或有刺鼻味。"
+  },
+  {
+   "slug": "oil-judge",
+   "t": "油脂判斷",
+   "c": "appraisal",
+   "catName": "鑑賞辨偽",
+   "g": "judge",
+   "grpName": "品質判斷",
+   "tags": [
+    "油脂",
+    "品質"
+   ],
+   "s": "以油脂含量、分布與密度判斷沉香品質，油脂豐者香氣與價值更高。"
+  },
+  {
+   "slug": "water-test",
+   "t": "沉水測試",
+   "c": "appraisal",
+   "catName": "鑑賞辨偽",
+   "g": "identify",
+   "grpName": "鑑定方法",
+   "tags": [
+    "沉水測試",
+    "鑑定"
+   ],
+   "s": "將沉香放入水中測試沉浮，沉水代表油脂密度高，是品級的重要參考。"
+  },
+  {
+   "slug": "aquilaria-genus",
+   "t": "Aquilaria 屬",
+   "c": "botany",
+   "catName": "植物與樹種",
+   "g": "thymel",
+   "grpName": "瑞香科與屬",
+   "tags": [
+    "Aquilaria",
+    "樹種",
+    "屬"
+   ],
+   "s": "Aquilaria 屬是沉香最主要的來源樹種屬，包含逾二十種產香樹，分布於東南亞與中國南方。"
+  },
+  {
+   "slug": "endangered-tree",
+   "t": "樹種瀕危與保育",
+   "c": "botany",
+   "catName": "植物與樹種",
+   "g": "habitat",
+   "grpName": "分布與保育",
+   "tags": [
+    "瀕危",
+    "保育",
+    "CITES"
+   ],
+   "s": "因過度採伐，多數沉香樹種已被列為瀕危並納入 CITES 附錄管制。"
+  },
+  {
+   "slug": "agarwood-literature",
+   "t": "沉香文學與典故",
+   "c": "culture",
+   "catName": "歷史與文化",
+   "g": "culture2",
+   "grpName": "文化內涵",
+   "tags": [
+    "文學",
+    "典故"
+   ],
+   "s": "沉香在詩詞、筆記與典故中屢見身影，象徵高潔、隱逸與雅致。"
+  },
+  {
+   "slug": "royal-agarwood",
+   "t": "皇家與沉香",
+   "c": "culture",
+   "catName": "歷史與文化",
+   "g": "history",
+   "grpName": "歷史源流",
+   "tags": [
+    "皇家",
+    "歷史"
+   ],
+   "s": "歷代皇室將沉香用於祭祀、熏香與典藏，賦予其尊貴地位。"
+  },
+  {
+   "slug": "agarwood-slice",
+   "t": "沉香切片",
+   "c": "form",
+   "catName": "香品形式",
+   "g": "craft",
+   "grpName": "工藝與萃取",
+   "tags": [
+    "切片",
+    "香品"
+   ],
+   "s": "沉香切片薄片適合直接熏香，能完整呈現油脂與香氣。"
+  },
+  {
+   "slug": "coil-cone",
+   "t": "盤香與塔香",
+   "c": "form",
+   "catName": "香品形式",
+   "g": "incense",
+   "grpName": "香品",
+   "tags": [
+    "盤香",
+    "塔香"
+   ],
+   "s": "盤香與塔香是線香的變體，燃燒時間長、香氣均勻，適合空間淨化與靜坐。"
+  },
+  {
+   "slug": "incense-seal",
+   "t": "香篆與篆香",
+   "c": "form",
+   "catName": "香品形式",
+   "g": "incense",
+   "grpName": "香品",
+   "tags": [
+    "香篆",
+    "篆香"
+   ],
+   "s": "香篆以模具將香粉鋪成篆字圖樣再點燃，兼具儀式感與香氣美感。"
+  },
+  {
+   "slug": "fallen-tree",
+   "t": "倒架沉香",
+   "c": "formation",
+   "catName": "結香與形成",
+   "g": "state",
+   "grpName": "結香狀態",
+   "tags": [
+    "倒架",
+    "結香類型"
+   ],
+   "s": "倒架指樹木倒伏於地面或水中繼續結香的沉香，兼具生熟之長。"
+  },
+  {
+   "slug": "sand-sink",
+   "t": "沙沉沉香",
+   "c": "formation",
+   "catName": "結香與形成",
+   "g": "bury",
+   "grpName": "埋藏環境",
+   "tags": [
+    "沙沉",
+    "埋藏環境"
+   ],
+   "s": "沙沉指於沙質環境結香的沉香，油脂與香氣有其地域特色。"
+  },
+  {
+   "slug": "appraiser",
+   "t": "鑑定機構與專業",
+   "c": "industry",
+   "catName": "產業與市場",
+   "g": "keep",
+   "grpName": "保存收藏",
+   "tags": [
+    "鑑定",
+    "專業"
+   ],
+   "s": "專業鑑定機構與資深藏家可協助鑑別沉香真偽與品級，降低選購風險。"
+  },
+  {
+   "slug": "collection-investment",
+   "t": "沉香收藏與投資",
+   "c": "industry",
+   "catName": "產業與市場",
+   "g": "market",
+   "grpName": "行情市場",
+   "tags": [
+    "收藏",
+    "投資"
+   ],
+   "s": "沉香因稀有與文化價值具收藏潛力，但需具備鑑賞能力並理性看待市場波動。"
+  },
+  {
+   "slug": "sustainable",
+   "t": "永續採香",
+   "c": "law",
+   "catName": "法規與保育",
+   "g": "conserve",
+   "grpName": "保育永續",
+   "tags": [
+    "永續",
+    "採香"
+   ],
+   "s": "人工種植與負責任採收是沉香產業永續的方向，兼顧資源與市場需求。"
+  },
+  {
+   "slug": "brunei",
+   "t": "汶萊沉香",
+   "c": "origin",
+   "catName": "產區品系",
+   "g": "others",
+   "grpName": "其他產區",
+   "tags": [
+    "汶萊",
+    "產區"
+   ],
+   "s": "汶萊沉香油脂細膩、香氣清甜醇厚，因產量少而被視為高品質星洲系。"
+  },
+  {
+   "slug": "guangdong-agarwood",
+   "t": "廣東莞香",
+   "c": "origin",
+   "catName": "產區品系",
+   "g": "china",
+   "grpName": "中國",
+   "tags": [
+    "廣東",
+    "莞香",
+    "中國"
+   ],
+   "s": "廣東莞香以東莞一帶為名，是中國歷史上有名的沉香產地，香氣清冽帶甜。"
+  },
+  {
+   "slug": "india-agarwood",
+   "t": "印度沉香",
+   "c": "origin",
+   "catName": "產區品系",
+   "g": "others",
+   "grpName": "其他產區",
+   "tags": [
+    "印度",
+    "產區"
+   ],
+   "s": "印度東北部產沉香，屬南亞產區，香氣帶當地風土特色。"
+  },
+  {
+   "slug": "malaysia-east",
+   "t": "東馬沙巴砂勞越沉香",
+   "c": "origin",
+   "catName": "產區品系",
+   "g": "malaysia",
+   "grpName": "馬來西亞",
+   "tags": [
+    "東馬",
+    "沙巴",
+    "砂勞越"
+   ],
+   "s": "東馬（沙巴、砂勞越）沉香屬星洲系，香氣醇厚帶涼甜，是馬來西亞主要產區。"
+  },
+  {
+   "slug": "nha-trang",
+   "t": "芽莊沉香",
+   "c": "origin",
+   "catName": "產區品系",
+   "g": "vietnam",
+   "grpName": "越南",
+   "tags": [
+    "芽莊",
+    "越南",
+    "產區"
+   ],
+   "s": "芽莊是越南最著名的沉香產地之一，出產的沉香清涼甘甜、花香突出，被譽為越南香的代表。"
+  },
+  {
+   "slug": "thailand-agarwood",
+   "t": "泰國沉香",
+   "c": "origin",
+   "catName": "產區品系",
+   "g": "indochina",
+   "grpName": "中南半島",
+   "tags": [
+    "泰國",
+    "產區"
+   ],
+   "s": "泰國沉香香氣甘甜，屬惠安系，產量相對有限。"
+  },
+  {
+   "slug": "agarwood-status",
+   "t": "沉香的文化地位",
+   "c": "overview",
+   "catName": "沉香基礎",
+   "g": "value",
+   "grpName": "價值地位",
+   "tags": [
+    "沉香",
+    "文化",
+    "地位"
+   ],
+   "s": "沉香橫跨香道、宗教、中醫與藝術，是東方文化中地位極高的名香。"
+  },
+  {
+   "slug": "resin-time",
+   "t": "結香需要多久",
+   "c": "overview",
+   "catName": "沉香基礎",
+   "g": "resin",
+   "grpName": "結香原理",
+   "tags": [
+    "結香",
+    "時間",
+    "歲月"
+   ],
+   "s": "一般需數年至數十年，高品質沉水香甚至需數十年以上沉積，時間是沉香珍貴的關鍵。"
+  },
+  {
+   "slug": "nine-parts-sink",
+   "t": "九分沉",
+   "c": "quality",
+   "catName": "品級與品質",
+   "g": "sinking",
+   "grpName": "沉水等級",
+   "tags": [
+    "九分沉",
+    "等級"
+   ],
+   "s": "九分沉指油脂高、入水幾近全沉但略有浮頭的沉香，是接近沉水級的高品質。"
+  },
+  {
+   "slug": "white-qi-nan",
+   "t": "白奇楠",
+   "c": "quality",
+   "catName": "品級與品質",
+   "g": "qinan",
+   "grpName": "奇楠分類",
+   "tags": [
+    "奇楠",
+    "白奇楠"
+   ],
+   "s": "白奇楠油脂量極高、色偏白綠，香氣涼甜帶乳，是奇楠中最受推崇的品類之一。"
+  },
+  {
+   "slug": "home-incense",
+   "t": "居家香氛運用",
+   "c": "way",
+   "catName": "品香與香道",
+   "g": "apply",
+   "grpName": "香道應用",
+   "tags": [
+    "居家",
+    "香氛"
+   ],
+   "s": "沉香以電熏、線香或精油等形式運用於居家，營造寧靜雅致的空間氛圍。"
+  },
+  {
+   "slug": "japan-kodo",
+   "t": "日本香道",
+   "c": "way",
+   "catName": "品香與香道",
+   "g": "kodo",
+   "grpName": "香道文化",
+   "tags": [
+    "日本",
+    "香道"
+   ],
+   "s": "日本香道以「聞香」為核心發展出嚴謹的品香儀軌，是東方香道的另一重要流派。"
+  },
+  {
+   "slug": "song-incense",
+   "t": "宋代文人香文化",
+   "c": "way",
+   "catName": "品香與香道",
+   "g": "kodo",
+   "grpName": "香道文化",
+   "tags": [
+    "宋代",
+    "香文化"
+   ],
+   "s": "宋代文人把焚香、點茶、掛畫、插花並列為四藝，沉香文化在宋代達到高峰。"
+  }
+ ]
+}
