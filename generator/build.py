@@ -536,9 +536,9 @@ def render_index():
         產區品系、品級品質、香品形式、品香香道、鑑賞辨偽、產業市場、法規保育與歷史文化。</p>
         </div>
       </section>
-      {knowledge_table()}
-      <h2>瀏覽分類</h2>
+      <h2>沉香知識百科</h2>
       <div class="cat-grid">{cat_cards}</div>
+      {knowledge_table()}
       <h2>最新條目</h2>
       <div class="card-grid">{latest_html}</div>
       <p style="margin-top:24px"><a class="btn" href="search.html">進階搜尋／多面向篩選</a>
@@ -667,6 +667,17 @@ def dump_data():
         f.write("// 自動產生，勿手改\nwindow.SITE_DATA = " +
                 json.dumps({"navTree": nav_tree, "articles": flat}, ensure_ascii=False) + ";\n")
 
+def collect_urls():
+    """與 render_sitemap() 相同的 URL 清單，供 SEO 推送使用。"""
+    urls = [SITE["url"] + "/", SITE["url"] + "/az.html", SITE["url"] + "/search.html",
+            SITE["url"] + "/favorites.html", SITE["url"] + "/tags/index.html",
+            SITE["url"] + "/category/index.html", SITE["url"] + "/articles/index.html"]
+    for c in C.CATEGORIES:
+        urls.append(SITE["url"] + f"/category/{c['slug']}.html")
+    for a in articles:
+        urls.append(SITE["url"] + f"/articles/{a['slug']}.html")
+    return urls
+
 def main():
     dump_data()
     render_favicon()
@@ -675,6 +686,12 @@ def main():
     render_category_index(); render_articles_index()
     for c in C.CATEGORIES: render_category(c)
     for a in articles: render_article(a)
+    # SEO 主動推送：IndexNow（Bing/Yandex/Naver/Seznam）＋ 百度主動推送
+    try:
+        from push_seo import maybe_push
+        maybe_push(collect_urls(), ROOT)
+    except Exception as ex:
+        print(f"[SEO推送] 略過（不影響建置）：{ex}")
     print(f"完成：{len(articles)} 條目頁 + {len(C.CATEGORIES)} 分類頁(含分頁) + 分類/條目索引 + 首頁/A-Z/標籤/搜尋/收藏/地圖")
 
 if __name__ == "__main__":
