@@ -142,8 +142,10 @@ code { background:var(--sub); padding:.15em .4em; border-radius:6px; font-size:.
   box-shadow:var(--shadow-lg); }
 .drawer.open { left:0; }
 .drawer-inner { padding:18px; }
+.drawer .main-nav { display:block; }
 .drawer-inner .nav-item { margin-bottom:2px; }
-.drawer .mega { position:static; display:block; box-shadow:none; border:none; padding:0 0 4px 10px; width:auto; }
+.drawer .mega { position:static; display:none; box-shadow:none; border:none; padding:0 0 4px 10px; width:auto; }
+.drawer .nav-item.open .mega { display:block; }
 .drawer .mega-visual { display:none; }
 .drawer .mega-body { padding:6px 0 6px; }
 .drawer .mega-kicker { display:none; }
@@ -273,7 +275,7 @@ code { background:var(--sub); padding:.15em .4em; border-radius:6px; font-size:.
   background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M6 9l6 6 6-6' fill='none' stroke='%23a47e3f' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
   background-repeat:no-repeat; background-position:right 10px center; background-size:14px; }
 .k-drop:focus { outline:none; border-color:var(--gold); box-shadow:0 0 0 2px var(--gold-soft); }
-.k-head-row, .k-row { display:grid; grid-template-columns:1.4fr 1.6fr 1.2fr; gap:16px; align-items:center; }
+.k-head-row, .k-row { display:grid; grid-template-columns:1.1fr 2.4fr 0.9fr; gap:16px; align-items:center; }
 .k-head-row { padding:9px 20px; font-size:.72rem; letter-spacing:.18em; color:var(--gold-deep);
   text-transform:uppercase; font-weight:700; border-bottom:1px solid var(--line); background:var(--sub); }
 .k-row { padding:14px 20px; border-bottom:1px solid var(--line); }
@@ -290,7 +292,7 @@ code { background:var(--sub); padding:.15em .4em; border-radius:6px; font-size:.
 .k-s em { font-style:normal; font-weight:700; font-size:1.1rem; color:var(--text); }
 .k-s span { font-size:.74rem; color:var(--text-soft); }
 .k-r { display:flex; flex-direction:column; gap:5px; min-width:0; }
-.k-rep { font-size:.86rem; color:var(--text); padding:4px 0; border-bottom:1px dotted var(--line); overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.k-rep { font-size:.86rem; color:var(--text); padding:4px 0; border-bottom:1px dotted var(--line); overflow-wrap:anywhere; line-height:1.5; }
 .k-rep:last-child { border-bottom:none; }
 .k-rep:hover { color:var(--gold-deep); }
 .k-t { display:flex; flex-wrap:wrap; gap:6px; align-content:flex-start; }
@@ -366,7 +368,7 @@ code { background:var(--sub); padding:.15em .4em; border-radius:6px; font-size:.
 @media (max-width:1100px){ .layout{ grid-template-columns:220px minmax(0,1fr);} .toc{display:none;} }
 @media (max-width:900px){
   .hamburger { display:flex; }
-  .main-nav { display:none; }
+  .site-header .main-nav { display:none; }
 }
 @media (max-width:760px){
   .layout{ grid-template-columns:1fr; padding-top:16px; }
@@ -377,7 +379,8 @@ code { background:var(--sub); padding:.15em .4em; border-radius:6px; font-size:.
   .brand-name{ font-size:1rem; max-width:150px; overflow:hidden; text-overflow:ellipsis; }
   .brand-sub{ display:none; }
   .header-tools{ gap:6px; }
-  .search-box input{ width:70px; font-size:16px; padding:7px 12px; }
+  /* 手機板隱藏 header 內擠壓的搜尋框，搜尋整合到首頁知識表篩選列（圖2）與 search.html */
+  .header-tools .search-box{ display:none; }
   .icon-btn{ width:34px; height:34px; }
   .icon-btn svg{ width:17px; height:17px; }
   .mega { border-radius:0; border-left:none; border-right:none; }

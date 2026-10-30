@@ -59,8 +59,24 @@
     const top = document.querySelector('.fab[data-fab="top"]');
     const back = document.querySelector('.fab[data-fab="back"]');
     const home = document.querySelector('.fab[data-fab="home"]');
-    if (back) back.addEventListener("click", () => history.length > 1 ? history.back() : location.href = "index.html");
-    if (home) home.addEventListener("click", () => location.href = location.pathname.endsWith("index.html") ? "#top" : "index.html");
+    // 依目前路徑深度算出站根相對路徑，避免在 /articles/ 子頁連到錯位的 index.html
+    function rootHref(target) {
+      const parts = location.pathname.split("/").filter(Boolean);
+      const up = parts.length > 0 ? "../".repeat(parts.length - 1) : "";
+      return up + target;
+    }
+    // 只有當 referrer 是同站來源（站內跳轉）才用瀏覽器上一頁；否則直接回首頁，避免把使用者踢回 Google 等外部來源
+    if (back) back.addEventListener("click", function () {
+      const ref = document.referrer || "";
+      const sameSite = ref.indexOf(location.origin) === 0;
+      if (sameSite && history.length > 1) history.back();
+      else location.href = rootHref("index.html");
+    });
+    if (home) home.addEventListener("click", function () {
+      const path = location.pathname;
+      if (path === "/" || path.endsWith("index.html")) location.href = "#top";
+      else location.href = rootHref("index.html");
+    });
     const show = () => { if (top) top.classList.toggle("hidden", (window.scrollY || document.documentElement.scrollTop) < 300); };
     if (top) { top.addEventListener("click", () => window.scrollTo({top:0, behavior:"smooth"})); window.addEventListener("scroll", show); show(); }
   }
