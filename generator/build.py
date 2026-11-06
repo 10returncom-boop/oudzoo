@@ -297,7 +297,7 @@ def scripts(pre):
 </div><!-- /frame -->
 </body></html>"""
 
-FOOTER_TEXT = """<div class="foot-credit">規劃 ｜ 設計 ｜ 開發 ｜ 整合行銷 ：舒安境工作室 ／ 張書欣</div>
+FOOTER_TEXT = """<div class="foot-credit">規劃 ｜ 設計 ｜ 開發 ｜ 整合行銷 ：舒安境工作室 ／ 舒安境</div>
 <div class="foot-contact">
   <a class="foot-link" href="https://line.me/R/ti/p/~331.today" aria-label="LINE 331.today">
     <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3C6.6 3 2.2 6.8 2.2 11.4c0 4 3.1 7.3 7.4 8.2.3.1.7.3.6.9 0 .4-.2 1-.3 1.2-.1.4-.2 1 .8.5 4.4-2.6 6-3.6 7.3-4.6C19.9 15.8 21.8 13.8 21.8 11.4 21.8 6.8 17.4 3 12 3z" fill="currentColor"/><path d="M8.4 9.9H7v-2.4h1.4zM11 9.9H9.6V6.3H11zM13.6 9.9h-1.4V6.3h1.4zM16.2 9.9h-1.4V7.5h1.4z" fill="#fff"/></svg>
