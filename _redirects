@@ -1,0 +1,2 @@
+/shop/api/*   /shop/api/:splat   200
+/shop/*       /shop/index.html    200

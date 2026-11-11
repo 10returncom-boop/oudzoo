@@ -1,0 +1,1534 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Oudzoo 沉香專門｜線上選物</title>
+<meta name="robots" content="noindex,nofollow" />
+<meta name="description" content="Oudzoo 沉香專門線上選物：商品分類、購物車、詢價單與訂單查詢，一次在同一頁完成。" />
+<meta property="og:title" content="Oudzoo 沉香專門｜線上選物" />
+<meta property="og:description" content="Oudzoo 沉香專門線上選物：商品分類、購物車、詢價單與訂單查詢，一次在同一頁完成。" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://oudzoo.com/shop/" />
+<link rel="canonical" href="https://oudzoo.com/shop/" />
+<link rel="icon" href="products/favicon.svg" />
+<style>
+:root{
+  --ink:#14251f; --ink-2:#3c5049; --muted:#71837c; --line:#dde5e0;
+  --bg:#f6f8f5; --card:#ffffff; --brand:#1f5d47; --brand-2:#2f7f60; --brand-soft:#e8f2ec;
+  --warn:#a8621b; --danger:#b23a48; --ok:#1f7a4d; --radius:12px;
+  --shadow:0 1px 2px rgba(20,37,31,.06),0 8px 24px rgba(20,37,31,.06);
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{background:var(--bg);color:var(--ink);font-family:"Noto Sans TC","Microsoft JhengHei",system-ui,-apple-system,sans-serif;font-size:15px;line-height:1.65}
+a{color:var(--brand);text-decoration:none}
+a:hover{text-decoration:underline}
+img{max-width:100%;display:block}
+.wrap{max-width:1120px;margin:0 auto;padding:0 16px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;border:1px solid var(--brand);background:var(--brand);color:#fff;padding:10px 16px;border-radius:999px;font-size:14px;cursor:pointer;font-family:inherit}
+.btn:hover{background:var(--brand-2);border-color:var(--brand-2);text-decoration:none}
+.btn-ghost{background:#fff;color:var(--brand);border-color:var(--line)}
+.btn-ghost:hover{background:var(--brand-soft);color:var(--brand)}
+.btn-sm{padding:6px 12px;font-size:13px}
+.btn[disabled]{opacity:.5;cursor:not-allowed}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius)}
+.muted{color:var(--muted)}
+.small{font-size:13px}
+.tag{display:inline-block;padding:2px 8px;border-radius:999px;background:var(--brand-soft);color:var(--brand);font-size:12px}
+.tag-warn{background:#fdf0df;color:var(--warn)}
+.tag-danger{background:#fbe6e8;color:var(--danger)}
+.tag-ok{background:#e4f3ea;color:var(--ok)}
+header.site{position:sticky;top:0;z-index:30;background:rgba(246,248,245,.95);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
+header.site .bar{display:flex;align-items:center;gap:16px;height:64px}
+.logo{font-weight:700;font-size:18px;color:var(--ink);letter-spacing:.5px}
+.logo:hover{text-decoration:none}
+nav.main{display:flex;gap:14px;margin-left:auto;font-size:14px;align-items:center}
+nav.main a{color:var(--ink-2)}
+.cart-btn{position:relative;border:1px solid var(--line);background:#fff;border-radius:999px;padding:6px 14px;cursor:pointer;font-family:inherit;font-size:14px;color:var(--brand)}
+.badge{display:inline-block;min-width:18px;height:18px;line-height:18px;text-align:center;border-radius:999px;background:var(--brand);color:#fff;font-size:12px;margin-left:4px;padding:0 4px}
+.section{padding:28px 0}
+h1{font-size:26px;margin:0 0 6px}
+h2{font-size:20px;margin:0 0 10px}
+h3{font-size:16px;margin:18px 0 8px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:16px}
+.pcard{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;display:flex;flex-direction:column}
+.pcard a{color:inherit}
+.pcard .thumb{aspect-ratio:1/1;overflow:hidden;background:#fff}
+.pcard .thumb img{width:100%;height:100%;object-fit:cover}
+.noimg{width:100%;height:100%;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#f4f2ee,#e5e2db);color:#ada79c;font-size:12px;letter-spacing:.1em}
+.gallery .main .noimg{font-size:14px}
+.pcard .body{padding:10px 12px 14px;display:flex;flex-direction:column;gap:4px}
+.pcard .name{font-weight:600;font-size:15px;color:var(--ink)}
+.pcard .price{color:var(--brand);font-weight:700}
+.crumb{font-size:13px;color:var(--muted);margin:10px 0 18px}
+.pdp{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,420px);gap:28px;align-items:start}
+@media(max-width:860px){.pdp{grid-template-columns:1fr}}
+.gallery .main{aspect-ratio:1/1;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:#fff}
+.gallery .thumbs{display:flex;gap:8px;margin-top:8px}
+.gallery .thumbs img{aspect-ratio:4/5;width:88px;object-fit:cover;border:1px solid var(--line);border-radius:8px;cursor:pointer}
+.gallery .thumbs img.active{border-color:var(--brand);box-shadow:0 0 0 2px var(--brand-soft)}
+.price-lg{font-size:28px;font-weight:700;color:var(--brand)}
+.compare{color:var(--muted);text-decoration:line-through;margin-left:8px;font-size:14px}
+.opt-row{margin:14px 0}
+.opt-label{font-size:13px;color:var(--muted);margin-bottom:6px}
+.opts{display:flex;gap:8px;flex-wrap:wrap}
+.opt{border:1px solid var(--line);background:#fff;border-radius:8px;padding:8px 14px;cursor:pointer;font-family:inherit;font-size:14px;color:var(--ink)}
+.opt.on{border-color:var(--brand);background:var(--brand-soft);color:var(--brand);font-weight:600}
+.opt[disabled]{opacity:.45;text-decoration:line-through;cursor:not-allowed}
+.qty{display:inline-flex;align-items:center;border:1px solid var(--line);border-radius:999px;overflow:hidden}
+.qty button{width:34px;height:34px;border:0;background:#fff;cursor:pointer;font-size:16px;color:var(--brand)}
+.qty input{width:46px;height:34px;border:0;text-align:center;font-family:inherit;font-size:15px}
+.blocks{margin-top:22px;border-top:1px solid var(--line)}
+.blk{display:grid;grid-template-columns:110px 1fr;gap:12px;padding:12px 0;border-bottom:1px solid var(--line);font-size:14px}
+.blk b{color:var(--ink-2);font-weight:600}
+table{width:100%;border-collapse:collapse}
+th,td{padding:10px 8px;border-bottom:1px solid var(--line);text-align:left;font-size:14px}
+th{color:var(--muted);font-weight:600;font-size:13px}
+td.num,th.num{text-align:right;font-variant-numeric:tabular-nums}
+.totals{border-top:1px solid var(--line);padding-top:10px}
+.totals div{display:flex;justify-content:space-between;padding:4px 0;font-size:14px}
+.totals .grand{font-size:17px;font-weight:700;color:var(--brand);border-top:1px solid var(--line);margin-top:6px;padding-top:10px}
+.empty{padding:44px;text-align:center;color:var(--muted)}
+.pager{display:flex;gap:10px;justify-content:center;align-items:center;margin:26px 0 6px}
+.pager a,.pager span{display:inline-block;padding:8px 16px;border:1px solid var(--line);border-radius:999px;background:#fff;font-size:14px;color:var(--ink)}
+.pager a:hover{border-color:var(--brand);color:var(--brand);text-decoration:none}
+.pager span{color:var(--muted);background:transparent;border-color:transparent}
+.steps{display:flex;gap:10px;margin:8px 0 22px;font-size:13px}
+.steps span{padding:6px 12px;border-radius:999px;background:#fff;border:1px solid var(--line);color:var(--muted)}
+.steps span.on{background:var(--brand);border-color:var(--brand);color:#fff}
+.form-row{margin-bottom:14px}
+label.fl{display:block;font-size:13px;color:var(--ink-2);margin-bottom:5px}
+input[type=text],input[type=email],input[type=tel],input[type=password],select,textarea{width:100%;padding:10px 12px;border:1px solid var(--line);border-radius:8px;font-family:inherit;font-size:14px;background:#fff;color:var(--ink)}
+input:focus,select:focus,textarea:focus{outline:2px solid var(--brand-soft);border-color:var(--brand)}
+.invalid{border-color:var(--danger)!important}
+.err{color:var(--danger);font-size:12px;margin-top:4px;min-height:16px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(max-width:640px){.two{grid-template-columns:1fr}}
+.radio-list label{display:flex;gap:8px;align-items:flex-start;border:1px solid var(--line);border-radius:10px;padding:10px 12px;margin-bottom:8px;background:#fff;cursor:pointer}
+.radio-list label.on{border-color:var(--brand);background:var(--brand-soft)}
+.toast{position:fixed;left:50%;bottom:90px;transform:translate(-50%,20px);background:var(--ink);color:#fff;padding:10px 18px;border-radius:999px;font-size:14px;opacity:0;transition:.25s;z-index:60;pointer-events:none}
+.toast.on{opacity:1;transform:translate(-50%,0)}
+.overlay{position:fixed;inset:0;background:rgba(20,37,31,.45);display:none;align-items:center;justify-content:center;z-index:70;padding:16px}
+.overlay.on{display:flex}
+.dialog{background:#fff;border-radius:16px;max-width:440px;width:100%;padding:22px}
+footer.site{border-top:1px solid var(--line);margin-top:40px;padding:28px 0;color:var(--muted);font-size:13px}
+footer.site .cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px}
+.kv{display:flex;justify-content:space-between;gap:12px;font-size:14px;padding:4px 0}
+.note{background:#fff;border:1px dashed var(--line);border-radius:10px;padding:12px 14px;font-size:13px;color:var(--ink-2)}
+.mailbox{white-space:pre-wrap;background:#fbfcfb;border:1px solid var(--line);border-radius:10px;padding:14px;font-size:13px;line-height:1.7;max-height:320px;overflow:auto;font-family:ui-monospace,Consolas,monospace}
+.pill-row{display:flex;gap:8px;flex-wrap:wrap}
+.product-desc p{margin:0 0 10px}
+.fab{position:fixed;right:16px;bottom:16px;z-index:50;display:flex;flex-direction:column;align-items:flex-end;gap:8px}
+.fab a{display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid var(--line);box-shadow:var(--shadow);border-radius:999px;padding:8px 14px;font-size:13px;color:var(--ink);text-decoration:none;font-variant-numeric:tabular-nums}
+.fab a:hover{border-color:var(--brand);color:var(--brand);text-decoration:none}
+.fab svg{width:15px;height:15px;flex:none;stroke:currentColor;fill:none;stroke-width:1.8}
+.fab a#fabLine{background:#06C755;border-color:#06C755;color:#fff;font-weight:700;width:56px;height:56px;padding:0;justify-content:center;border-radius:50%;box-shadow:0 6px 20px rgba(6,199,85,.35)}
+.fab a#fabLine span{font-size:14px;letter-spacing:.6px;font-weight:800;color:#fff;line-height:1}
+.fab a#fabLine:hover{background:#05b54c;border-color:#05b54c;color:#fff}
+@media(max-width:600px){.fab a#fabLine{width:50px;height:50px}.fab a#fabLine span{font-size:12.5px}}
+@media(max-width:600px){.fab{right:10px;bottom:10px}.fab a{padding:7px 11px;font-size:12px}}
+.banner{aspect-ratio:1200/525;border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);background:#fff}
+.banner img{width:100%;height:100%;object-fit:cover;display:block}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="wrap bar">
+    <a class="logo" href="#/" id="siteLogo">ShopKit</a>
+    <nav class="main">
+      <a href="#/category">全部商品</a>
+      <a href="#/lookup">訂單查詢</a>
+      <a href="#/policy/shipping">配送</a>
+      <a href="#/policy/returns">退換貨</a>
+      <a href="https://331.today/shop" id="hubLink" target="_blank" rel="noopener" style="display:none">← 回總站</a>
+      <button class="cart-btn" id="cartBtn" type="button">購物車<span class="badge" id="cartCount">0</span></button>
+    </nav>
+  </div>
+</header>
+<div id="app"></div>
+<div class="toast" id="toast"></div>
+<div class="overlay" id="overlay">
+  <div class="dialog">
+    <h2 id="dlgTitle" style="margin-top:0">確認</h2>
+    <p id="dlgBody" class="muted" style="font-size:14px"></p>
+    <div class="pill-row" style="justify-content:flex-end;margin-top:18px">
+      <button class="btn btn-ghost" id="dlgNo" type="button">取消</button>
+      <button class="btn" id="dlgYes" type="button">確定</button>
+    </div>
+  </div>
+</div>
+<div class="fab" id="fab">
+  <a id="fabLine" href="https://line.me/ti/p/g-FTLSqJAR" target="_blank" rel="noopener" title="用 LINE 聯絡我們" aria-label="用 LINE 聯絡我們">
+    <span>LINE</span>
+  </a>
+</div>
+<footer class="site">
+  <div class="wrap cols">
+    <div>
+      <b style="color:var(--ink)">ShopKit 示範店</b>
+      <div class="small" id="ftShop"></div>
+      <div class="small" id="ftSupport"></div>
+    </div>
+    <div>
+      <b style="color:var(--ink)">購物說明</b>
+      <div class="small"><a href="#/policy/shipping">運費與配送</a></div>
+      <div class="small"><a href="#/policy/returns">退換貨政策</a></div>
+      <div class="small"><a href="#/orders">我的本機訂單</a></div>
+    </div>
+    <div>
+      <b style="color:var(--ink)">關於本站</b>
+      <div class="small">純靜態示範站：資料存在瀏覽器，不接金流。</div>
+      <div class="small">下單後以電子郵件送出訂單資料。</div>
+    </div>
+  </div>
+</footer>
+<script>
+var DB = {"catalog":{"source":"excel:商品批次上架_master_18站.xlsx（oudzoo.com）","generatedAt":"2026-11-10","categories":[{"slug":"oudzoo","name":"Oudzoo 世界沉香百科","title":"Oudzoo｜世界沉香百科","description":"Oudzoo 世界沉香百科 商品，統一由 shop.331.today 收單。","children":[{"slug":"oudzoo-class","name":"課程與顧問","description":"辨偽課程、月報與空間規劃。","banner":null,"noindex":true},{"slug":"oudzoo-incense","name":"沉香香品","description":"線香、香粉與樣本盒。","banner":"products/oudzoo-incense-banner.jpg","noindex":true},{"slug":"oudzoo-tool","name":"品香器具","description":"爐具、香插與收納。","banner":"products/oudzoo-tool-banner.jpg","noindex":true}]}],"products":[{"slug":"hui-an-chen-xiang-xian-xiang","sku":"OUDZOO-HUI-AN-CHEN-XIANG-XIAN-XIANG","name":"惠安沉香線香 20g","brand":"Oudzoo 世界沉香百科","category":"oudzoo-incense","price":890,"summary":"沉香香品｜惠安沉香線香 20g","description":"入門價位、消耗品（沉香批發商，3–5 天），售價 NT$890","images":[],"specs":[],"variants":[{"sku":"OUDZOO-HUI-AN-CHEN-XIANG-XIAN-XIANG","options":{},"price":890,"stock":1}],"shipping":{"weightKg":0.4,"class":"normal","shipsIn":"確認報價後 1–3 個工作天出貨"},"seo":{"title":"惠安沉香線香 20g｜Oudzoo 世界沉香百科","description":"沉香香品｜惠安沉香線香 20g","keywords":["惠安沉香線香 20g","Oudzoo 世界沉香百科","Oudzoo","normal"]},"related":[],"inquiry":false,"status":"draft"},{"slug":"chen-xiang-mu-yang-pin-zu-chan-qu","sku":"OUDZOO-CHEN-XIANG-MU-YANG-PIN-ZU-CHAN-QU","name":"沉香木樣品組 6 產區","brand":"Oudzoo 世界沉香百科","category":"oudzoo-incense","price":1690,"summary":"沉香樣品｜沉香木樣品組 6 產區","description":"產區辨識是玩家第一步（沉香商標本組，5–7 天），售價 NT$1690","images":[],"specs":[],"variants":[{"sku":"OUDZOO-CHEN-XIANG-MU-YANG-PIN-ZU-CHAN-QU","options":{},"price":1690,"stock":1}],"shipping":{"weightKg":0.4,"class":"normal","shipsIn":"確認報價後 1–3 個工作天出貨"},"seo":{"title":"沉香木樣品組 6 產區｜Oudzoo 世界沉香百科","description":"沉香樣品｜沉香木樣品組 6 產區","keywords":["沉香木樣品組 6 產區","Oudzoo 世界沉香百科","Oudzoo","normal"]},"related":[],"inquiry":false,"status":"draft"},{"slug":"dian-zi-xiang-lu-heng-wen","sku":"OUDZOO-DIAN-ZI-XIANG-LU-HENG-WEN","name":"電子香爐 USB 恆溫","brand":"Oudzoo 世界沉香百科","category":"oudzoo-tool","price":1290,"summary":"香道器具｜電子香爐 USB 恆溫","description":"低溫安全、租屋族最愛（香道器具批發，5–7 天），售價 NT$1290","images":[],"specs":[],"variants":[{"sku":"OUDZOO-DIAN-ZI-XIANG-LU-HENG-WEN","options":{},"price":1290,"stock":1}],"shipping":{"weightKg":2,"class":"normal","shipsIn":"確認報價後 1–3 個工作天出貨"},"seo":{"title":"電子香爐 USB 恆溫｜Oudzoo 世界沉香百科","description":"香道器具｜電子香爐 USB 恆溫","keywords":["電子香爐 USB 恆溫","Oudzoo 世界沉香百科","Oudzoo","normal"]},"related":[],"inquiry":false,"status":"draft"},{"slug":"chen-xiang-deng-ji-yu-chan-qu-tu-jian","sku":"OUDZOO-CHEN-XIANG-DENG-JI-YU-CHAN-QU-TU-JIAN","name":"沉香等級與產區圖鑑","brand":"Oudzoo 世界沉香百科","category":"oudzoo-incense","price":990,"summary":"知識出版｜沉香等級與產區圖鑑","description":"買沉香最怕被騙（POD 彩色印刷，5–7 天），售價 NT$990","images":[],"specs":[],"variants":[{"sku":"OUDZOO-CHEN-XIANG-DENG-JI-YU-CHAN-QU-TU-JIAN","options":{},"price":990,"stock":1}],"shipping":{"weightKg":0.8,"class":"normal","shipsIn":"接單後製作，4–6 個工作天出貨"},"seo":{"title":"沉香等級與產區圖鑑｜Oudzoo 世界沉香百科","description":"知識出版｜沉香等級與產區圖鑑","keywords":["沉香等級與產區圖鑑","Oudzoo 世界沉香百科","Oudzoo","normal"]},"related":[],"inquiry":false,"status":"draft"},{"slug":"xiang-dao-ru-men-tao-zu-lu-xiang-jia","sku":"OUDZOO-XIANG-DAO-RU-MEN-TAO-ZU-LU-XIANG-JIA","name":"香道入門套組（爐＋香＋夾）","brand":"Oudzoo 世界沉香百科","category":"oudzoo-tool","price":2490,"summary":"香道器具｜香道入門套組（爐＋香＋夾）","description":"一次買齊、送禮合適（香道器具批發，5–7 天），售價 NT$2490","images":[],"specs":[],"variants":[{"sku":"OUDZOO-XIANG-DAO-RU-MEN-TAO-ZU-LU-XIANG-JIA","options":{},"price":2490,"stock":1}],"shipping":{"weightKg":2,"class":"normal","shipsIn":"確認報價後 1–3 個工作天出貨"},"seo":{"title":"香道入門套組（爐＋香＋夾）｜Oudzoo 世界沉香百科","description":"香道器具｜香道入門套組（爐＋香＋夾）","keywords":["香道入門套組（爐＋香＋夾）","Oudzoo 世界沉香百科","Oudzoo","normal"]},"related":[],"inquiry":false,"status":"draft"},{"slug":"chen-xiang-jing-you","sku":"OUDZOO-CHEN-XIANG-JING-YOU","name":"沉香精油 5ml","brand":"Oudzoo 世界沉香百科","category":"oudzoo-incense","price":1590,"summary":"沉香香品｜沉香精油 5ml","description":"使用門檻低、複購高（精油批發，5–7 天），售價 NT$1590","images":[],"specs":[],"variants":[{"sku":"OUDZOO-CHEN-XIANG-JING-YOU","options":{},"price":1590,"stock":1}],"shipping":{"weightKg":0.4,"class":"normal","shipsIn":"確認報價後 1–3 個工作天出貨"},"seo":{"title":"沉香精油 5ml｜Oudzoo 世界沉香百科","description":"沉香香品｜沉香精油 5ml","keywords":["沉香精油 5ml","Oudzoo 世界沉香百科","Oudzoo","normal"]},"related":[],"inquiry":false,"status":"draft"},{"slug":"wo-xiang-shou-na-mu-he","sku":"OUDZOO-WO-XIANG-SHOU-NA-MU-HE","name":"臥香收納木盒","brand":"Oudzoo 世界沉香百科","category":"oudzoo-tool","price":690,"summary":"收納器具｜臥香收納木盒","description":"收納與送禮兼具（1688 代發，7–10 天），售價 NT$690","images":[],"specs":[],"variants":[{"sku":"OUDZOO-WO-XIANG-SHOU-NA-MU-HE","options":{},"price":690,"stock":1}],"shipping":{"weightKg":2,"class":"normal","shipsIn":"確認報價後 1–3 個工作天出貨"},"seo":{"title":"臥香收納木盒｜Oudzoo 世界沉香百科","description":"收納器具｜臥香收納木盒","keywords":["臥香收納木盒","Oudzoo 世界沉香百科","Oudzoo","normal"]},"related":[],"inquiry":false,"status":"draft"},{"slug":"chen-xiang-bian-wei-xian-shang-ke-jiang","sku":"OUDZOO-CHEN-XIANG-BIAN-WEI-XIAN-SHANG-KE-JIANG","name":"沉香辨偽線上課 6 講","brand":"Oudzoo 世界沉香百科","category":"oudzoo-class","price":2990,"summary":"線上課程｜沉香辨偽線上課 6 講","description":"知識站最適合賣辨偽（站方錄製，即時），售價 NT$2990","images":[],"specs":[],"variants":[{"sku":"OUDZOO-CHEN-XIANG-BIAN-WEI-XIAN-SHANG-KE-JIANG","options":{},"price":2990,"stock":1}],"shipping":{"weightKg":0,"class":"digital","shipsIn":"付款後立即線上下載"},"seo":{"title":"沉香辨偽線上課 6 講｜Oudzoo 世界沉香百科","description":"線上課程｜沉香辨偽線上課 6 講","keywords":["沉香辨偽線上課 6 講","Oudzoo 世界沉香百科","Oudzoo","digital"]},"related":[],"inquiry":false,"status":"draft"},{"slug":"chen-xiang-shou-zhu","sku":"OUDZOO-CHEN-XIANG-SHOU-ZHU","name":"沉香手珠 8mm","brand":"Oudzoo 世界沉香百科","category":"oudzoo-incense","price":1490,"summary":"沉香香品｜沉香手珠 8mm","description":"可佩戴的沉香、複購型（沉香批發商，5–7 天），售價 NT$1490","images":[],"specs":[],"variants":[{"sku":"OUDZOO-CHEN-XIANG-SHOU-ZHU","options":{},"price":1490,"stock":1}],"shipping":{"weightKg":0.4,"class":"normal","shipsIn":"確認報價後 1–3 個工作天出貨"},"seo":{"title":"沉香手珠 8mm｜Oudzoo 世界沉香百科","description":"沉香香品｜沉香手珠 8mm","keywords":["沉香手珠 8mm","Oudzoo 世界沉香百科","Oudzoo","normal"]},"related":[],"inquiry":false,"status":"draft"},{"slug":"chen-xiang-kuai-ke-jian-xiang","sku":"OUDZOO-CHEN-XIANG-KUAI-KE-JIAN-XIANG","name":"沉香塊 10g（可煎香）","brand":"Oudzoo 世界沉香百科","category":"oudzoo-incense","price":2490,"summary":"沉香香品｜沉香塊 10g（可煎香）","description":"煎香與收藏兩用（沉香批發商，5–7 天），售價 NT$2490","images":[],"specs":[],"variants":[{"sku":"OUDZOO-CHEN-XIANG-KUAI-KE-JIAN-XIANG","options":{},"price":2490,"stock":1}],"shipping":{"weightKg":0.4,"class":"normal","shipsIn":"確認報價後 1–3 個工作天出貨"},"seo":{"title":"沉香塊 10g（可煎香）｜Oudzoo 世界沉香百科","description":"沉香香品｜沉香塊 10g（可煎香）","keywords":["沉香塊 10g（可煎香）","Oudzoo 世界沉香百科","Oudzoo","normal"]},"related":[],"inquiry":false,"status":"draft"},{"slug":"chen-xiang-fen","sku":"OUDZOO-CHEN-XIANG-FEN","name":"沉香粉 20g","brand":"Oudzoo 世界沉香百科","category":"oudzoo-incense","price":990,"summary":"沉香香品｜沉香粉 20g","description":"打篆與電子爐都用（沉香批發商，3–5 天），售價 NT$990","images":[],"specs":[],"variants":[{"sku":"OUDZOO-CHEN-XIANG-FEN","options":{},"price":990,"stock":1}],"shipping":{"weightKg":0.4,"class":"normal","shipsIn":"確認報價後 1–3 個工作天出貨"},"seo":{"title":"沉香粉 20g｜Oudzoo 世界沉香百科","description":"沉香香品｜沉香粉 20g","keywords":["沉香粉 20g","Oudzoo 世界沉香百科","Oudzoo","normal"]},"related":[],"inquiry":false,"status":"draft"},{"slug":"qi-nan-yang-ben","sku":"OUDZOO-QI-NAN-YANG-BEN","name":"奇楠樣本 0.5g","brand":"Oudzoo 世界沉香百科","category":"oudzoo-incense","price":3990,"summary":"沉香收藏｜奇楠樣本 0.5g","description":"奇楠是收藏天花板（沉香商標本，5–7 天），售價 NT$3990","images":[],"specs":[],"variants":[{"sku":"OUDZOO-QI-NAN-YANG-BEN","options":{},"price":3990,"stock":1}],"shipping":{"weightKg":0.4,"class":"normal","shipsIn":"確認報價後 1–3 個工作天出貨"},"seo":{"title":"奇楠樣本 0.5g｜Oudzoo 世界沉香百科","description":"沉香收藏｜奇楠樣本 0.5g","keywords":["奇楠樣本 0.5g","Oudzoo 世界沉香百科","Oudzoo","normal"]},"related":[],"inquiry":false,"status":"draft"},{"slug":"tan-xiang-xian-xiang","sku":"OUDZOO-TAN-XIANG-XIAN-XIANG","name":"檀香線香 20g","brand":"Oudzoo 世界沉香百科","category":"oudzoo-incense","price":690,"summary":"香品｜檀香線香 20g","description":"低價入門、可搭售（香品批發，3–5 天），售價 NT$690","images":[],"specs":[],"variants":[{"sku":"OUDZOO-TAN-XIANG-XIAN-XIANG","options":{},"price":690,"stock":1}],"shipping":{"weightKg":0.8,"class":"normal","shipsIn":"確認報價後 1–3 個工作天出貨"},"seo":{"title":"檀香線香 20g｜Oudzoo 世界沉香百科","description":"香品｜檀香線香 20g","keywords":["檀香線香 20g","Oudzoo 世界沉香百科","Oudzoo","normal"]},"related":[],"inquiry":false,"status":"draft"},{"slug":"xiang-fen-ya-mo-tong","sku":"OUDZOO-XIANG-FEN-YA-MO-TONG","name":"香粉壓模（銅）","brand":"Oudzoo 世界沉香百科","category":"oudzoo-tool","price":390,"summary":"香道器具｜香粉壓模（銅）","description":"打篆必備工具（香道器具批發，5–7 天），售價 NT$390","images":[],"specs":[],"variants":[{"sku":"OUDZOO-XIANG-FEN-YA-MO-TONG","options":{},"price":390,"stock":1}],"shipping":{"weightKg":2,"class":"normal","shipsIn":"確認報價後 1–3 個工作天出貨"},"seo":{"title":"香粉壓模（銅）｜Oudzoo 世界沉香百科","description":"香道器具｜香粉壓模（銅）","keywords":["香粉壓模（銅）","Oudzoo 世界沉香百科","Oudzoo","normal"]},"related":[],"inquiry":false,"status":"draft"},{"slug":"xiang-zhuan-mo-zu-han-xiang-hui","sku":"OUDZOO-XIANG-ZHUAN-MO-ZU-HAN-XIANG-HUI","name":"香篆模組（含香灰）","brand":"Oudzoo 世界沉香百科","category":"oudzoo-tool","price":890,"summary":"香道器具｜香篆模組（含香灰）","description":"打篆入門一組搞定（香道器具批發，5–7 天），售價 NT$890","images":[],"specs":[],"variants":[{"sku":"OUDZOO-XIANG-ZHUAN-MO-ZU-HAN-XIANG-HUI","options":{},"price":890,"stock":1}],"shipping":{"weightKg":2,"class":"normal","shipsIn":"確認報價後 1–3 個工作天出貨"},"seo":{"title":"香篆模組（含香灰）｜Oudzoo 世界沉香百科","description":"香道器具｜香篆模組（含香灰）","keywords":["香篆模組（含香灰）","Oudzoo 世界沉香百科","Oudzoo","normal"]},"related":[],"inquiry":false,"status":"draft"},{"slug":"xiang-jia-zhu-zhi","sku":"OUDZOO-XIANG-JIA-ZHU-ZHI","name":"香夾（竹製）","brand":"Oudzoo 世界沉香百科","category":"oudzoo-tool","price":290,"summary":"香道器具｜香夾（竹製）","description":"低價工具、易湊單（香道器具批發，5–7 天），售價 NT$290","images":[],"specs":[],"variants":[{"sku":"OUDZOO-XIANG-JIA-ZHU-ZHI","options":{},"price":290,"stock":1}],"shipping":{"weightKg":2,"class":"normal","shipsIn":"確認報價後 1–3 個工作天出貨"},"seo":{"title":"香夾（竹製）｜Oudzoo 世界沉香百科","description":"香道器具｜香夾（竹製）","keywords":["香夾（竹製）","Oudzoo 世界沉香百科","Oudzoo","normal"]},"related":[],"inquiry":false,"status":"draft"},{"slug":"tao-xiang-lu-shou-zuo","sku":"OUDZOO-TAO-XIANG-LU-SHOU-ZUO","name":"陶香爐（手作）","brand":"Oudzoo 世界沉香百科","category":"oudzoo-tool","price":1290,"summary":"香道器具｜陶香爐（手作）","description":"手作質感、送禮（陶藝工作室，7–10 天），售價 NT$1290","images":[],"specs":[],"variants":[{"sku":"OUDZOO-TAO-XIANG-LU-SHOU-ZUO","options":{},"price":1290,"stock":1}],"shipping":{"weightKg":2,"class":"normal","shipsIn":"確認報價後 1–3 個工作天出貨"},"seo":{"title":"陶香爐（手作）｜Oudzoo 世界沉香百科","description":"香道器具｜陶香爐（手作）","keywords":["陶香爐（手作）","Oudzoo 世界沉香百科","Oudzoo","normal"]},"related":[],"inquiry":false,"status":"draft"},{"slug":"xiang-hui-zhuan-yong","sku":"OUDZOO-XIANG-HUI-ZHUAN-YONG","name":"香灰 200g（專用）","brand":"Oudzoo 世界沉香百科","category":"oudzoo-incense","price":390,"summary":"香道耗材｜香灰 200g（專用）","description":"打篆耗材、回購型（香道耗材，3–5 天），售價 NT$390","images":[],"specs":[],"variants":[{"sku":"OUDZOO-XIANG-HUI-ZHUAN-YONG","options":{},"price":390,"stock":1}],"shipping":{"weightKg":0.8,"class":"normal","shipsIn":"確認報價後 1–3 個工作天出貨"},"seo":{"title":"香灰 200g（專用）｜Oudzoo 世界沉香百科","description":"香道耗材｜香灰 200g（專用）","keywords":["香灰 200g（專用）","Oudzoo 世界沉香百科","Oudzoo","normal"]},"related":[],"inquiry":false,"status":"draft"},{"slug":"xiang-dao-ke-tang-xian-shang","sku":"OUDZOO-XIANG-DAO-KE-TANG-XIAN-SHANG","name":"香道課 6 堂（線上）","brand":"Oudzoo 世界沉香百科","category":"oudzoo-class","price":2490,"summary":"線上課程｜香道課 6 堂（線上）","description":"香道入門系統教學（站方錄製，即時），售價 NT$2490","images":[],"specs":[],"variants":[{"sku":"OUDZOO-XIANG-DAO-KE-TANG-XIAN-SHANG","options":{},"price":2490,"stock":1}],"shipping":{"weightKg":0,"class":"digital","shipsIn":"付款後立即線上下載"},"seo":{"title":"香道課 6 堂（線上）｜Oudzoo 世界沉香百科","description":"線上課程｜香道課 6 堂（線上）","keywords":["香道課 6 堂（線上）","Oudzoo 世界沉香百科","Oudzoo","digital"]},"related":[],"inquiry":false,"status":"draft"},{"slug":"chen-xiang-cha","sku":"OUDZOO-CHEN-XIANG-CHA","name":"沉香茶 10g","brand":"Oudzoo 世界沉香百科","category":"oudzoo-incense","price":690,"summary":"沉香食品｜沉香茶 10g","description":"品飲型沉香、禮品（沉香商，5–7 天），售價 NT$690","images":[],"specs":[],"variants":[{"sku":"OUDZOO-CHEN-XIANG-CHA","options":{},"price":690,"stock":1}],"shipping":{"weightKg":0.8,"class":"normal","shipsIn":"確認報價後 1–3 個工作天出貨"},"seo":{"title":"沉香茶 10g｜Oudzoo 世界沉香百科","description":"沉香食品｜沉香茶 10g","keywords":["沉香茶 10g","Oudzoo 世界沉香百科","Oudzoo","normal"]},"related":[],"inquiry":false,"status":"draft"},{"slug":"chen-xiang-zao-shou-gong","sku":"OUDZOO-CHEN-XIANG-ZAO-SHOU-GONG","name":"沉香皂（手工）","brand":"Oudzoo 世界沉香百科","category":"oudzoo-incense","price":390,"summary":"沉香日用｜沉香皂（手工）","description":"日常消耗、好入手（手工皂工作室，5–7 天），售價 NT$390","images":[],"specs":[],"variants":[{"sku":"OUDZOO-CHEN-XIANG-ZAO-SHOU-GONG","options":{},"price":390,"stock":1}],"shipping":{"weightKg":2,"class":"normal","shipsIn":"確認報價後 1–3 個工作天出貨"},"seo":{"title":"沉香皂（手工）｜Oudzoo 世界沉香百科","description":"沉香日用｜沉香皂（手工）","keywords":["沉香皂（手工）","Oudzoo 世界沉香百科","Oudzoo","normal"]},"related":[],"inquiry":false,"status":"draft"},{"slug":"chen-xiang-zhen-xiao","sku":"OUDZOO-CHEN-XIANG-ZHEN-XIAO","name":"沉香枕（小）","brand":"Oudzoo 世界沉香百科","category":"oudzoo-incense","price":2490,"summary":"沉香日用｜沉香枕（小）","description":"助眠題材、單價高（寢具代工，7–10 天），售價 NT$2490","images":[],"specs":[],"variants":[{"sku":"OUDZOO-CHEN-XIANG-ZHEN-XIAO","options":{},"price":2490,"stock":1}],"shipping":{"weightKg":2,"class":"normal","shipsIn":"確認報價後 1–3 個工作天出貨"},"seo":{"title":"沉香枕（小）｜Oudzoo 世界沉香百科","description":"沉香日用｜沉香枕（小）","keywords":["沉香枕（小）","Oudzoo 世界沉香百科","Oudzoo","normal"]},"related":[],"inquiry":false,"status":"draft"},{"slug":"chen-xiang-tie-pian-pian","sku":"OUDZOO-CHEN-XIANG-TIE-PIAN-PIAN","name":"沉香貼片 10 片","brand":"Oudzoo 世界沉香百科","category":"oudzoo-incense","price":590,"summary":"沉香日用｜沉香貼片 10 片","description":"貼身使用、複購型（貼片代工，5–7 天），售價 NT$590","images":[],"specs":[],"variants":[{"sku":"OUDZOO-CHEN-XIANG-TIE-PIAN-PIAN","options":{},"price":590,"stock":1}],"shipping":{"weightKg":2,"class":"normal","shipsIn":"確認報價後 1–3 個工作天出貨"},"seo":{"title":"沉香貼片 10 片｜Oudzoo 世界沉香百科","description":"沉香日用｜沉香貼片 10 片","keywords":["沉香貼片 10 片","Oudzoo 世界沉香百科","Oudzoo","normal"]},"related":[],"inquiry":false,"status":"draft"},{"slug":"bian-xiang-deng","sku":"OUDZOO-BIAN-XIANG-DENG","name":"辨香燈 LED","brand":"Oudzoo 世界沉香百科","category":"oudzoo-tool","price":690,"summary":"香道器具｜辨香燈 LED","description":"辨香需要光源（燈具批發，5–7 天），售價 NT$690","images":[],"specs":[],"variants":[{"sku":"OUDZOO-BIAN-XIANG-DENG","options":{},"price":690,"stock":1}],"shipping":{"weightKg":2,"class":"normal","shipsIn":"確認報價後 1–3 個工作天出貨"},"seo":{"title":"辨香燈 LED｜Oudzoo 世界沉香百科","description":"香道器具｜辨香燈 LED","keywords":["辨香燈 LED","Oudzoo 世界沉香百科","Oudzoo","normal"]},"related":[],"inquiry":false,"status":"draft"},{"slug":"dian-zi-cheng","sku":"OUDZOO-DIAN-ZI-CHENG","name":"電子秤 0.001g","brand":"Oudzoo 世界沉香百科","category":"oudzoo-tool","price":890,"summary":"量測工具｜電子秤 0.001g","description":"秤重是交易基礎（電子秤批發，5–7 天），售價 NT$890","images":[],"specs":[],"variants":[{"sku":"OUDZOO-DIAN-ZI-CHENG","options":{},"price":890,"stock":1}],"shipping":{"weightKg":2,"class":"normal","shipsIn":"確認報價後 1–3 個工作天出貨"},"seo":{"title":"電子秤 0.001g｜Oudzoo 世界沉香百科","description":"量測工具｜電子秤 0.001g","keywords":["電子秤 0.001g","Oudzoo 世界沉香百科","Oudzoo","normal"]},"related":[],"inquiry":false,"status":"draft"},{"slug":"xiang-pin-shou-na-gui-mu","sku":"OUDZOO-XIANG-PIN-SHOU-NA-GUI-MU","name":"香品收納櫃（木）","brand":"Oudzoo 世界沉香百科","category":"oudzoo-tool","price":1490,"summary":"香道收納｜香品收納櫃（木）","description":"香品多就需要收納（1688 木作，7–10 天），售價 NT$1490","images":[],"specs":[],"variants":[{"sku":"OUDZOO-XIANG-PIN-SHOU-NA-GUI-MU","options":{},"price":1490,"stock":1}],"shipping":{"weightKg":2,"class":"normal","shipsIn":"確認報價後 1–3 個工作天出貨"},"seo":{"title":"香品收納櫃（木）｜Oudzoo 世界沉香百科","description":"香道收納｜香品收納櫃（木）","keywords":["香品收納櫃（木）","Oudzoo 世界沉香百科","Oudzoo","normal"]},"related":[],"inquiry":false,"status":"draft"},{"slug":"xiang-dao-li-he-si-jian-shi","sku":"OUDZOO-XIANG-DAO-LI-HE-SI-JIAN-SHI","name":"香道禮盒（四件式）","brand":"Oudzoo 世界沉香百科","category":"oudzoo-tool","price":3990,"summary":"香道禮盒｜香道禮盒（四件式）","description":"送禮單價高、體面（香道器具批發，7–10 天），售價 NT$3990","images":[],"specs":[],"variants":[{"sku":"OUDZOO-XIANG-DAO-LI-HE-SI-JIAN-SHI","options":{},"price":3990,"stock":1}],"shipping":{"weightKg":2,"class":"normal","shipsIn":"確認報價後 1–3 個工作天出貨"},"seo":{"title":"香道禮盒（四件式）｜Oudzoo 世界沉香百科","description":"香道禮盒｜香道禮盒（四件式）","keywords":["香道禮盒（四件式）","Oudzoo 世界沉香百科","Oudzoo","normal"]},"related":[],"inquiry":false,"status":"draft"},{"slug":"xiang-dao-ti-yan-bao-han-jiao-xue","sku":"OUDZOO-XIANG-DAO-TI-YAN-BAO-HAN-JIAO-XUE","name":"香道體驗包（含教學）","brand":"Oudzoo 世界沉香百科","category":"oudzoo-incense","price":590,"summary":"香道體驗｜香道體驗包（含教學）","description":"體驗型商品、低門檻（香道材料行，5–7 天），售價 NT$590","images":[],"specs":[],"variants":[{"sku":"OUDZOO-XIANG-DAO-TI-YAN-BAO-HAN-JIAO-XUE","options":{},"price":590,"stock":1}],"shipping":{"weightKg":0.8,"class":"normal","shipsIn":"確認報價後 1–3 個工作天出貨"},"seo":{"title":"香道體驗包（含教學）｜Oudzoo 世界沉香百科","description":"香道體驗｜香道體驗包（含教學）","keywords":["香道體驗包（含教學）","Oudzoo 世界沉香百科","Oudzoo","normal"]},"related":[],"inquiry":false,"status":"draft"},{"slug":"chen-xiang-chan-qu-di-tu","sku":"OUDZOO-CHEN-XIANG-CHAN-QU-DI-TU","name":"沉香產區地圖","brand":"Oudzoo 世界沉香百科","category":"oudzoo-class","price":390,"summary":"數位工具｜沉香產區地圖","description":"產區知識視覺化（地圖輸出，4–6 天），售價 NT$390","images":[],"specs":[],"variants":[{"sku":"OUDZOO-CHEN-XIANG-CHAN-QU-DI-TU","options":{},"price":390,"stock":1}],"shipping":{"weightKg":0.4,"class":"normal","shipsIn":"接單後製作，4–6 個工作天出貨"},"seo":{"title":"沉香產區地圖｜Oudzoo 世界沉香百科","description":"數位工具｜沉香產區地圖","keywords":["沉香產區地圖","Oudzoo 世界沉香百科","Oudzoo","normal"]},"related":[],"inquiry":false,"status":"draft"},{"slug":"xiang-dao-kong-jian-gui-hua","sku":"OUDZOO-XIANG-DAO-KONG-JIAN-GUI-HUA","name":"香道空間規劃","brand":"Oudzoo 世界沉香百科","category":"oudzoo-class","price":3500,"summary":"顧問服務｜香道空間規劃","description":"茶席與香席規劃需求（站方顧問，預約制），售價 NT$3500","images":[],"specs":[],"variants":[{"sku":"OUDZOO-XIANG-DAO-KONG-JIAN-GUI-HUA","options":{},"price":3500,"stock":1}],"shipping":{"weightKg":0,"class":"digital","shipsIn":"預約後由專人聯繫安排"},"seo":{"title":"香道空間規劃｜Oudzoo 世界沉香百科","description":"顧問服務｜香道空間規劃","keywords":["香道空間規劃","Oudzoo 世界沉香百科","Oudzoo","digital"]},"related":[],"inquiry":false,"status":"draft"}]},"settings":{"shop":{"name":"ShopKit 示範店","legalName":"好物示範股份有限公司","locale":"zh-TW","currency":"TWD","supportPhone":"02-2712-0000","supportEmail":"support@shopkit.example","supportHours":"週一至週五 09:30–18:30","address":"106 台北市大安區示範路 88 號 3 樓"},"tax":{"mode":"excluded","rate":0.05,"label":"營業稅","displayNote":"全站商品售價為未稅價，結帳時另加 5% 營業稅","rounding":"line"},"shipping":{"freeShippingBasis":"goodsSubtotalBeforeDiscount","methods":[{"id":"home_delivery","name":"宅配到府","carrier":"黑貓宅急便","fee":80,"freeOver":1500,"etaDays":"1–2 個工作日","desc":"週一至週六配送，可指定時段（早／午／晚）"},{"id":"cvs_pickup","name":"超商取貨","carrier":"7-ELEVEN 交貨便","fee":60,"freeOver":1000,"etaDays":"2–4 個工作日","desc":"到店簡訊通知，取貨期限 7 天"}],"remoteZones":["臺東縣","花蓮縣","澎湖縣","金門縣","連江縣","屏東縣-恆春鎮","屏東縣-滿州鄉","屏東縣-牡丹鄉","屏東縣-獅子鄉","新北市-烏來區","桃園市-復興區","新竹縣-尖石鄉","新竹縣-五峰鄉","苗栗縣-泰安鄉","臺中市-和平區","南投縣-仁愛鄉","南投縣-信義鄉","嘉義縣-阿里山鄉","高雄市-茂林區","高雄市-桃源區","高雄市-那瑪夏區"],"remoteSurcharge":150,"remoteNote":"偏遠地區加收 150 元運費，結帳時依收件地址自動判定","cvsRestrictions":{"maxWeightKg":5,"maxDimensionCm":45,"blockedClasses":["bulky","fragile","liquid","powder","restricted"],"message":"超商取貨限 5 公斤以下、單邊 45 公分內，且不承接易碎、液體、粉末與刀具類商品"}},"stock":{"sufficientThreshold":10,"lowThreshold":1,"labels":{"sufficient":"庫存充足","low":"庫存少量","soldout":"已售完"}},"cart":{"maxQtyPerLine":20,"storageKey":"shopkit.cart.v1","sessionKey":"shopkit.session.v1","couponKey":"shopkit.coupon.v1"},"payment":{"provider":"ecpay","displayName":"綠界科技 ECPay","environment":"test","methods":[{"id":"credit","name":"信用卡","ecpayCode":"Credit","desc":"一次付清，支援 3 期零利率（滿 3,000 元）","feeNote":""},{"id":"atm","name":"ATM 轉帳","ecpayCode":"ATM","desc":"取得虛擬帳號後 3 日內完成轉帳","feeNote":""},{"id":"cvs","name":"超商代碼","ecpayCode":"CVS","desc":"產生繳費代碼，7 日內至超商付款","feeNote":"超商代收手續費 30 元由本店吸收"},{"id":"wallet","name":"本站購物金","ecpayCode":null,"desc":"使用帳戶內購物金折抵，不足額再選其他方式","feeNote":""}],"expireMinutes":{"atm":4320,"cvs":10080,"credit":30,"wallet":30},"failureReasons":{"insufficient_funds":{"label":"卡片額度不足","action":"換一張卡，或改選 ATM 轉帳／超商代碼"},"card_declined":{"label":"發卡行拒絕交易","action":"聯繫發卡行確認是否啟動網路交易，或改用其他付款方式"},"3ds_failed":{"label":"3D 驗證未通過","action":"重新輸入簡訊驗證碼；連續失敗請改用 ATM"},"expired_card":{"label":"卡片效期不符","action":"確認卡片有效期限與背面末三碼後重試"},"amount_mismatch":{"label":"金額與訂單不符","action":"回購物車重新整理金額，勿手動改動付款頁參數"},"duplicate_trade":{"label":"重複交易","action":"此筆已建立付款紀錄，請至訂單頁確認狀態，勿重複付款"},"timeout":{"label":"交易逾時","action":"訂單保留 30 分鐘，可至訂單頁重新付款"},"gateway_error":{"label":"金流服務暫時異常","action":"等 5 分鐘後至訂單頁重新付款；仍失敗請聯繫客服"},"atm_expired":{"label":"虛擬帳號已過期","action":"至訂單頁重新產生繳費帳號"},"cvs_expired":{"label":"繳費代碼已過期","action":"至訂單頁重新產生繳費代碼"},"refund_failed":{"label":"退款申請未成功","action":"系統已記錄，客服將於 1 個工作日內人工處理"}}},"coupons":[{"code":"WELCOME100","type":"fixed","value":100,"minSubtotal":800,"maxUses":1000,"used":0,"active":true,"note":"新客首購折 100 元"},{"code":"SAVE10","type":"percent","value":0.1,"minSubtotal":1200,"maxDiscount":300,"maxUses":500,"used":0,"active":true,"note":"滿 1,200 折 10%，上限 300 元"},{"code":"FREESHIP","type":"shipping","value":0,"minSubtotal":0,"maxUses":300,"used":0,"active":true,"note":"免運費"},{"code":"SPRING2025","type":"fixed","value":200,"minSubtotal":2000,"maxUses":100,"used":100,"active":false,"note":"已額滿"}],"invoice":{"provider":"ecpay_einvoice","displayName":"綠界電子發票","types":[{"id":"mobile_carrier","name":"手機條碼載具","hint":"格式 /ABC1234，共 8 碼"},{"id":"citizen_cert","name":"自然人憑證載具","hint":"16 碼英數"},{"id":"company","name":"公司戶（三聯式）","hint":"需填統一編號與公司名稱"},{"id":"donate","name":"捐贈","hint":"填社福團體愛心碼"},{"id":"paper","name":"紙本發票","hint":"隨貨附紙本"}],"issueOn":"payment_confirmed"},"logistics":{"providers":{"home_delivery":{"id":"tcat","name":"黑貓宅急便","api":"ecpay_logistics","retry":{"maxAttempts":3,"backoffMs":[2000,8000,20000]}},"cvs_pickup":{"id":"seven","name":"7-ELEVEN 交貨便","api":"ecpay_logistics","retry":{"maxAttempts":3,"backoffMs":[2000,8000,20000]}}},"returnWindowDays":7,"inspectionNote":"依消費者保護法第 19 條，七天猶豫期自收到商品次日起算，退貨需保留完整包裝"},"reports":{"timezone":"Asia/Taipei","paymentRateDefinition":"已付款訂單數 ÷ 已建立訂單數","returnRateDefinition":"已成立退貨訂單數 ÷ 已出貨訂單數","aovDefinition":"已付款訂單金額合計（含稅、含運）÷ 已付款訂單數"}},"zipcodes":{"source":"twzipcode-data (中華郵政 3 碼郵遞區號)","updatedAt":"2026-11-09","counties":[{"name":"臺北市","districts":[{"name":"中正區","zip":"100"},{"name":"大同區","zip":"103"},{"name":"中山區","zip":"104"},{"name":"松山區","zip":"105"},{"name":"大安區","zip":"106"},{"name":"萬華區","zip":"108"},{"name":"信義區","zip":"110"},{"name":"士林區","zip":"111"},{"name":"北投區","zip":"112"},{"name":"內湖區","zip":"114"},{"name":"南港區","zip":"115"},{"name":"文山區","zip":"116"}]},{"name":"基隆市","districts":[{"name":"仁愛區","zip":"200"},{"name":"信義區","zip":"201"},{"name":"中正區","zip":"202"},{"name":"中山區","zip":"203"},{"name":"安樂區","zip":"204"},{"name":"暖暖區","zip":"205"},{"name":"七堵區","zip":"206"}]},{"name":"新北市","districts":[{"name":"萬里區","zip":"207"},{"name":"金山區","zip":"208"},{"name":"板橋區","zip":"220"},{"name":"汐止區","zip":"221"},{"name":"深坑區","zip":"222"},{"name":"石碇區","zip":"223"},{"name":"瑞芳區","zip":"224"},{"name":"平溪區","zip":"226"},{"name":"雙溪區","zip":"227"},{"name":"貢寮區","zip":"228"},{"name":"新店區","zip":"231"},{"name":"坪林區","zip":"232"},{"name":"烏來區","zip":"233"},{"name":"永和區","zip":"234"},{"name":"中和區","zip":"235"},{"name":"土城區","zip":"236"},{"name":"三峽區","zip":"237"},{"name":"樹林區","zip":"238"},{"name":"鶯歌區","zip":"239"},{"name":"三重區","zip":"241"},{"name":"新莊區","zip":"242"},{"name":"泰山區","zip":"243"},{"name":"林口區","zip":"244"},{"name":"蘆洲區","zip":"247"},{"name":"五股區","zip":"248"},{"name":"八里區","zip":"249"},{"name":"淡水區","zip":"251"},{"name":"三芝區","zip":"252"},{"name":"石門區","zip":"253"}]},{"name":"宜蘭縣","districts":[{"name":"宜蘭市","zip":"260"},{"name":"頭城鎮","zip":"261"},{"name":"礁溪鄉","zip":"262"},{"name":"壯圍鄉","zip":"263"},{"name":"員山鄉","zip":"264"},{"name":"羅東鎮","zip":"265"},{"name":"三星鄉","zip":"266"},{"name":"大同鄉","zip":"267"},{"name":"五結鄉","zip":"268"},{"name":"冬山鄉","zip":"269"},{"name":"蘇澳鎮","zip":"270"},{"name":"南澳鄉","zip":"272"},{"name":"釣魚臺列嶼","zip":"290"}]},{"name":"新竹市","districts":[{"name":"東區","zip":"300"},{"name":"北區","zip":"300"},{"name":"香山區","zip":"300"}]},{"name":"新竹縣","districts":[{"name":"竹北市","zip":"302"},{"name":"湖口鄉","zip":"303"},{"name":"新豐鄉","zip":"304"},{"name":"新埔鎮","zip":"305"},{"name":"關西鎮","zip":"306"},{"name":"芎林鄉","zip":"307"},{"name":"寶山鄉","zip":"308"},{"name":"竹東鎮","zip":"310"},{"name":"五峰鄉","zip":"311"},{"name":"橫山鄉","zip":"312"},{"name":"尖石鄉","zip":"313"},{"name":"北埔鄉","zip":"314"},{"name":"峨眉鄉","zip":"315"}]},{"name":"桃園市","districts":[{"name":"中壢區","zip":"320"},{"name":"平鎮區","zip":"324"},{"name":"龍潭區","zip":"325"},{"name":"楊梅區","zip":"326"},{"name":"新屋區","zip":"327"},{"name":"觀音區","zip":"328"},{"name":"桃園區","zip":"330"},{"name":"龜山區","zip":"333"},{"name":"八德區","zip":"334"},{"name":"大溪區","zip":"335"},{"name":"復興區","zip":"336"},{"name":"大園區","zip":"337"},{"name":"蘆竹區","zip":"338"}]},{"name":"苗栗縣","districts":[{"name":"竹南鎮","zip":"350"},{"name":"頭份市","zip":"351"},{"name":"三灣鄉","zip":"352"},{"name":"南庄鄉","zip":"353"},{"name":"獅潭鄉","zip":"354"},{"name":"後龍鎮","zip":"356"},{"name":"通霄鎮","zip":"357"},{"name":"苑裡鎮","zip":"358"},{"name":"苗栗市","zip":"360"},{"name":"造橋鄉","zip":"361"},{"name":"頭屋鄉","zip":"362"},{"name":"公館鄉","zip":"363"},{"name":"大湖鄉","zip":"364"},{"name":"泰安鄉","zip":"365"},{"name":"銅鑼鄉","zip":"366"},{"name":"三義鄉","zip":"367"},{"name":"西湖鄉","zip":"368"},{"name":"卓蘭鎮","zip":"369"}]},{"name":"臺中市","districts":[{"name":"中區","zip":"400"},{"name":"東區","zip":"401"},{"name":"南區","zip":"402"},{"name":"西區","zip":"403"},{"name":"北區","zip":"404"},{"name":"北屯區","zip":"406"},{"name":"西屯區","zip":"407"},{"name":"南屯區","zip":"408"},{"name":"太平區","zip":"411"},{"name":"大里區","zip":"412"},{"name":"霧峰區","zip":"413"},{"name":"烏日區","zip":"414"},{"name":"豐原區","zip":"420"},{"name":"后里區","zip":"421"},{"name":"石岡區","zip":"422"},{"name":"東勢區","zip":"423"},{"name":"和平區","zip":"424"},{"name":"新社區","zip":"426"},{"name":"潭子區","zip":"427"},{"name":"大雅區","zip":"428"},{"name":"神岡區","zip":"429"},{"name":"大肚區","zip":"432"},{"name":"沙鹿區","zip":"433"},{"name":"龍井區","zip":"434"},{"name":"梧棲區","zip":"435"},{"name":"清水區","zip":"436"},{"name":"大甲區","zip":"437"},{"name":"外埔區","zip":"438"},{"name":"大安區","zip":"439"}]},{"name":"彰化縣","districts":[{"name":"彰化市","zip":"500"},{"name":"芬園鄉","zip":"502"},{"name":"花壇鄉","zip":"503"},{"name":"秀水鄉","zip":"504"},{"name":"鹿港鎮","zip":"505"},{"name":"福興鄉","zip":"506"},{"name":"線西鄉","zip":"507"},{"name":"和美鎮","zip":"508"},{"name":"伸港鄉","zip":"509"},{"name":"員林市","zip":"510"},{"name":"社頭鄉","zip":"511"},{"name":"永靖鄉","zip":"512"},{"name":"埔心鄉","zip":"513"},{"name":"溪湖鎮","zip":"514"},{"name":"大村鄉","zip":"515"},{"name":"埔鹽鄉","zip":"516"},{"name":"田中鎮","zip":"520"},{"name":"北斗鎮","zip":"521"},{"name":"田尾鄉","zip":"522"},{"name":"埤頭鄉","zip":"523"},{"name":"溪州鄉","zip":"524"},{"name":"竹塘鄉","zip":"525"},{"name":"二林鎮","zip":"526"},{"name":"大城鄉","zip":"527"},{"name":"芳苑鄉","zip":"528"},{"name":"二水鄉","zip":"530"}]},{"name":"南投縣","districts":[{"name":"南投市","zip":"540"},{"name":"中寮鄉","zip":"541"},{"name":"草屯鎮","zip":"542"},{"name":"國姓鄉","zip":"544"},{"name":"埔里鎮","zip":"545"},{"name":"仁愛鄉","zip":"546"},{"name":"名間鄉","zip":"551"},{"name":"集集鎮","zip":"552"},{"name":"水里鄉","zip":"553"},{"name":"魚池鄉","zip":"555"},{"name":"信義鄉","zip":"556"},{"name":"竹山鎮","zip":"557"},{"name":"鹿谷鄉","zip":"558"}]},{"name":"嘉義市","districts":[{"name":"東區","zip":"600"},{"name":"西區","zip":"600"}]},{"name":"嘉義縣","districts":[{"name":"番路鄉","zip":"602"},{"name":"梅山鄉","zip":"603"},{"name":"竹崎鄉","zip":"604"},{"name":"阿里山鄉","zip":"605"},{"name":"中埔鄉","zip":"606"},{"name":"大埔鄉","zip":"607"},{"name":"水上鄉","zip":"608"},{"name":"鹿草鄉","zip":"611"},{"name":"太保市","zip":"612"},{"name":"朴子市","zip":"613"},{"name":"東石鄉","zip":"614"},{"name":"六腳鄉","zip":"615"},{"name":"新港鄉","zip":"616"},{"name":"民雄鄉","zip":"621"},{"name":"大林鎮","zip":"622"},{"name":"溪口鄉","zip":"623"},{"name":"義竹鄉","zip":"624"},{"name":"布袋鎮","zip":"625"}]},{"name":"雲林縣","districts":[{"name":"斗南鎮","zip":"630"},{"name":"大埤鄉","zip":"631"},{"name":"虎尾鎮","zip":"632"},{"name":"土庫鎮","zip":"633"},{"name":"褒忠鄉","zip":"634"},{"name":"東勢鄉","zip":"635"},{"name":"臺西鄉","zip":"636"},{"name":"崙背鄉","zip":"637"},{"name":"麥寮鄉","zip":"638"},{"name":"斗六市","zip":"640"},{"name":"林內鄉","zip":"643"},{"name":"古坑鄉","zip":"646"},{"name":"莿桐鄉","zip":"647"},{"name":"西螺鎮","zip":"648"},{"name":"二崙鄉","zip":"649"},{"name":"北港鎮","zip":"651"},{"name":"水林鄉","zip":"652"},{"name":"口湖鄉","zip":"653"},{"name":"四湖鄉","zip":"654"},{"name":"元長鄉","zip":"655"}]},{"name":"臺南市","districts":[{"name":"中西區","zip":"700"},{"name":"東區","zip":"701"},{"name":"南區","zip":"702"},{"name":"北區","zip":"704"},{"name":"安平區","zip":"708"},{"name":"安南區","zip":"709"},{"name":"永康區","zip":"710"},{"name":"歸仁區","zip":"711"},{"name":"新化區","zip":"712"},{"name":"左鎮區","zip":"713"},{"name":"玉井區","zip":"714"},{"name":"楠西區","zip":"715"},{"name":"南化區","zip":"716"},{"name":"仁德區","zip":"717"},{"name":"關廟區","zip":"718"},{"name":"龍崎區","zip":"719"},{"name":"官田區","zip":"720"},{"name":"麻豆區","zip":"721"},{"name":"佳里區","zip":"722"},{"name":"西港區","zip":"723"},{"name":"七股區","zip":"724"},{"name":"將軍區","zip":"725"},{"name":"學甲區","zip":"726"},{"name":"北門區","zip":"727"},{"name":"新營區","zip":"730"},{"name":"後壁區","zip":"731"},{"name":"白河區","zip":"732"},{"name":"東山區","zip":"733"},{"name":"六甲區","zip":"734"},{"name":"下營區","zip":"735"},{"name":"柳營區","zip":"736"},{"name":"鹽水區","zip":"737"},{"name":"善化區","zip":"741"},{"name":"大內區","zip":"742"},{"name":"山上區","zip":"743"},{"name":"新市區","zip":"744"},{"name":"安定區","zip":"745"}]},{"name":"高雄市","districts":[{"name":"新興區","zip":"800"},{"name":"前金區","zip":"801"},{"name":"苓雅區","zip":"802"},{"name":"鹽埕區","zip":"803"},{"name":"鼓山區","zip":"804"},{"name":"旗津區","zip":"805"},{"name":"前鎮區","zip":"806"},{"name":"三民區","zip":"807"},{"name":"楠梓區","zip":"811"},{"name":"小港區","zip":"812"},{"name":"左營區","zip":"813"},{"name":"仁武區","zip":"814"},{"name":"大社區","zip":"815"},{"name":"岡山區","zip":"820"},{"name":"路竹區","zip":"821"},{"name":"阿蓮區","zip":"822"},{"name":"田寮區","zip":"823"},{"name":"燕巢區","zip":"824"},{"name":"橋頭區","zip":"825"},{"name":"梓官區","zip":"826"},{"name":"彌陀區","zip":"827"},{"name":"永安區","zip":"828"},{"name":"湖內區","zip":"829"},{"name":"鳳山區","zip":"830"},{"name":"大寮區","zip":"831"},{"name":"林園區","zip":"832"},{"name":"鳥松區","zip":"833"},{"name":"大樹區","zip":"840"},{"name":"旗山區","zip":"842"},{"name":"美濃區","zip":"843"},{"name":"六龜區","zip":"844"},{"name":"內門區","zip":"845"},{"name":"杉林區","zip":"846"},{"name":"甲仙區","zip":"847"},{"name":"桃源區","zip":"848"},{"name":"那瑪夏區","zip":"849"},{"name":"茂林區","zip":"851"},{"name":"茄萣區","zip":"852"},{"name":"東沙群島","zip":"817"},{"name":"南沙群島","zip":"819"}]},{"name":"澎湖縣","districts":[{"name":"馬公市","zip":"880"},{"name":"西嶼鄉","zip":"881"},{"name":"望安鄉","zip":"882"},{"name":"七美鄉","zip":"883"},{"name":"白沙鄉","zip":"884"},{"name":"湖西鄉","zip":"885"}]},{"name":"屏東縣","districts":[{"name":"屏東市","zip":"900"},{"name":"三地門鄉","zip":"901"},{"name":"霧臺鄉","zip":"902"},{"name":"瑪家鄉","zip":"903"},{"name":"九如鄉","zip":"904"},{"name":"里港鄉","zip":"905"},{"name":"高樹鄉","zip":"906"},{"name":"鹽埔鄉","zip":"907"},{"name":"長治鄉","zip":"908"},{"name":"麟洛鄉","zip":"909"},{"name":"竹田鄉","zip":"911"},{"name":"內埔鄉","zip":"912"},{"name":"萬丹鄉","zip":"913"},{"name":"潮州鎮","zip":"920"},{"name":"泰武鄉","zip":"921"},{"name":"來義鄉","zip":"922"},{"name":"萬巒鄉","zip":"923"},{"name":"崁頂鄉","zip":"924"},{"name":"新埤鄉","zip":"925"},{"name":"南州鄉","zip":"926"},{"name":"林邊鄉","zip":"927"},{"name":"東港鎮","zip":"928"},{"name":"琉球鄉","zip":"929"},{"name":"佳冬鄉","zip":"931"},{"name":"新園鄉","zip":"932"},{"name":"枋寮鄉","zip":"940"},{"name":"枋山鄉","zip":"941"},{"name":"春日鄉","zip":"942"},{"name":"獅子鄉","zip":"943"},{"name":"車城鄉","zip":"944"},{"name":"牡丹鄉","zip":"945"},{"name":"恆春鎮","zip":"946"},{"name":"滿州鄉","zip":"947"}]},{"name":"臺東縣","districts":[{"name":"臺東市","zip":"950"},{"name":"綠島鄉","zip":"951"},{"name":"蘭嶼鄉","zip":"952"},{"name":"延平鄉","zip":"953"},{"name":"卑南鄉","zip":"954"},{"name":"鹿野鄉","zip":"955"},{"name":"關山鎮","zip":"956"},{"name":"海端鄉","zip":"957"},{"name":"池上鄉","zip":"958"},{"name":"東河鄉","zip":"959"},{"name":"成功鎮","zip":"961"},{"name":"長濱鄉","zip":"962"},{"name":"太麻里鄉","zip":"963"},{"name":"金峰鄉","zip":"964"},{"name":"大武鄉","zip":"965"},{"name":"達仁鄉","zip":"966"}]},{"name":"花蓮縣","districts":[{"name":"花蓮市","zip":"970"},{"name":"新城鄉","zip":"971"},{"name":"秀林鄉","zip":"972"},{"name":"吉安鄉","zip":"973"},{"name":"壽豐鄉","zip":"974"},{"name":"鳳林鎮","zip":"975"},{"name":"光復鄉","zip":"976"},{"name":"豐濱鄉","zip":"977"},{"name":"瑞穗鄉","zip":"978"},{"name":"萬榮鄉","zip":"979"},{"name":"玉里鎮","zip":"981"},{"name":"卓溪鄉","zip":"982"},{"name":"富里鄉","zip":"983"}]},{"name":"金門縣","districts":[{"name":"金沙鎮","zip":"890"},{"name":"金湖鎮","zip":"891"},{"name":"金寧鄉","zip":"892"},{"name":"金城鎮","zip":"893"},{"name":"烈嶼鄉","zip":"894"},{"name":"烏坵鄉","zip":"896"}]},{"name":"連江縣","districts":[{"name":"南竿鄉","zip":"209"},{"name":"北竿鄉","zip":"210"},{"name":"莒光鄉","zip":"211"},{"name":"東引鄉","zip":"212"}]}]},"stores":{"updated":"","source":"（尚未匯入；用 static-app\\data\\import_stores.py 從超商／物流後台匯出的門市清單 CSV 產生）","items":[]},"site":{"slug":"oudzoo","name":"Oudzoo 沉香專門","domain":"oudzoo.com","subdomain":"oudzoo.com/shop","project":"shop-oudzoo","hub":"https://331.today/shop","note":""}};
+</script>
+<script>
+(function () {
+  "use strict";
+
+  /* ============ 可調整設定（改這裡就好） ============ */
+  var PAGE_SIZE = 30;   // 每頁 30 件；30 件以內不顯示換頁
+  var CONFIG = {
+    orderEmail: "10return.com@gmail.com", // 訂單寄到這個信箱（函式端另由環境變數 ORDER_TO 決定）
+    emailEndpoint: "",     // 留空＋pagesApi=true 時，部署在 http(s) 上會自動用 "/shop/api/order"
+    lookupEndpoint: "",    // 留空＋pagesApi=true 時，部署在 http(s) 上會自動用 "/shop/api/orders"
+    pagesApi: true,        // 關掉 = 永不用 Pages Function（純靜態主機就設 false）
+    autoOpenMail: true,    // 送出後自動開一封預填信件（少一次點擊；關掉改 false）
+    shopName: "",          // 留空用 settings.shop.name
+    // Google 表單收單（選用）：把表單的 formResponse 網址與各欄位 entry ID 填進來就會同步寫入
+    // action 例：https://docs.google.com/forms/d/e/1FAIpQLxxxx/formResponse
+    googleForm: {
+      action: "https://docs.google.com/forms/d/e/1FAIpQLSep3QiMXBEPAPoJ7ifA1CBU3twj8UrNPVJing09b4kJkL_WOw/formResponse",
+      entries: { orderNo: "entry.1895539957", name: "entry.283904773", phone: "entry.639366322", email: "entry.1722649064", total: "entry.626455050", items: "entry.1368097138", address: "entry.65678998", ship: "entry.1902238286", invoice: "entry.511460324", note: "entry.2110992755" }
+    },
+  };
+  // 本機用 file:// 打開時不可能有 /api，所以只在 http(s) 下啟用 Pages 端點
+  var IS_HTTP = location.protocol === "http:" || location.protocol === "https:";
+  var ORDER_ENDPOINT = CONFIG.emailEndpoint || (CONFIG.pagesApi && IS_HTTP ? "/shop/api/order" : "");
+  var LOOKUP_ENDPOINT = CONFIG.lookupEndpoint || (CONFIG.pagesApi && IS_HTTP ? "/shop/api/orders" : "");
+  /* ================================================ */
+
+  var S = DB.settings;
+  var SITE = DB.site || null;              // 分站建置時才有（build.mjs --site/--all）
+  var CATS = DB.catalog.categories;
+  var PRODUCTS = DB.catalog.products;
+  var ZIP = DB.zipcodes.counties;
+
+  var ORDER_EMAIL = CONFIG.orderEmail || S.shop.supportEmail;
+  // 店家聯絡方式（右下角固定區與頁尾共用；改這裡一次改全站）
+  var CONTACT = { email: ORDER_EMAIL, tel: "0968-222201", telHref: "+886968222201", line: "https://line.me/ti/p/g-FTLSqJAR" };
+  var SHOP_NAME = CONFIG.shopName || S.shop.name;
+
+  var K_CART = "shopkit.static.cart.v1";
+  var K_COUPON = "shopkit.static.coupon.v1";
+  var K_ORDERS = "shopkit.static.orders.v1";
+
+  var idx = {};
+  PRODUCTS.forEach(function (p) {
+    p.variants.forEach(function (v) {
+      idx[v.sku] = { product: p, variant: v };
+    });
+  });
+
+  function read(key, fallback) {
+    try {
+      var raw = localStorage.getItem(key);
+      return raw ? JSON.parse(raw) : fallback;
+    } catch (e) { return fallback; }
+  }
+  function write(key, value) {
+    try { localStorage.setItem(key, JSON.stringify(value)); } catch (e) {}
+  }
+  function money(n) { return "NT$" + Number(n || 0).toLocaleString("zh-TW"); }
+  // 詢價品（price 0）一律顯示「詢價」，不要顯示 NT$0
+  function priceLabel(n) { return Number(n) > 0 ? money(n) : "詢價"; }
+  function totalsLabel(n) { return Number(n) > 0 ? money(n) : "待報價"; }
+  function esc(s) {
+    return String(s == null ? "" : s).replace(/[&<>"']/g, function (c) {
+      return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c];
+    });
+  }
+  function pad(n) { return String(n).padStart(2, "0"); }
+  function today() {
+    var d = new Date();
+    return d.getFullYear() + pad(d.getMonth() + 1) + pad(d.getDate());
+  }
+  function newOrderNo() {
+    var chars = "ABCDEFGHJKLMNPQRSTUVWXYZ23456789", s = "";
+    for (var i = 0; i < 4; i++) s += chars[Math.floor(Math.random() * chars.length)];
+    return "SK" + today().slice(2) + s;
+  }
+
+  /* ---------- 購物車 ---------- */
+  var cart = read(K_CART, []);
+  var coupon = read(K_COUPON, null);
+
+  function saveCart() { write(K_CART, cart); syncBadge(); }
+
+  function cartLines() {
+    return cart.map(function (l) {
+      var hit = idx[l.sku];
+      if (!hit) return null;
+      var avail = hit.variant.stock;
+      return {
+        sku: l.sku,
+        qty: l.qty,
+        name: hit.product.name,
+        brand: hit.product.brand || "",
+        optionLabel: Object.keys(hit.variant.options).map(function (k) { return hit.variant.options[k]; }).join(" / "),
+        price: hit.variant.price,
+        stock: avail,
+        shipClass: (hit.product.shipping || {}).class || "",
+        digital: ((hit.product.shipping || {}).class || "") === "digital",
+        image: (hit.product.images[0] || {}).src || ""
+      };
+    }).filter(Boolean);
+  }
+
+  function stockState(stock) {
+    if (stock <= 0) return { key: "soldout", label: S.stock.labels.soldout, tag: "tag-danger" };
+    if (stock < S.stock.sufficientThreshold) return { key: "low", label: S.stock.labels.low, tag: "tag-warn" };
+    return { key: "sufficient", label: S.stock.labels.sufficient, tag: "tag-ok" };
+  }
+
+  // 整車都是數位商品（線上課程等）→ 免運、不必填地址
+  function allDigital(lines) {
+    return !!lines.length && lines.every(function (l) { return l.shipClass === "digital"; });
+  }
+
+  function computeTotals(lines, couponCode, shipMethod, county, district) {    var subtotal = 0;
+    lines.forEach(function (l) { subtotal += l.price * l.qty; });
+
+    var discount = 0, freeShip = false, c = null;
+    if (couponCode) {
+      c = S.coupons.filter(function (x) { return x.code === couponCode && x.active; })[0];
+      if (c && subtotal >= (c.minSubtotal || 0)) {
+        if (c.type === "fixed") discount = c.value;
+        else if (c.type === "percent") discount = Math.min(Math.round(subtotal * c.value), c.maxDiscount || Infinity);
+        else if (c.type === "shipping") freeShip = true;
+      } else { c = null; }
+    }
+    if (discount > subtotal) discount = subtotal;
+
+    var method = S.shipping.methods.filter(function (m) { return m.id === shipMethod; })[0] || S.shipping.methods[0];
+    // 整車都是詢價品（單價 0）→ 不計運費、不計稅，金額一律「待報價」
+    if (lines.length && subtotal === 0) {
+      return {
+        subtotal: 0, discount: 0, shipping: 0, tax: 0, total: 0,
+        shipMethod: method.id, method: method, couponApplied: "", freeShip: false, inquiry: true,
+        digital: allDigital(lines)
+      };
+    }
+    var shipping = 0;
+    if (lines.length) {
+      var basis = subtotal; // goodsSubtotalBeforeDiscount
+      if (allDigital(lines)) {
+        shipping = 0; // 線上課程／數位內容：不寄送、不計運費、無偏遠加價
+      } else {
+        shipping = freeShip ? 0 : (basis >= method.freeOver ? 0 : method.fee);
+        var zone = county && district ? county + "-" + district : county;
+        var isRemote = S.shipping.remoteZones.some(function (z) {
+          return z === county || z === zone;
+        });
+        if (isRemote && method.id === "home_delivery") shipping += S.shipping.remoteSurcharge;
+      }
+    }
+
+    var taxable = subtotal - discount + shipping;
+    var tax = Math.round(taxable * S.tax.rate);
+    return {
+      subtotal: subtotal, discount: discount, shipping: shipping, tax: tax,
+      total: taxable + tax, shipMethod: method.id, method: method,
+      couponApplied: c ? c.code : "", freeShip: freeShip,
+      digital: allDigital(lines)
+    };
+  }
+
+  function syncBadge() {
+    var n = cart.reduce(function (a, l) { return a + l.qty; }, 0);
+    var el = document.getElementById("cartCount");
+    if (el) el.textContent = n;
+  }
+
+  function toast(msg) {
+    var el = document.getElementById("toast");
+    el.textContent = msg;
+    el.classList.add("on");
+    clearTimeout(toast._t);
+    toast._t = setTimeout(function () { el.classList.remove("on"); }, 2200);
+  }
+
+  function confirmDialog(title, body, okLabel) {
+    return new Promise(function (resolve) {
+      var ov = document.getElementById("overlay");
+      document.getElementById("dlgTitle").textContent = title;
+      document.getElementById("dlgBody").textContent = body;
+      document.getElementById("dlgYes").textContent = okLabel || "確定";
+      ov.classList.add("on");
+      function done(v) {
+        ov.classList.remove("on");
+        document.getElementById("dlgYes").onclick = null;
+        document.getElementById("dlgNo").onclick = null;
+        resolve(v);
+      }
+      document.getElementById("dlgYes").onclick = function () { done(true); };
+      document.getElementById("dlgNo").onclick = function () { done(false); };
+    });
+  }
+
+  function addToCart(sku, qty) {
+    var hit = idx[sku];
+    if (!hit) { toast("找不到這個規格"); return; }
+    var cap = Math.min(hit.variant.stock, S.cart.maxQtyPerLine);
+    if (cap <= 0) { toast("此規格已售完"); return; }
+    var line = cart.filter(function (l) { return l.sku === sku; })[0];
+    var want = (line ? line.qty : 0) + (qty || 1);
+    if (want > cap) {
+      if (line) line.qty = cap;
+      else cart.push({ sku: sku, qty: cap });
+      saveCart();
+      toast("已加到上限 " + cap + " 件（依庫存）");
+      return;
+    }
+    if (line) line.qty = want;
+    else cart.push({ sku: sku, qty: want });
+    saveCart();
+    toast("已加入購物車：" + hit.product.name + " ×" + (qty || 1));
+  }
+
+  /* ---------- 訂單（本機） ---------- */
+  function orders() { return read(K_ORDERS, []); }
+  // 有同號就覆蓋、沒有就插到最前面（遠端查回來的訂單也走這支）
+  function putOrder(o) {
+    var list = orders();
+    var hit = -1;
+    for (var i = 0; i < list.length; i++) if (list[i].orderNo === o.orderNo) { hit = i; break; }
+    if (hit >= 0) list[hit] = o;
+    else list.unshift(o);
+    write(K_ORDERS, list.slice(0, 100));
+  }
+  function saveOrder(o) { putOrder(o); }
+  function getOrder(no) {
+    return orders().filter(function (o) { return o.orderNo === no; })[0] || null;
+  }
+
+  function buildMail(o) {
+    var lines = o.items.map(function (it) {
+      return "・" + it.name + (it.optionLabel ? "（" + it.optionLabel + "）" : "") + " ×" + it.qty + "　" + priceLabel(it.price * it.qty) + (it.price > 0 ? "（未稅）" : "（詢價品）");
+    }).join("\n");
+    var body =
+      "【" + SHOP_NAME + "】" + (o.inquiry ? "新詢價單通知" : "新訂單通知") + "\n\n" +
+      (o.inquiry ? "單號：" : "訂單編號：") + o.orderNo + "\n" +
+      "建立時間：" + o.createdAt + "\n\n" +
+      "── 收件資訊 ──\n" +
+      "姓名：" + o.receiver.name + "\n" +
+      "手機：" + o.receiver.phone + "\n" +
+      "Email：" + o.receiver.email + "\n" +
+      (o.receiver.line ? "LINE：" + o.receiver.line + "\n" : "") +
+      "地址：" + o.addressText + "\n\n" +
+      "── 配送方式 ──\n" +
+      o.shipMethodName + "（" + o.shipEta + "）\n" +
+      (o.storeName ? "取貨門市：" + o.storeName + "（" + o.storeId + "）\n" : "") +
+      "\n── 商品明細 ──\n" + lines + "\n\n" +
+      "── 金額 ──\n" +
+      "未稅小計：" + totalsLabel(o.totals.subtotal) + "\n" +
+      (o.totals.discount ? "優惠折扣：-" + money(o.totals.discount) + (o.coupon ? "（" + o.coupon + "）" : "") + "\n" : "") +
+      "運費：" + (o.inquiry ? "待報價" : money(o.totals.shipping)) + "\n" +
+      "營業稅（5%）：" + totalsLabel(o.totals.tax) + "\n" +
+      (o.inquiry ? "應付總額：待報價（請店主回覆價格後再付款）\n\n" : "應付總額：" + money(o.totals.total) + "\n\n") +
+      "── 發票 ──\n" + o.invoiceText + "\n\n" +
+      (o.note ? "── 備註 ──\n" + o.note + "\n\n" : "") +
+      "付款方式：由店家另行聯繫（本頁不處理信用卡資料）\n" +
+      "送出時間：" + new Date().toLocaleString("zh-TW") + "\n";
+    return {
+      to: ORDER_EMAIL,
+      subject: (o.inquiry ? "新詢價單 " : "新訂單 ") + o.orderNo + "｜" + o.receiver.name + "｜" + (o.inquiry ? "待報價" : money(o.totals.total)),
+      body: body
+    };
+  }
+
+  /* ---------- 視圖 ---------- */
+  function stockTag(stock) {
+    var st = stockState(stock);
+    return '<span class="tag ' + st.tag + '">' + st.label + "</span>";
+  }
+
+  function thumbHtml(p) {
+    var im = (p.images || [])[0];
+    if (!im || !im.src) return '<div class="noimg"></div>';
+    return '<img src="' + im.src + '" alt="' + esc(im.alt || p.name) + '" loading="lazy" />';
+  }
+
+  function productCard(p) {
+    var min = Math.min.apply(null, p.variants.map(function (v) { return v.price; }));
+    var stock = p.variants.reduce(function (a, v) { return a + v.stock; }, 0);
+    var digital = (p.shipping || {}).class === "digital";
+    var tag = digital
+      ? '<span class="tag tag-ok">線上課程</span>'
+      : (min > 0 ? (stock > 0 ? stockTag(stock) : '<span class="tag tag-danger">已售完</span>') : '<span class="tag tag-ok">詢價品</span>');
+    return '<article class="pcard">' +
+      '<a href="#/product/' + p.slug + '" class="thumb">' + thumbHtml(p) + '</a>' +
+      '<div class="body">' +
+      '<a class="name" href="#/product/' + p.slug + '">' + esc(p.name) + "</a>" +
+      '<div class="small muted">' + esc(p.summary).slice(0, 46) + "…</div>" +
+      '<div class="price">' + (min > 0 ? money(min) + " 起" : (digital ? "報名詢價" : "詢價")) + "</div>" +
+      "<div>" + tag + "</div>" +
+      "</div></article>";
+  }
+
+  function pagerHtml(page, total, base) {
+    if (total <= PAGE_SIZE) return "";
+    var pages = Math.ceil(total / PAGE_SIZE);
+    var prev = page > 1
+      ? '<a href="' + base + (page - 1 > 1 ? "/" + (page - 1) : "") + '">← 上一頁</a>'
+      : '<span>← 上一頁</span>';
+    var next = page < pages
+      ? '<a href="' + base + "/" + (page + 1) + '">下一頁 →</a>'
+      : '<span>下一頁 →</span>';
+    return '<div class="pager">' + prev + '<span>' + page + " / " + pages + "（共 " + total + " 件）</span>" + next + "</div>";
+  }
+
+  function pageSlice(list, page) {
+    var pages = Math.max(1, Math.ceil(list.length / PAGE_SIZE));
+    var p = Math.min(Math.max(1, parseInt(page, 10) || 1), pages);
+    return { items: list.slice((p - 1) * PAGE_SIZE, p * PAGE_SIZE), page: p };
+  }
+
+  function viewHome(page) {
+    var banners = CATS.map(function (c) {
+      var child = c.children[0];
+      return { slug: child.slug, name: c.name, desc: c.description, banner: child.banner };
+    });
+    var pg = pageSlice(PRODUCTS, page);
+    var hot = pg.items;
+    var heroTitle = SITE ? (SITE.name + "｜線上選物") : "18 個品牌 × 一台購物車｜統一詢價站";
+    var heroDesc = SITE
+      ? (esc(SITE.name) + " 的線上商品，送出後由店主回覆價格與付款方式；實體寄送、數位與服務線上開通（未稅價，結帳另加 5% 營業稅）。本站為純靜態站，資料存在你的瀏覽器，下單以 Email／Google 表單送出。")
+      : "331.today 的 165 件作品、331.fyi 的線上課程，加上 15 個知識站的第一批選品，全部集中在這裡詢價；送出後由店主回覆價格與付款方式。實體寄送、數位與服務線上開通（未稅價，結帳另加 5% 營業稅）。本站為純靜態站，資料存在你的瀏覽器，下單以 Email／Google 表單送出。";
+    return '<main class="wrap">' +
+      '<section class="section">' +
+      '<h1>' + esc(heroTitle) + '</h1>' +
+      '<p class="muted">' + heroDesc + '</p>' +
+      "</section>" +
+      '<section class="section"><div class="grid">' +
+      banners.map(function (b) {
+        return '<a class="card" style="overflow:hidden" href="#/category/' + b.slug + '">' +
+          '<div class="banner"><img src="' + b.banner + '" alt="' + esc(b.name) + '" /></div>' +
+          '<div style="padding:12px 14px"><b>' + esc(b.name) + '</b><div class="small muted">' + esc(b.desc) + "</div></div></a>";
+      }).join("") +
+      "</div></section>" +
+      '<section class="section"><div style="display:flex;align-items:baseline;justify-content:space-between">' +
+      "<h2>熱門商品</h2><a class=\"small\" href=\"#/category\">看全部 " + PRODUCTS.length + " 件 →</a></div>" +
+      '<div class="grid">' + hot.map(productCard).join("") + "</div>" +
+      pagerHtml(pg.page, PRODUCTS.length, "#/p") + "</section>" +
+      "</main>";
+  }
+
+  function viewCategories() {
+    return '<main class="wrap"><section class="section"><h1>全部商品</h1>' +
+      '<p class="muted">共 ' + PRODUCTS.length + " 件商品、兩層分類。</p></section>" +
+      CATS.map(function (c) {
+        return '<section class="section"><h2>' + esc(c.name) + "</h2>" +
+          '<p class="small muted">' + esc(c.description) + "</p>" +
+          '<div class="grid">' + c.children.map(function (ch) {
+            var items = PRODUCTS.filter(function (p) { return p.category === ch.slug; });
+            return '<a class="card" style="overflow:hidden" href="#/category/' + ch.slug + '">' +
+              '<div class="banner"><img src="' + ch.banner + '" alt="' + esc(ch.name) + '" /></div>' +
+              '<div style="padding:12px 14px"><b>' + esc(ch.name) + '</b><div class="small muted">' + esc(ch.description) + "（" + items.length + " 件）</div></div></a>";
+          }).join("") + "</div></section>";
+      }).join("") + "</main>";
+  }
+
+  function findCat(slug) {
+    var out = null;
+    CATS.forEach(function (c) {
+      if (c.slug === slug) out = { parent: c, child: null, name: c.name, title: c.title || c.name, description: c.description };
+      c.children.forEach(function (ch) {
+        if (ch.slug === slug) out = { parent: c, child: ch, name: ch.name, title: ch.name, description: ch.description };
+      });
+    });
+    return out;
+  }
+
+  function viewCategory(slug, page) {
+    var cat = findCat(slug);
+    if (!cat) return viewNotFound();
+    // 上層分類頁要把所有子分類的商品一起列出來（各站購物車就指到自己的上層分類）
+    var items = cat.child
+      ? PRODUCTS.filter(function (p) { return p.category === slug; })
+      : PRODUCTS.filter(function (p) {
+        return cat.parent.children.some(function (ch) { return ch.slug === p.category; });
+      });
+    var pg = pageSlice(items, page);
+    var crumb = '<div class="crumb"><a href="#/">首頁</a> / <a href="#/category">全部商品</a> / ' +
+      (cat.child ? '<a href="#/category/' + cat.parent.slug + '">' + esc(cat.parent.name) + "</a> / " : "") + esc(cat.name) + "</div>";
+    var kids = (!cat.child && cat.parent.children.length > 2)
+      ? '<div class="grid" style="margin-top:18px">' + cat.parent.children.map(function (ch) {
+        var n = PRODUCTS.filter(function (p) { return p.category === ch.slug; }).length;
+        return '<a class="card" style="overflow:hidden" href="#/category/' + ch.slug + '">' +
+          '<div class="banner"><img src="' + ch.banner + '" alt="' + esc(ch.name) + '" /></div>' +
+          '<div style="padding:12px 14px"><b>' + esc(ch.name) + '</b><div class="small muted">' + esc(ch.description) + "（" + n + " 件）</div></div></a>";
+      }).join("") + "</div>"
+      : "";
+    return '<main class="wrap">' + crumb +
+      '<section class="section"><h1>' + esc(cat.title) + "</h1><p class=\"muted\">" + esc(cat.description) + "</p>" + kids +
+      '<h2 style="margin-top:24px">' + (cat.child ? "商品" : "全部 " + items.length + " 件") + "</h2>" +
+      '<div class="grid" style="margin-top:12px">' + pg.items.map(productCard).join("") + "</div>" +
+      pagerHtml(pg.page, items.length, "#/category/" + slug) + "</section></main>";
+  }
+
+  function viewProduct(slug) {
+    var p = PRODUCTS.filter(function (x) { return x.slug === slug; })[0];
+    if (!p) return viewNotFound();
+    var digital = (p.shipping || {}).class === "digital";
+    var sel = {};
+    p.specs.forEach(function (s) {
+      var first = p.variants.filter(function (v) { return v.stock > 0; })[0] || p.variants[0];
+      sel[s.name] = first.options[s.name];
+    });
+    state.product = { slug: slug, sel: sel, qty: 1 };
+    var catName = findCat(p.category) ? findCat(p.category).name : p.category;
+    var catCrumb = catName === p.name
+      ? "" // 課程的商品名與子分類同名，避免同一層出現兩次
+      : '<a href="#/category/' + p.category + '">' + esc(catName) + "</a> / ";
+    return '<main class="wrap">' +
+      '<div class="crumb"><a href="#/">首頁</a> / <a href="#/category">全部商品</a> / ' + catCrumb + esc(p.name) + "</div>" +
+      '<div class="pdp">' +
+      '<div><div class="gallery"><div class="main">' + (p.images[0] ? '<img id="pdpMain" src="' + p.images[0].src + '" alt="' + esc(p.images[0].alt || p.name) + '" />' : '<div class="noimg"></div>') + '</div>' +
+      '<div class="thumbs" id="pdpThumbs">' + p.images.map(function (im, i) {
+        return '<img class="' + (i === 0 ? "active" : "") + '" data-src="' + im.src + '" src="' + im.src + '" alt="' + esc(im.alt || p.name) + '" />';
+      }).join("") + "</div></div></div>" +
+      '<div class="pdpinfo" id="pdpInfo">' + pdpInfoHtml(p) + "</div>" +
+      "</div>" +
+      '<section class="section"><h2>商品說明</h2><div class="product-desc">' + p.description + "</div></section>" +
+      '<section class="section"><h2>' + (digital ? "開通與退費" : "出貨與退換") + "</h2>" +
+      '<div class="blocks" style="border-top:0">' +
+      (digital
+        ? '<div class="blk"><b>開通方式</b><div>報名送出後由店主以 Email 聯繫，確認付款後線上開通（不需寄送、不計運費）。</div></div>' +
+          '<div class="blk"><b>退費</b><div>數位內容一經開通即不適用 7 天猶豫期；開通前可全額退費，詳見 <a href="#/policy/returns">退換貨政策</a>。</div></div>'
+        : '<div class="blk"><b>運費</b><div>' + S.shipping.methods.map(function (m) { return esc(m.name) + " " + money(m.fee) + "（滿 " + money(m.freeOver) + " 免運）"; }).join("；") + "。偏遠地區宅配加收 " + money(S.shipping.remoteSurcharge) + "。</div></div>" +
+          '<div class="blk"><b>配送時間</b><div>' + S.shipping.methods.map(function (m) { return esc(m.name) + " " + esc(m.etaDays); }).join("；") + "</div></div>" +
+          '<div class="blk"><b>退換貨</b><div>收到商品次日起 7 天猶豫期，保持完整包裝可退換；詳見 <a href="#/policy/returns">退換貨政策</a>。</div></div>') +
+      '<div class="blk"><b>稅額</b><div>' + esc(S.tax.displayNote) + "</div></div>" +
+      "</div></section>" +
+      recos(p) +
+      "</main>";
+  }
+
+  function recos(p) {
+    function bySlugs(list, title) {
+      var items = list.map(function (s) { return PRODUCTS.filter(function (x) { return x.slug === s; })[0]; }).filter(Boolean);
+      if (!items.length) return "";
+      return '<section class="section"><h2>' + title + '</h2><div class="grid">' + items.map(productCard).join("") + "</div></section>";
+    }
+    return bySlugs(p.related || [], "相關商品") + bySlugs(p.addons || [], "加購推薦");
+  }
+
+  function currentVariant(p, sel) {
+    var vs = p.variants.filter(function (v) {
+      return p.specs.every(function (s) { return v.options[s.name] === sel[s.name]; });
+    });
+    return vs[0] || null;
+  }
+
+  function pdpInfoHtml(p) {
+    var sel = state.product && state.product.sel ? state.product.sel : {};
+    var v = currentVariant(p, sel) || p.variants[0];
+    var st = stockState(v.stock);
+    var maxQty = Math.min(v.stock, S.cart.maxQtyPerLine);
+    var digital = (p.shipping || {}).class === "digital";
+    var qty = state.product ? state.product.qty : 1;
+    return '<h1 style="font-size:22px">' + esc(p.name) + "</h1>" +
+      '<div class="small muted" style="margin-bottom:10px">' + esc(p.brand) + "・" + esc(findCat(p.category) ? findCat(p.category).name : p.category) + "・" + esc(v.sku) + "</div>" +
+      '<div><span class="price-lg">' + priceLabel(v.price) + "</span>" + (p.compareAt && p.compareAt > v.price ? '<span class="compare">' + money(p.compareAt) + "</span>" : "") + (v.price > 0 ? '<span class="small muted">　未稅</span>' : (digital ? '<span class="small muted">　本課程採報名詢價制</span>' : '<span class="small muted">　本件採詢價制</span>')) + "</div>" +
+      "<div style='margin:8px 0 2px'>" + (digital ? '<span class="tag tag-ok">線上開通・不需寄送</span>' : (v.price > 0 ? '<span class="tag ' + st.tag + '">' + st.label + "（" + v.stock + " 件）</span>" : '<span class="tag tag-ok">可詢價（每件一件）</span>')) + "</div>" +
+      p.specs.map(function (s) {
+        var values = s.values;
+        return '<div class="opt-row"><div class="opt-label">' + esc(s.name) + '</div><div class="opts" data-spec="' + esc(s.name) + '">' +
+          values.map(function (val) {
+            var tmp = Object.assign({}, sel); tmp[s.name] = val;
+            var vv = currentVariant(p, tmp);
+            var disabled = !vv || vv.stock <= 0;
+            return '<button type="button" class="opt' + (sel[s.name] === val ? " on" : "") + '" data-val="' + esc(val) + '"' + (disabled ? " disabled" : "") + ">" + esc(val) + "（" + (vv && vv.price > 0 ? money(vv.price) : "詢價") + "）</button>";
+          }).join("") + "</div></div>";
+      }).join("") +
+      '<div class="opt-row" style="display:flex;align-items:center;gap:14px">' +
+      '<span class="opt-label" style="margin:0">數量</span>' +
+      '<span class="qty"><button type="button" id="qMinus">−</button><input id="qInput" value="' + qty + '" inputmode="numeric" /><button type="button" id="qPlus">+</button></span>' +
+      '<span class="small muted">上限 ' + maxQty + " 件</span></div>" +
+      '<div class="pill-row" style="margin-top:16px">' +
+      '<button class="btn" type="button" id="addToCart"' + (v.stock <= 0 ? " disabled" : "") + ">" + (v.price > 0 ? "加入購物車" : "加入詢價單") + "</button>" +
+      '<button class="btn btn-ghost" type="button" id="buyNow"' + (v.stock <= 0 ? " disabled" : "") + ">" + (v.price > 0 ? "直接結帳" : "直接詢價") + "</button>" +
+      "</div>" +
+      '<div class="blocks">' + (digital
+        ? '<div class="blk"><b>開通</b><div>線上開通，不需寄送、不計運費；報名後由店主開通觀看權限</div></div>'
+        : '<div class="blk"><b>運費</b><div>' + S.shipping.methods.map(function (m) { return esc(m.name) + " " + money(m.fee); }).join("／") + "，滿額免運</div></div>") +
+      '<div class="blk"><b>付款</b><div class="small">本頁不處理卡號；送出訂單後由店家以 Email 聯繫付款方式（ATM／超商／匯款皆可）</div></div></div>';
+  }
+
+  function viewCart() {
+    var lines = cartLines();
+    if (!lines.length) {
+      var recos = PRODUCTS.slice(0, 3);
+      return '<main class="wrap"><section class="section"><h1>購物車</h1><div class="card empty"><p>購物車是空的。</p>' +
+        '<p class="small muted">下面三件是店裡最常被一起買的商品。</p></div>' +
+        '<h2 style="margin-top:24px">推薦商品</h2><div class="grid">' + recos.map(productCard).join("") + "</div></section></main>";
+    }
+    var t = computeTotals(lines, coupon, shipMethod(), "", "");
+    return '<main class="wrap">' +
+      '<div class="crumb"><a href="#/">首頁</a> / 購物車</div>' +
+      '<section class="section"><h1>購物車（' + lines.length + " 種）</h1>" +
+      '<div class="card" style="padding:0 14px;margin-top:16px"><table><thead><tr><th>商品</th><th class="num">單價</th><th class="num">數量</th><th class="num">小計</th><th></th></tr></thead><tbody>' +
+      lines.map(function (l) {
+        var cap = Math.min(l.stock, S.cart.maxQtyPerLine);
+        return "<tr data-sku=\"" + l.sku + '"><td><div style="display:flex;gap:10px;align-items:center">' +
+          '<img src="' + l.image + '" alt="" style="width:54px;height:54px;object-fit:cover;border:1px solid var(--line);border-radius:8px" />' +
+          "<div><a href=\"#/product/" + (idx[l.sku] ? idx[l.sku].product.slug : "") + '">' + esc(l.name) + '</a><div class="small muted">' + esc(l.optionLabel) + "</div></div></div></td>" +
+          '<td class="num">' + priceLabel(l.price) + "</td>" +
+          '<td class="num"><span class="qty"><button type="button" data-act="minus">−</button><input data-act="qty" value="' + l.qty + '" /><button type="button" data-act="plus">+</button></span><div class="small muted">上限 ' + cap + "</div></td>" +
+          '<td class="num">' + priceLabel(l.price * l.qty) + "</td>" +
+          '<td class="num"><button class="btn btn-ghost btn-sm" type="button" data-act="remove">移除</button></td></tr>';
+      }).join("") +
+      "</tbody></table></div>" +
+      '<div class="two" style="margin-top:18px;align-items:start">' +
+      '<div class="card" style="padding:14px"><div class="opt-label">優惠碼</div>' +
+      '<div style="display:flex;gap:8px"><input id="couponInput" placeholder="輸入優惠碼" value="' + esc(coupon || "") + '" /><button class="btn btn-ghost" type="button" id="couponApply">套用</button></div>' +
+      '<div class="err" id="couponMsg">' + (coupon ? "已套用 " + esc(coupon) : "") + "</div>" +
+      '<div class="small muted">可用：' + S.coupons.filter(function (c) { return c.active; }).map(function (c) { return esc(c.code); }).join("、") + "</div></div>" +
+      '<div class="card" style="padding:14px"><div class="totals">' +
+      '<div><span>未稅小計</span><span>' + totalsLabel(t.subtotal) + "</span></div>" +
+      '<div><span>優惠折扣</span><span>' + (t.discount ? "-" + money(t.discount) : money(0)) + "</span></div>" +
+      '<div><span>運費</span><span>' + (t.inquiry ? "待報價" : (t.digital ? "免運（線上開通）" : (t.shipping ? money(t.shipping) : "免運"))) + "</span></div>" +
+      '<div><span>營業稅（5%）</span><span>' + totalsLabel(t.tax) + "</span></div>" +
+      '<div class="grand"><span>總計</span><span>' + totalsLabel(t.total) + "</span></div>" +
+      "</div>" +
+      '<button class="btn" type="button" id="toCheckout" style="width:100%;margin-top:14px">前往結帳</button>' +
+      '<div class="small muted" style="margin-top:8px">' + esc(S.tax.displayNote) + "</div></div></div>" +
+      "</section></main>";
+  }
+
+  /* ---------- 結帳 ---------- */
+  var state = {
+    product: null,
+    step: 1,
+    form: {
+      name: "", phone: "", email: "", line: "", note: "",
+      county: "", district: "", zip: "", address: "",
+      shipMethod: S.shipping.methods[0].id, cvsBrand: "7-ELEVEN", storeName: "", storeId: ""
+    },
+    errors: {}
+  };
+
+  function shipMethod() {
+    return state.form.shipMethod || S.shipping.methods[0].id;
+  }
+
+  /* ---------- 超商取貨門市（三大超商動態下拉） ----------
+     門市資料放在 static-app\data\stores.json，由 build.mjs 併進 DB.stores。
+     沒有資料時自動退回「門市名稱＋代號」手動輸入，流程不會卡住。 */
+  var STORES = (DB.stores && DB.stores.items) || [];
+  var CVS_BRANDS = ["7-ELEVEN", "全家", "萊爾富"];
+
+  function cvsBrandsAvailable() {
+    if (!STORES.length) return CVS_BRANDS;
+    var out = [];
+    CVS_BRANDS.forEach(function (b) {
+      if (STORES.some(function (s) { return s.brand === b; })) out.push(b);
+    });
+    return out.length ? out : CVS_BRANDS;
+  }
+
+  function storesIn(brand, county, district) {
+    if (!county || !district) return [];
+    return STORES.filter(function (s) {
+      return s.brand === (brand || "7-ELEVEN") && s.county === county && s.district === district;
+    });
+  }
+
+  // 品牌下拉（三大超商）
+  function cvsStorePickerHtml(f) {
+    var brands = cvsBrandsAvailable();
+    return '<div class="form-row"><label class="fl">取貨超商 *</label><select id="f_cvsBrand" data-field="cvsBrand">' +
+      brands.map(function (b) {
+        return '<option value="' + esc(b) + '"' + (f.cvsBrand === b ? " selected" : "") + ">" + esc(b) + "</option>";
+      }).join("") +
+      "</select>" + (STORES.length ? '<div class="small muted" style="margin-top:2px">門市清單共 ' + STORES.length + " 間，依縣市／鄉鎮連動。</div>" : "") + "</div>";
+  }
+
+  // 門市下拉：依「品牌＋縣市＋鄉鎮市區」連動；挑了門市會自動帶入門市代號
+  function cvsStoreSelectHtml(f) {
+    if (!STORES.length) {
+      return '<div class="note" style="margin-top:10px">尚未匯入門市清單，請直接填寫門市名稱與代號（店主可匯入 <code>static-app\\data\\stores.json</code> 後改為自動下拉）。</div>' +
+        '<div class="two"><div class="form-row"><label class="fl">取貨門市名稱 *</label><input id="f_storeName" value="' + esc(f.storeName) + '" data-field="storeName" /><div class="err" data-err="storeName">' + (state.errors.storeName || "") + "</div></div>" +
+        '<div class="form-row"><label class="fl">門市代號 *</label><input id="f_storeId" value="' + esc(f.storeId) + '" data-field="storeId" /><div class="err" data-err="storeId">' + (state.errors.storeId || "") + "</div></div></div>";
+    }
+    var list = storesIn(f.cvsBrand, f.county, f.district);
+    var opts;
+    if (!f.county || !f.district) {
+      opts = '<option value="">請先選縣市與鄉鎮市區</option>';
+    } else if (!list.length) {
+      opts = '<option value="">此區查無 ' + esc(f.cvsBrand) + " 門市</option>";
+    } else {
+      opts = '<option value="">請選擇門市（共 ' + list.length + " 間）</option>" + list.map(function (s) {
+        return '<option value="' + esc(s.name) + '" data-id="' + esc(s.id) + '"' + (f.storeName === s.name ? " selected" : "") + ">" + esc(s.name) + "（" + esc(s.id) + "）" + esc(s.address || "") + "</option>";
+      }).join("");
+    }
+    return '<div class="two"><div class="form-row"><label class="fl">取貨門市 *</label><select id="f_storeName" data-field="storeName">' + opts + '</select><div class="err" data-err="storeName">' + (state.errors.storeName || "") + "</div></div>" +
+      '<div class="form-row"><label class="fl">門市代號</label><input id="f_storeId" value="' + esc(f.storeId) + '" data-field="storeId" readonly placeholder="選門市後自動帶入" /><div class="err" data-err="storeId">' + (state.errors.storeId || "") + "</div></div></div>";
+  }
+
+  function formEl(id) { return document.getElementById(id); }
+  function val(name) { return (state.form[name] || "").trim(); }
+
+  // 發票：本站不線上收集發票需求（詢價／預訂單只是遞交需求，尚未交易）。
+  // 一律在訂單備註寫明：成交後由店主與客人確認「開立或不開立」。
+  var INVOICE_NOTE = "詢價單遞交需求／發票於成交後確認";
+
+  function invoiceText() {
+    return INVOICE_NOTE;
+  }
+
+  function viewCheckout() {
+    var lines = cartLines();
+    if (!lines.length) {
+      return '<main class="wrap"><section class="section"><div class="card empty"><p>購物車是空的，先挑幾件商品吧。</p><a class="btn" href="#/category">去看商品</a></div></section></main>';
+    }
+    var t = computeTotals(lines, coupon, state.form.shipMethod, state.form.county, state.form.district);
+    return '<main class="wrap">' +
+      '<div class="crumb"><a href="#/">首頁</a> / <a href="#/cart">購物車</a> / 結帳</div>' +
+      '<section class="section"><h1>結帳</h1>' +
+      '<div class="steps"><span class="' + (state.step === 1 ? "on" : "") + '">1 資料</span><span class="' + (state.step === 2 ? "on" : "") + '">' + (allDigital(cartLines()) ? "2 開通" : "2 配送") + '</span><span class="' + (state.step === 3 ? "on" : "") + '">3 確認與送出</span></div>' +
+      '<div class="two" style="grid-template-columns:minmax(0,1fr) 360px;align-items:start">' +
+      '<div class="card" style="padding:18px">' + checkoutStepHtml() + "</div>" +
+      '<div class="card" style="padding:16px;position:sticky;top:80px"><h3 style="margin-top:0">訂單摘要</h3>' +
+      lines.map(function (l) {
+        return '<div class="kv"><span class="small">' + esc(l.name) + "<br /><span class=\"muted\">" + esc(l.optionLabel) + " ×" + l.qty + "</span></span><span>" + priceLabel(l.price * l.qty) + "</span></div>";
+      }).join("") +
+      '<div class="totals" style="margin-top:8px">' +
+      '<div><span>未稅小計</span><span>' + totalsLabel(t.subtotal) + "</span></div>" +
+      '<div><span>優惠折扣</span><span>' + (t.discount ? "-" + money(t.discount) : money(0)) + "</span></div>" +
+      '<div><span>運費（' + (t.digital ? "線上開通" : esc(t.method.name)) + "）</span><span>" + (t.inquiry ? "待報價" : (t.digital ? "免運（不寄送）" : (t.shipping ? money(t.shipping) : "免運"))) + "</span></div>" +
+      '<div><span>營業稅（5%）</span><span>' + totalsLabel(t.tax) + "</span></div>" +
+      '<div class="grand"><span>總計</span><span>' + totalsLabel(t.total) + "</span></div></div>" +
+      '<div class="small muted" style="margin-top:8px">' + (t.inquiry ? (t.digital ? "本單為線上課程：送出後由店家回覆開通方式與費用，不會立即扣款，也不需寄送。" : "本單含詢價品：送出後由店家回覆價格與付款方式，不會立即扣款。") : "售價未稅，稅額於結帳另加。") + "</div>" +
+      "</div></div></section></main>";
+  }
+
+  function checkoutStepHtml() {
+    var f = state.form;
+    var lines = cartLines();
+    if (state.step === 1) {
+      return "<h2>收件資料</h2>" +
+        '<div class="form-row"><label class="fl">姓名 *</label><input id="f_name" value="' + esc(f.name) + '" data-field="name" /><div class="err" data-err="name">' + (state.errors.name || "") + "</div></div>" +
+        '<div class="two"><div class="form-row"><label class="fl">手機 *</label><input id="f_phone" value="' + esc(f.phone) + '" data-field="phone" inputmode="tel" /><div class="err" data-err="phone">' + (state.errors.phone || "") + "</div></div>" +
+        '<div class="form-row"><label class="fl">Email *</label><input id="f_email" value="' + esc(f.email) + '" data-field="email" type="email" /><div class="err" data-err="email">' + (state.errors.email || "") + "</div></div></div>" +
+        '<div class="form-row"><label class="fl">LINE ID（選填）</label><input id="f_line" value="' + esc(f.line) + '" data-field="line" placeholder="例：0968222201 或 lineid（方便店主用 LINE 聯絡你）" /><div class="err" data-err="line">' + (state.errors.line || "") + '</div><div class="small muted" style="margin-top:2px">不填也可以，店主會改用 Email／手機與你聯絡。</div></div>' +
+        '<div class="form-row"><label class="fl">備註</label><textarea id="f_note" data-field="note" rows="2">' + esc(f.note) + "</textarea></div>" +
+        (lines.every(function (l) { return l.price <= 0; }) ? '<div class="note" style="margin-top:6px">本單為<b>詢價／預訂需求</b>：送出後只是把需求交給店主，尚未成立交易、也不用先付款。店主會依你留的 Email／手機回覆報價與付款方式。</div>' : "") +
+        '<div class="pill-row" style="justify-content:space-between;margin-top:16px">' +
+        '<a class="btn btn-ghost" href="#/cart">回購物車</a>' +
+        '<button class="btn" type="button" id="stepNext1">下一步：配送</button></div>';
+    }
+    if (state.step === 2) {
+      var method = S.shipping.methods.filter(function (m) { return m.id === f.shipMethod; })[0] || S.shipping.methods[0];
+      // 整車數位商品：沒有配送方式可選，改為「線上開通」說明
+      if (allDigital(cartLines())) {
+        return "<h2>線上開通</h2>" +
+          '<div class="note">本單全部是線上課程／數位內容，<b>不需填地址、不需選配送方式、也不會計運費</b>。送出後店主會用 Email 與你聯繫，確認付款後開通觀看權限。</div>' +
+          '<div class="blocks" style="border-top:0">' +
+          '<div class="blk"><b>聯絡方式</b><div>' + esc(f.name) + "・" + esc(f.phone) + "<br />" + esc(f.email) + (f.line ? "<br />LINE：" + esc(f.line) : "") + "</div></div>" +
+          '<div class="blk"><b>開通流程</b><div>店主回覆課程費用與匯款方式 → 完成付款 → 開通線上觀看</div></div>' +
+          "</div>" +
+          '<div class="pill-row" style="justify-content:space-between;margin-top:16px">' +
+          '<button class="btn btn-ghost" type="button" id="stepBack2">上一步</button>' +
+          '<button class="btn" type="button" id="stepNext2">下一步：確認</button></div>';
+      }
+      return "<h2>配送方式</h2><div class=\"radio-list\" id=\"shipList\">" +
+        S.shipping.methods.map(function (m) {
+          return '<label class="' + (f.shipMethod === m.id ? "on" : "") + '"><input type="radio" name="ship" value="' + m.id + '"' + (f.shipMethod === m.id ? " checked" : "") + ' /><span><b>' + esc(m.name) + " " + money(m.fee) + '</b><br /><span class="small muted">' + esc(m.carrier) + "・" + esc(m.etaDays) + "・滿 " + money(m.freeOver) + " 免運</span></span></label>";
+        }).join("") + "</div>" +
+        (method.id === "cvs_pickup" ? cvsStorePickerHtml(f) : "") +
+        '<div class="two"><div class="form-row"><label class="fl">縣市 *</label><select id="f_county" data-field="county"><option value="">請選擇</option>' +
+        ZIP.map(function (c) { return '<option value="' + esc(c.name) + '"' + (f.county === c.name ? " selected" : "") + ">" + esc(c.name) + "</option>"; }).join("") +
+        '</select><div class="err" data-err="county">' + (state.errors.county || "") + "</div></div>" +
+        '<div class="form-row"><label class="fl">鄉鎮市區 *</label><select id="f_district" data-field="district"><option value="">請先選縣市</option>' +
+        (f.county ? ((ZIP.filter(function (c) { return c.name === f.county; })[0] || {}).districts || []).map(function (d) {
+          return '<option value="' + esc(d.name) + '" data-zip="' + d.zip + '"' + (f.district === d.name ? " selected" : "") + ">" + esc(d.name) + "</option>";
+        }).join("") : "") +
+        '</select><div class="err" data-err="district">' + (state.errors.district || "") + "</div></div></div>" +
+        (method.id === "cvs_pickup"
+          ? cvsStoreSelectHtml(f)
+          : '<div class="form-row"><label class="fl">郵遞區號</label><input id="f_zip" value="' + esc(f.zip) + '" data-field="zip" readonly /><div class="err" data-err="zip">' + (state.errors.zip || "") + "</div></div>" +
+            '<div class="form-row"><label class="fl">地址 *</label><input id="f_address" value="' + esc(f.address) + '" data-field="address" placeholder="街道、巷弄、門牌" /><div class="err" data-err="address">' + (state.errors.address || "") + "</div></div>") +
+        '<div class="pill-row" style="justify-content:space-between;margin-top:16px">' +
+        '<button class="btn btn-ghost" type="button" id="stepBack2">上一步</button>' +
+        '<button class="btn" type="button" id="stepNext2">下一步：確認</button></div>';
+    }
+    var anyInquiry = lines.some(function (l) { return l.price <= 0; });
+    return "<h2>確認並送出</h2>" +
+      '<div class="note">送出後會建立一筆本機訂單，並產生一封訂單 Email（可一鍵開啟郵件程式寄出，或複製後自行寄送）。本站不收取任何卡號。</div>' +
+      (anyInquiry ? '<div class="note" style="margin-top:10px">⚠ 這是一張<b>詢價／預訂單</b>：只是把你的需求交給店主，<b>尚未成立交易、也不是發票開立憑證</b>。店主回覆報價、雙方確認成交與付款後，才會處理出貨或線上開通。</div>' : "") +
+      '<div class="blocks" style="margin-top:12px">' +
+      '<div class="blk"><b>收件人</b><div>' + esc(f.name) + "・" + esc(f.phone) + "<br />" + esc(f.email) + (f.line ? "<br />LINE：" + esc(f.line) : "") + "</div></div>" +
+      '<div class="blk"><b>配送</b><div>' + (allDigital(cartLines())
+        ? "線上開通（不寄送）"
+        : esc((S.shipping.methods.filter(function (m) { return m.id === f.shipMethod; })[0] || {}).name || "") +
+          (f.storeName ? "・" + esc(f.storeName) + "（" + esc(f.storeId) + "）" : "・" + esc(f.county + f.district + f.address))) + "</div></div>" +
+      '<div class="blk"><b>發票</b><div>詢價單遞交需求／發票於成交後確認<div class="small muted" style="margin-top:4px">本單僅遞交需求、尚未成立交易，也不是發票開立憑證。需要開立發票（含統編報帳）請於成交後告知店主，或依雙方約定不開立。</div></div></div>' +
+      '<div class="blk"><b>付款</b><div>送出訂單後由店家 Email 聯繫（ATM 虛擬帳號／超商代碼／匯款）</div></div>' +
+      "</div>" +
+      '<div class="pill-row" style="justify-content:space-between;margin-top:16px">' +
+      '<button class="btn btn-ghost" type="button" id="stepBack3">上一步</button>' +
+      '<button class="btn" type="button" id="submitOrder">確認送出訂單</button></div>';
+  }
+
+  function validateStep(step) {
+    var f = state.form, e = {};
+    if (step === 1) {
+      if (!f.name || f.name.length < 2) e.name = "請填寫姓名（至少 2 個字）";
+      if (!/^09\d{8}$/.test(f.phone)) e.phone = "手機格式為 09xxxxxxxx";
+      if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(f.email)) e.email = "Email 格式不正確";
+      // LINE ID 選填：不填不擋，只做長度上限
+      if (f.line && String(f.line).trim().length > 60) e.line = "LINE ID 請在 60 個字以內";
+    }
+    if (step === 2) {
+      if (allDigital(cartLines())) return true; // 線上開通：不需要地址與配送方式
+      if (!f.county) e.county = "請選縣市";
+      if (!f.district) e.district = "請選鄉鎮市區";
+      if (f.shipMethod === "cvs_pickup") {
+        if (!f.cvsBrand) e.cvsBrand = "請選取貨超商";
+        if (!f.storeName) e.storeName = "請選取貨門市";
+        if (!f.storeId) e.storeId = "請填門市代號";
+      } else {
+        if (!f.address || f.address.length < 4) e.address = "請填完整地址";
+      }
+    }
+    state.errors = e;
+    return Object.keys(e).length === 0;
+  }
+
+  function submitOrder() {
+    var f = state.form;
+    var lines = cartLines();
+    var t = computeTotals(lines, coupon, f.shipMethod, f.county, f.district);
+    var method = t.method;
+    var order = {
+      orderNo: newOrderNo(),
+      createdAt: new Date().toLocaleString("zh-TW"),
+      status: "pending",
+      statusLabel: t.inquiry ? "待報價" : "待確認付款",
+      inquiry: !!t.inquiry,
+      items: lines.map(function (l) {
+        return { sku: l.sku, name: l.name, optionLabel: l.optionLabel, qty: l.qty, price: l.price };
+      }),
+      totals: { subtotal: t.subtotal, discount: t.discount, shipping: t.shipping, tax: t.tax, total: t.total },
+      coupon: coupon || "",
+      receiver: { name: f.name, phone: f.phone, email: f.email, line: f.line || "" },
+      shipMethod: t.digital ? "digital" : f.shipMethod,
+      shipMethodName: t.digital ? "線上開通（不寄送）" : (f.shipMethod === "cvs_pickup" ? ("超商取貨（" + (f.cvsBrand || "7-ELEVEN") + "）") : method.name),
+      shipEta: t.digital ? "報名後開通" : method.etaDays,
+      cvsBrand: f.shipMethod === "cvs_pickup" ? (f.cvsBrand || "7-ELEVEN") : "",
+      storeName: f.storeName,
+      storeId: f.storeId,
+      addressText: t.digital
+        ? "線上開通（不寄送）"
+        : (f.shipMethod === "cvs_pickup"
+          ? ((f.cvsBrand || "7-ELEVEN") + " " + f.county + f.district + "｜" + f.storeName + "（" + f.storeId + "）")
+          : (f.zip + " " + f.county + f.district + f.address)),
+      invoiceType: "after_deal",
+      invoiceText: INVOICE_NOTE,
+      note: f.note
+    };
+    saveOrder(order);
+    cart = [];
+    coupon = null;
+    saveCart();
+    write(K_COUPON, null);
+    state.step = 1;
+
+    var mail = buildMail(order);
+
+    // ① 送出即自動開一封預填信（在點擊同一個手勢內，較不會被瀏覽器攔）
+    var opened = false;
+    if (CONFIG.autoOpenMail) {
+      try {
+        var a = document.createElement("a");
+        a.href = mailtoHref(mail);
+        a.target = "_blank";
+        a.style.display = "none";
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        opened = true;
+      } catch (e) { opened = false; }
+    }
+
+    // ② 有端點就順手送出（失敗不阻擋流程，頁面仍有複製／郵件兩條退路）
+    var orderChannels = { google: false, api: false, emailed: false };
+    if (ORDER_ENDPOINT) {
+      fetch(ORDER_ENDPOINT, {
+        method: "POST",
+        headers: { "content-type": "application/json", accept: "application/json" },
+        body: JSON.stringify({ to: mail.to, subject: mail.subject, body: mail.body, order: order })
+      })
+        .then(function (r) { return r.json().then(function (d) { return { ok: r.ok, d: d }; }); })
+        .then(function (res) {
+          if (res.ok && res.d && res.d.ok) {
+            orderChannels.api = true;
+            orderChannels.emailed = !!res.d.emailed;
+            order.channels = orderChannels;
+            putOrder(order);
+            toast(res.d.emailed ? "訂單已自動寄給店家" : "店家端已收到訂單（寄信金鑰未設定，未實際寄出）");
+            if (location.hash.indexOf(order.orderNo) >= 0) render();
+          } else {
+            toast("自動寄出失敗，請用下方「開啟郵件程式」或「複製訂單內容」");
+          }
+        })
+        .catch(function () { toast("自動寄出失敗，請用下方「開啟郵件程式」或「複製訂單內容」"); });
+    }
+
+    // ③ 有設 Google 表單就同步寫入一份（店家由 Google 的通知信收到）
+    var viaGoogle = submitGoogleForm(order);
+    if (viaGoogle) {
+      orderChannels.google = true;
+      toast("已寫入 Google 表單，店家會收到通知");
+    }
+
+    order.channels = orderChannels;
+    putOrder(order);
+
+    location.hash = "#/order/" + order.orderNo + "?new=1" + (opened ? "&mail=1" : "");
+  }
+
+  // 把訂單塞進 Google 表單（隱藏 form + iframe，不會離開本站；Google 表單可設「回覆通知」寄給店家）
+  function submitGoogleForm(o) {
+    var gf = CONFIG.googleForm;
+    if (!gf || !gf.action) return false;
+    var frameName = "gf_sink_" + Date.now();
+    var iframe = document.createElement("iframe");
+    iframe.name = frameName;
+    iframe.style.display = "none";
+    document.body.appendChild(iframe);
+
+    var form = document.createElement("form");
+    form.method = "POST";
+    form.action = gf.action;
+    form.target = frameName;
+    form.style.display = "none";
+    form.setAttribute("accept-charset", "UTF-8");
+
+    var data = {
+      orderNo: o.orderNo,
+      name: o.receiver.name,
+      phone: o.receiver.phone,
+      email: o.receiver.email,
+      total: o.inquiry ? "待報價" : o.totals.total,
+      items: o.items.map(function (it) { return it.name + "(" + it.optionLabel + ")x" + it.qty; }).join(" / "),
+      address: o.addressText,
+      ship: o.shipMethodName,
+      invoice: o.invoiceText,
+      note: (o.receiver.line ? "LINE：" + o.receiver.line + "\n" : "") + (o.note || "")
+    };
+    var entries = gf.entries || {};
+    var filled = 0;
+    Object.keys(data).forEach(function (k) {
+      var entry = entries[k];
+      if (!entry) return;
+      var inp = document.createElement("input");
+      inp.type = "hidden";
+      inp.name = entry;
+      inp.value = String(data[k]);
+      form.appendChild(inp);
+      filled++;
+    });
+    if (!filled) {
+      iframe.remove();
+      return false;
+    }
+    document.body.appendChild(form);
+    form.submit();
+    setTimeout(function () {
+      form.remove();
+      iframe.remove();
+    }, 1500);
+    return true;
+  }
+
+  function viewOrder(no, isNew, mailOpened) {
+    var o = getOrder(no);
+    if (!o) {
+      return '<main class="wrap"><section class="section"><div class="card empty"><p>找不到訂單 ' + esc(no) + "（本機沒有這筆紀錄）。</p>" +
+        '<p class="small muted">本機訂單只存在這台電腦的瀏覽器；清快取或換瀏覽器就會消失。</p><a class="btn" href="#/lookup">查其他訂單</a></div></section></main>';
+    }
+    var mail = buildMail(o);
+    var ch = o.channels || {};
+    var delivered = !!(ch.google || ch.emailed);
+    return '<main class="wrap"><section class="section">' +
+      '<h1>訂單 ' + esc(o.orderNo) + "</h1>" +
+      '<div class="small muted">建立於 ' + esc(o.createdAt) + "・狀態 <span class=\"tag tag-warn\">" + esc(o.statusLabel) + "</span></div>" +
+      (isNew ? '<div class="note" style="margin-top:12px"><b>' +
+        (delivered ? "訂單已自動送出，你不用再寄信（想留副本再用下面按鈕）" : "還沒寄出：這是草稿，要你按「傳送」才會到店家") + "</b><br />" +
+        (ch.google ? "已寫入 <b>Google 表單</b>，店家會收到 Google 的回覆通知信（收件者 <b>" + esc(ORDER_EMAIL) + "</b>）。<br />" : "") +
+        (ch.emailed ? "已透過本站寄信服務寄出。<br />" : "") +
+        (ch.api && !ch.emailed ? "店家端已收到訂單資料，但寄信金鑰還沒設定，信件沒有實際寄出。<br />" : "") +
+        (mailOpened ? "同時幫你開了一封預填信件（收件者 <b>" + esc(ORDER_EMAIL) + "</b>），要按「傳送」才會寄出。" : "") +
+        (delivered ? "" : "信件不會自己送出。電腦沒設定郵件程式、視窗沒彈出來，或想用手機／網頁信箱，就用下面「用 Gmail 網頁寄出」或「複製訂單內容」。") +
+        (delivered ? "" : (ORDER_ENDPOINT ? "" : "<br /><span class=\"muted\">本站沒有接寄信服務，所以不會自動寄出。</span>")) +
+        "</div>" : "") +
+      '<div class="pill-row" style="margin:14px 0"><a class="btn" id="mailBtn" href="' + esc(mailtoHref(mail)) + '">開啟郵件程式</a>' +
+      '<a class="btn btn-ghost" id="gmailBtn" href="' + esc(gmailHref(mail)) + '" target="_blank" rel="noopener">用 Gmail 網頁寄出</a>' +
+      '<button class="btn btn-ghost" type="button" id="copyMail">複製訂單內容</button>' +
+      (ORDER_ENDPOINT ? '<button class="btn btn-ghost" type="button" id="postMail">直接送出（表單端點）</button>' : "") +
+      '<button class="btn btn-ghost" type="button" id="markPaid">我已付款，標記為已付款</button>' +
+      '<button class="btn btn-ghost" type="button" id="cancelOrder">取消訂單</button></div>' +
+      '<div class="two" style="grid-template-columns:minmax(0,1fr) 360px;align-items:start">' +
+      '<div class="card" style="padding:0 14px"><table><thead><tr><th>商品</th><th class="num">數量</th><th class="num">小計</th></tr></thead><tbody>' +
+      o.items.map(function (it) {
+        return "<tr><td>" + esc(it.name) + '<div class="small muted">' + esc(it.optionLabel) + "</div></td><td class=\"num\">×" + it.qty + '</td><td class="num">' + money(it.price * it.qty) + "</td></tr>";
+      }).join("") + "</tbody></table>" +
+      '<div class="totals" style="margin:12px 0">' +
+      '<div><span>未稅小計</span><span>' + totalsLabel(o.totals.subtotal) + "</span></div>" +
+      '<div><span>優惠折扣</span><span>' + (o.totals.discount ? "-" + money(o.totals.discount) : money(0)) + "</span></div>" +
+      '<div><span>運費</span><span>' + (o.inquiry ? "待報價" : (o.totals.shipping ? money(o.totals.shipping) : "免運")) + "</span></div>" +
+      '<div><span>營業稅（5%）</span><span>' + totalsLabel(o.totals.tax) + "</span></div>" +
+      '<div class="grand"><span>總計</span><span>' + totalsLabel(o.totals.total) + "</span></div></div></div>" +
+      '<div class="card" style="padding:16px"><h3 style="margin-top:0">收件與配送</h3>' +
+      '<div class="kv"><span class="muted">收件人</span><span>' + esc(o.receiver.name) + "</span></div>" +
+      '<div class="kv"><span class="muted">手機</span><span>' + esc(o.receiver.phone) + "</span></div>" +
+      '<div class="kv"><span class="muted">Email</span><span>' + esc(o.receiver.email) + "</span></div>" +
+      (o.receiver.line ? '<div class="kv"><span class="muted">LINE</span><span>' + esc(o.receiver.line) + "</span></div>" : "") +
+      '<div class="kv"><span class="muted">配送</span><span>' + esc(o.shipMethodName) + "</span></div>" +
+      '<div class="kv"><span class="muted">地址</span><span style="text-align:right">' + esc(o.addressText) + "</span></div>" +
+      '<div class="kv"><span class="muted">發票</span><span style="text-align:right">' + esc(o.invoiceText) + "</span></div>" +
+      '<div class="note" style="margin-top:12px">下一步：寄出訂單 → 店家回信確認金額 → 依指示付款（ATM／超商／匯款）→ 店家出貨。</div>' +
+      '<div class="small muted" style="margin-top:8px">客服 ' + esc(CONTACT.tel) + "・" + esc(S.shop.supportHours) + "・<a href=\"" + esc(CONTACT.line) + "\" target=\"_blank\" rel=\"noopener\">LINE</a></div></div></div>" +
+      "</section></main>";
+  }
+
+  function mailtoHref(mail) {
+    return "mailto:" + encodeURIComponent(mail.to) + "?subject=" + encodeURIComponent(mail.subject) + "&body=" + encodeURIComponent(mail.body);
+  }
+
+  // 沒有郵件軟體時的替代：Gmail 網頁版 compose（仍要自己按傳送，但至少不用設定郵件程式）
+  function gmailHref(mail) {
+    return "https://mail.google.com/mail/?view=cm&fs=1" +
+      "&to=" + encodeURIComponent(mail.to) +
+      "&su=" + encodeURIComponent(mail.subject) +
+      "&body=" + encodeURIComponent(mail.body);
+  }
+
+  function viewLookup() {
+    var list = orders();
+    return '<main class="wrap"><section class="section"><h1>訂單查詢</h1>' +
+      '<p class="muted">本機訂單（存在這台電腦的瀏覽器）' + (LOOKUP_ENDPOINT ? "；填了 Email 可跨裝置向店家查詢。" : "。換裝置或清快取就查不到，請保留店家寄回的 Email。") + "</p>" +
+      '<div class="card" style="padding:16px;margin-top:12px"><div class="two"><div class="form-row"><label class="fl">訂單編號</label><input id="lkNo" placeholder="SKxxxxxxxx" /></div>' +
+      '<div class="form-row"><label class="fl">下單 Email' + (LOOKUP_ENDPOINT ? "（跨裝置查詢必填）" : "") + '</label><input id="lkEmail" placeholder="' + (LOOKUP_ENDPOINT ? "buyer@example.com" : "可留空") + '" /></div></div>' +
+      '<button class="btn" type="button" id="lkBtn">查詢</button><div class="err" id="lkMsg"></div></div>' +
+      '<h2 style="margin-top:26px">最近的訂單</h2>' +
+      (list.length ? '<div class="card" style="padding:0 14px"><table><thead><tr><th>訂單</th><th>時間</th><th>金額</th><th>狀態</th><th></th></tr></thead><tbody>' +
+        list.map(function (o) {
+          return "<tr><td>" + esc(o.orderNo) + "</td><td class=\"small\">" + esc(o.createdAt) + '</td><td class="num">' + totalsLabel(o.totals.total) + '</td><td><span class="tag tag-warn">' + esc(o.statusLabel) + '</span></td><td><a href="#/order/' + o.orderNo + '">查看</a></td></tr>';
+        }).join("") + "</tbody></table></div>"
+        : '<div class="card empty">還沒有本機訂單。</div>') +
+      "</section></main>";
+  }
+
+  function viewPolicyReturns() {
+    return '<main class="wrap"><section class="section" style="max-width:820px">' +
+      "<h1>退換貨政策</h1>" +
+      '<p class="muted">適用於本站所有商品，依消費者保護法第 19 條提供 7 天猶豫期。</p>' +
+      "<h3>一、期限</h3><p>自收到商品次日起 7 天內可申請退貨或換貨；逾期恕不受理。鑑賞期非試用期，商品需保持完整包裝與未使用狀態。</p>" +
+      "<h3>二、可退換的情形</h3><ul><li>商品本身有瑕疵、破損或寄錯品項（含運費全額退還）。</li><li>到貨與訂購內容不符。</li><li>7 天猶豫期內改變心意（需自行負擔回程運費 80 元，超商 60 元）。</li></ul>" +
+      "<h3>三、不可退換的情形</h3><ul><li>已使用、清洗或損壞的商品。</li><li>個人衛生用品（如已拆封的清潔海綿、砧板）基於衛生考量。</li><li>活動贈品、加購品須與主商品一併退回。</li></ul>" +
+      "<h3>四、流程</h3><ol><li>Email 或電話聯繫客服，提供訂單編號與問題照片。</li><li>客服 1 個工作日內回覆，提供退貨方式（宅配取件或超商寄回）。</li><li>商品檢驗完成後 7 個工作日內退款，原路退回或提供匯款帳號。</li></ol>" +
+      '<div class="note">本站為純靜態示範站，退款由店家線下處理；實際交易前請與店家確認本政策。</div>' +
+      '<div class="small muted" style="margin-top:14px">客服 ' + esc(CONTACT.tel) + "・" + esc(CONTACT.email) + "・" + esc(S.shop.supportHours) + "・<a href=\"" + esc(CONTACT.line) + "\" target=\"_blank\" rel=\"noopener\">LINE</a></div>" +
+      "</section></main>";
+  }
+
+  function viewPolicyShipping() {
+    return '<main class="wrap"><section class="section" style="max-width:820px">' +
+      "<h1>運費與配送</h1>" +
+      '<div class="card" style="padding:0 14px;margin-top:14px"><table><thead><tr><th>方式</th><th>物流商</th><th class="num">運費</th><th class="num">免運門檻</th><th>時間</th></tr></thead><tbody>' +
+      S.shipping.methods.map(function (m) {
+        return "<tr><td>" + esc(m.name) + "</td><td>" + esc(m.carrier) + '</td><td class="num">' + money(m.fee) + '</td><td class="num">滿 ' + money(m.freeOver) + '</td><td class="small">' + esc(m.etaDays) + "</td></tr>";
+      }).join("") + "</tbody></table></div>" +
+      "<h3>偏遠地區</h3><p>以下地區宅配加收 " + money(S.shipping.remoteSurcharge) + "：" + S.shipping.remoteZones.map(esc).join("、") + "。</p>" +
+      "<h3>配送說明</h3><p>週一至週六出貨，例假日順延。超商取貨到店後以簡訊通知，取貨期限 7 天，逾期退回。</p>" +
+      "<h3>稅額</h3><p>" + esc(S.tax.displayNote) + "</p>" +
+      "</section></main>";
+  }
+
+  function viewNotFound() {
+    return '<main class="wrap"><section class="section"><div class="card empty"><h1 style="font-size:22px">找不到這個頁面</h1>' +
+      '<p>網址可能已變更，或商品已下架。</p><a class="btn" href="#/">回首頁</a></div></section></main>';
+  }
+
+  /* ---------- 動態 robots：骨架站、購物車、結帳、查詢一律不索引 ---------- */
+  function setRobots(content) {
+    var m = document.head.querySelector('meta[name="robots"]');
+    if (!m) {
+      m = document.createElement("meta");
+      m.setAttribute("name", "robots");
+      document.head.appendChild(m);
+    }
+    m.setAttribute("content", content);
+  }
+
+  function applyRobots(parts) {
+    var page = parts[0] || "";
+    // 交易流程頁：不索引、不跟隨
+    if (page === "cart" || page === "checkout" || page === "lookup" || page === "orders" || page === "order") {
+      setRobots("noindex,nofollow");
+      return;
+    }
+    // 分類頁：沒有商品（骨架站）、或分類標了 noindex → 不索引
+    if (page === "category") {
+      var slug = parts[1] || "";
+      if (!slug) { setRobots("index,follow"); return; }
+      var cat = findCat(slug);
+      if (!cat) { setRobots("noindex,follow"); return; }
+      var items = cat.child
+        ? PRODUCTS.filter(function (p) { return p.category === slug; })
+        : PRODUCTS.filter(function (p) {
+          return cat.parent.children.some(function (ch) { return ch.slug === p.category; });
+        });
+      var flagged = (cat.child ? cat.child.noindex : cat.parent.noindex) ||
+        (cat.parent && cat.parent.noindex);
+      setRobots(items.length === 0 || flagged ? "noindex,follow" : "index,follow");
+      return;
+    }
+    // 商品頁：草稿或標 noindex → 不索引；找不到 → 不索引
+    if (page === "product") {
+      var p = PRODUCTS.filter(function (x) { return x.slug === (parts[1] || ""); })[0];
+      if (!p) { setRobots("noindex,follow"); return; }
+      setRobots(p.status === "draft" || p.noindex ? "noindex,follow" : "index,follow");
+      return;
+    }
+    if (page === "" ) { setRobots(PRODUCTS.some(function (p) { return p.status === "live" && !p.noindex; }) ? "index,follow" : "noindex,nofollow"); return; }
+    setRobots("index,follow");
+  }
+
+  /* ---------- 路由 ---------- */
+  function applySiteBrand() {
+    if (!SITE) return;
+    var logo = document.getElementById("siteLogo");
+    if (logo) logo.textContent = SITE.name;
+    var hub = document.getElementById("hubLink");
+    if (hub) hub.style.display = "";
+    document.title = SITE.name + "｜線上選物（" + (SITE.subdomain || SITE.project) + "）";
+  }
+
+  function render() {
+    applySiteBrand();
+    var app = document.getElementById("app");
+    var hash = location.hash.replace(/^#/, "") || "/";
+    var qs = "";
+    if (hash.indexOf("?") >= 0) { qs = hash.slice(hash.indexOf("?")); hash = hash.slice(0, hash.indexOf("?")); }
+    var parts = hash.split("/").filter(Boolean);
+    var html = "";
+
+    if (!parts.length) html = viewHome(1);
+    else if (parts[0] === "p") html = viewHome(parts[1]);
+    else if (parts[0] === "category") html = parts[1] ? viewCategory(parts[1], parts[2]) : viewCategories();
+    else if (parts[0] === "product") html = viewProduct(parts[1] || "");
+    else if (parts[0] === "cart") html = viewCart();
+    else if (parts[0] === "checkout") html = viewCheckout();
+    else if (parts[0] === "order") html = viewOrder(parts[1] || "", qs.indexOf("new=1") >= 0, qs.indexOf("mail=1") >= 0);
+    else if (parts[0] === "lookup" || parts[0] === "orders") html = viewLookup();
+    else if (parts[0] === "policy" && parts[1] === "returns") html = viewPolicyReturns();
+    else if (parts[0] === "policy" && parts[1] === "shipping") html = viewPolicyShipping();
+    else html = viewNotFound();
+
+    app.innerHTML = html;
+    applyRobots(parts);
+    syncBadge();
+    bindView(parts);
+    window.scrollTo({ top: 0 });
+  }
+
+  function bindView(parts) {
+    var page = parts[0] || "";
+
+    if (page === "product") {
+      var p = PRODUCTS.filter(function (x) { return x.slug === parts[1]; })[0];
+      if (!p) return;
+      var thumbs = document.getElementById("pdpThumbs");
+      if (thumbs) thumbs.addEventListener("click", function (ev) {
+        var img = ev.target.closest("img");
+        if (!img) return;
+        var main = document.getElementById("pdpMain");
+        main.src = img.getAttribute("data-src");
+        thumbs.querySelectorAll("img").forEach(function (x) { x.classList.remove("active"); });
+        img.classList.add("active");
+      });
+
+      var info = document.getElementById("pdpInfo");
+      function refreshInfo() {
+        info.innerHTML = pdpInfoHtml(p);
+        bindInfo();
+      }
+      function bindInfo() {
+        info.querySelectorAll(".opts").forEach(function (row) {
+          row.addEventListener("click", function (ev) {
+            var btn = ev.target.closest(".opt");
+            if (!btn || btn.disabled) return;
+            state.product.sel[row.getAttribute("data-spec")] = btn.getAttribute("data-val");
+            refreshInfo();
+          });
+        });
+        var q = document.getElementById("qInput");
+        var v = currentVariant(p, state.product.sel) || p.variants[0];
+        var cap = Math.min(v.stock, S.cart.maxQtyPerLine);
+        document.getElementById("qMinus").onclick = function () {
+          state.product.qty = Math.max(1, state.product.qty - 1);
+          q.value = state.product.qty;
+        };
+        document.getElementById("qPlus").onclick = function () {
+          state.product.qty = Math.min(cap || 1, state.product.qty + 1);
+          q.value = state.product.qty;
+        };
+        q.onchange = function () {
+          var n = parseInt(q.value, 10) || 1;
+          state.product.qty = Math.min(cap || 1, Math.max(1, n));
+          q.value = state.product.qty;
+        };
+        var addBtn = document.getElementById("addToCart");
+        if (addBtn) addBtn.onclick = function () {
+          addToCart(v.sku, state.product.qty);
+        };
+        var buyBtn = document.getElementById("buyNow");
+        if (buyBtn) buyBtn.onclick = function () {
+          addToCart(v.sku, state.product.qty);
+          location.hash = "#/cart";
+        };
+      }
+      bindInfo();
+    }
+
+    if (page === "cart") {
+      var table = document.querySelector("[data-sku]") ? document.querySelector("table") : null;
+      if (table) table.addEventListener("click", function (ev) {
+        var btn = ev.target.closest("[data-act]");
+        if (!btn) return;
+        var row = ev.target.closest("tr[data-sku]");
+        var sku = row.getAttribute("data-sku");
+        var line = cart.filter(function (l) { return l.sku === sku; })[0];
+        if (!line) return;
+        var act = btn.getAttribute("data-act");
+        var cap = Math.min(idx[sku].variant.stock, S.cart.maxQtyPerLine);
+        if (act === "plus") { line.qty = Math.min(cap, line.qty + 1); saveCart(); render(); return; }
+        if (act === "minus") { line.qty = Math.max(1, line.qty - 1); saveCart(); render(); return; }
+        if (act === "remove") {
+          confirmDialog("移除商品", "要把「" + idx[sku].product.name + "」從購物車移除嗎？", "移除").then(function (ok) {
+            if (!ok) return;
+            cart = cart.filter(function (l) { return l.sku !== sku; });
+            saveCart(); render(); toast("已移除 " + idx[sku].product.name);
+          });
+        }
+      });
+      var tableInput = document.querySelector("table");
+      if (tableInput) tableInput.addEventListener("change", function (ev) {
+        var input = ev.target.closest("[data-act='qty']");
+        if (!input) return;
+        var row = ev.target.closest("tr[data-sku]");
+        var sku = row.getAttribute("data-sku");
+        var line = cart.filter(function (l) { return l.sku === sku; })[0];
+        var cap = Math.min(idx[sku].variant.stock, S.cart.maxQtyPerLine);
+        var n = parseInt(input.value, 10) || 1;
+        line.qty = Math.min(cap, Math.max(1, n));
+        saveCart(); render();
+      });
+      var applyBtn = document.getElementById("couponApply");
+      if (applyBtn) applyBtn.onclick = function () {
+        var code = (document.getElementById("couponInput").value || "").trim().toUpperCase();
+        var msg = document.getElementById("couponMsg");
+        var subtotal = cartLines().reduce(function (a, l) { return a + l.price * l.qty; }, 0);
+        var c = S.coupons.filter(function (x) { return x.code === code && x.active; })[0];
+        if (!c || subtotal < (c.minSubtotal || 0)) {
+          coupon = null; write(K_COUPON, null);
+          msg.textContent = "此優惠碼目前不適用本筆訂單，請確認代碼或改用其他優惠";
+          saveCart(); render();
+          return;
+        }
+        coupon = code; write(K_COUPON, code);
+        toast("優惠碼已套用");
+        render();
+      };
+      var checkoutBtn = document.getElementById("toCheckout");
+      if (checkoutBtn) checkoutBtn.onclick = function () { location.hash = "#/checkout"; };
+    }
+
+    if (page === "checkout") bindCheckout();
+    if (page === "order") bindOrder(parts[1]);
+
+    if (page === "lookup" || page === "orders") {
+      var btn = document.getElementById("lkBtn");
+      if (btn) btn.onclick = function () {
+        var no = (document.getElementById("lkNo").value || "").trim().toUpperCase();
+        var mail = (document.getElementById("lkEmail").value || "").trim().toLowerCase();
+        var msg = document.getElementById("lkMsg");
+        msg.textContent = "";
+        if (!no) { msg.textContent = "請先填訂單編號"; return; }
+        var local = getOrder(no);
+        if (local && (!mail || String(local.receiver.email).toLowerCase() === mail)) {
+          location.hash = "#/order/" + local.orderNo;
+          return;
+        }
+        if (!LOOKUP_ENDPOINT) {
+          msg.textContent = local ? "Email 與訂單不符" : "本機查無此訂單編號";
+          return;
+        }
+        if (!mail) { msg.textContent = "跨裝置查詢要同時填下單時留的 Email"; return; }
+        msg.textContent = "查詢中…";
+        fetch(LOOKUP_ENDPOINT + "/" + encodeURIComponent(no) + "?email=" + encodeURIComponent(mail))
+          .then(function (r) { return r.json().then(function (d) { return { ok: r.ok, d: d }; }); })
+          .then(function (res) {
+            if (!res.ok || !res.d || !res.d.ok || !res.d.order) {
+              msg.textContent = "查無此訂單，或 Email 與訂單不符";
+              return;
+            }
+            putOrder(res.d.order);
+            location.hash = "#/order/" + res.d.order.orderNo;
+          })
+          .catch(function () { msg.textContent = "查詢失敗，請確認網路後再試"; });
+      };
+    }
+
+    var cartBtn = document.getElementById("cartBtn");
+    if (cartBtn) cartBtn.onclick = function () { location.hash = "#/cart"; };
+  }
+
+  function bindCheckout() {
+    document.querySelectorAll("[data-field]").forEach(function (el) {
+      el.addEventListener("change", function () {
+        state.form[el.getAttribute("data-field")] = el.value;
+        if (el.id === "f_county") { state.form.district = ""; state.form.zip = ""; render(); }
+        if (el.id === "f_district") {
+          var op = el.options ? el.options[el.selectedIndex] : null;
+          state.form.zip = op ? (op.getAttribute("data-zip") || "") : "";
+          state.form.storeName = ""; state.form.storeId = "";
+          render();
+        }
+        if (el.id === "f_cvsBrand") {
+          state.form.cvsBrand = el.value;
+          state.form.storeName = ""; state.form.storeId = "";
+          render();
+        }
+        if (el.id === "f_storeName" && el.options) {
+          var sop = el.options[el.selectedIndex];
+          state.form.storeId = sop ? (sop.getAttribute("data-id") || "") : "";
+          render();
+        }
+      });
+    });
+    var ship = document.getElementById("shipList");
+    if (ship) ship.addEventListener("change", function (ev) {
+      if (ev.target.name !== "ship") return;
+      state.form.shipMethod = ev.target.value;
+      render();
+    });
+    var n1 = document.getElementById("stepNext1");
+    if (n1) n1.onclick = function () {
+      if (!validateStep(1)) { render(); toast("請確認標示的欄位"); return; }
+      state.step = 2; render();
+    };
+    var b2 = document.getElementById("stepBack2");
+    if (b2) b2.onclick = function () { state.step = 1; render(); };
+    var n2 = document.getElementById("stepNext2");
+    if (n2) n2.onclick = function () {
+      if (!validateStep(2)) { render(); toast("請確認標示的欄位"); return; }
+      state.step = 3; render();
+    };
+    var b3 = document.getElementById("stepBack3");
+    if (b3) b3.onclick = function () { state.step = 2; render(); };
+    var sub = document.getElementById("submitOrder");
+    if (sub) sub.onclick = function () {
+      var t = computeTotals(cartLines(), coupon, state.form.shipMethod, state.form.county, state.form.district);
+      var n = cart.reduce(function (a, l) { return a + l.qty; }, 0);
+      confirmDialog(t.inquiry ? "確認送出詢價單" : "確認送出訂單", t.inquiry
+        ? (t.digital
+          ? "共 " + n + " 項課程，費用待店家報價（送出後不會扣款，也不需要寄送）。"
+          : "共 " + n + " 件作品，金額待店家報價（送出後不會扣款）。")
+        : "總金額 " + money(t.total) + "（含 5% 營業稅 " + money(t.tax) + "）。送出後會建立本機訂單並產生 Email 內容。", t.inquiry ? "確認詢價" : "確認送出").then(function (ok) {
+        if (ok) submitOrder();
+      });
+    };
+  }
+
+  function bindOrder(no) {
+    var o = getOrder(no || "");
+    if (!o) return;
+    var mail = buildMail(o);
+    var copyBtn = document.getElementById("copyMail");
+    if (copyBtn) copyBtn.onclick = function () {
+      copyText("To: " + mail.to + "\nSubject: " + mail.subject + "\n\n" + mail.body);
+    };
+    var postBtn = document.getElementById("postMail");
+    if (postBtn) postBtn.onclick = function () {
+      fetch(ORDER_ENDPOINT, {
+        method: "POST",
+        headers: { "content-type": "application/json", accept: "application/json" },
+        body: JSON.stringify({ to: mail.to, subject: mail.subject, body: mail.body, order: o })
+      }).then(function (r) {
+        toast(r.ok ? "訂單已送出" : "送出失敗，請改用複製或郵件程式");
+      }).catch(function () { toast("送出失敗，請改用複製或郵件程式"); });
+    };
+    var paid = document.getElementById("markPaid");
+    if (paid) paid.onclick = function () {
+      o.status = "paid"; o.statusLabel = "已付款（待店家確認）";
+      updateOrder(o); render(); toast("已標記為已付款");
+    };
+    var cancel = document.getElementById("cancelOrder");
+    if (cancel) cancel.onclick = function () {
+      confirmDialog("取消訂單", "取消後這筆本機紀錄會標記為已取消；已寄出的 Email 不會撤回。", "取消訂單").then(function (ok) {
+        if (!ok) return;
+        o.status = "cancelled"; o.statusLabel = "已取消";
+        updateOrder(o); render(); toast("訂單已取消");
+      });
+    };
+  }
+
+  function updateOrder(o) {
+    var list = orders();
+    var i = list.findIndex ? list.findIndex(function (x) { return x.orderNo === o.orderNo; }) : -1;
+    if (i < 0) {
+      for (var k = 0; k < list.length; k++) if (list[k].orderNo === o.orderNo) i = k;
+    }
+    if (i >= 0) list[i] = o;
+    write(K_ORDERS, list);
+  }
+
+  function copyText(text) {
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).then(function () { toast("已複製，貼到郵件即可寄出"); })
+        .catch(function () { fallbackCopy(text); });
+    } else fallbackCopy(text);
+  }
+  function fallbackCopy(text) {
+    var ta = document.createElement("textarea");
+    ta.value = text;
+    ta.style.position = "fixed";
+    ta.style.opacity = "0";
+    document.body.appendChild(ta);
+    ta.select();
+    try { document.execCommand("copy"); toast("已複製，貼到郵件即可寄出"); }
+    catch (e) { toast("複製失敗，請手動選取內容"); }
+    document.body.removeChild(ta);
+  }
+
+  /* ---------- 啟動 ---------- */
+  document.getElementById("ftShop").textContent = SHOP_NAME + "・" + S.shop.address;
+  document.getElementById("ftSupport").textContent = "客服 " + CONTACT.tel + "・" + S.shop.supportHours + "・訂單信箱 " + ORDER_EMAIL;
+  var fabLine = document.getElementById("fabLine");
+  if (fabLine) fabLine.href = CONTACT.line;
+  window.addEventListener("hashchange", render);
+  render();
+})();
+</script>
+</body>
+</html>

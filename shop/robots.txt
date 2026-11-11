@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /shop/api/
+
+# 本站是單檔 SPA（#/category/... 為 hash 路由，伺服器端看不到），
+# 購物車／結帳／查詢頁與沒有商品的分類頁改由頁面內的 meta robots 標記 noindex。

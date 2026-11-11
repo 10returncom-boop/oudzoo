@@ -1,0 +1,9 @@
+/*
+  Cache-Control: public, max-age=0, must-revalidate
+
+/shop/products/*
+  Cache-Control: public, max-age=86400
+  X-Content-Type-Options: nosniff
+
+/shop/index.html
+  Cache-Control: public, max-age=0, must-revalidate
